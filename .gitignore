@@ -1,0 +1,8 @@
+.mimocode/
+.DS_Store
+node_modules/
+*.log
+.idea/
+.vscode/
+__pycache__/
+*.pyc

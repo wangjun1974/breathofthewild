@@ -1,0 +1,17 @@
+{
+  "name": "BotW 呀哈哈地图",
+  "short_name": "呀哈哈",
+  "description": "旷野之息 900 个呀哈哈位置、坐标与找法提示",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "icons": [
+    {
+      "src": "./assets/korok.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
