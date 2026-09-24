@@ -214,7 +214,7 @@ breathofthewild/
 - [x] Phase 1 数据构建完成（900/900，typeHit=900，nearestHit=900）
 - [x] Phase 2 地图与交互完成（Leaflet + 底部弹层 + 区域筛选 + 已收集）
 - [x] Phase 3 iPhone 联调通过（用户真机已测）
-- [ ] Phase 4 公网部署完成（文档已写，待用户选择托管后填链接）
+- [x] Phase 4 公网部署完成（GitHub Pages：https://wangjun1974.github.io/breathofthewild/）
 - [x] Phase 5 README/打磨完成
 
 ### 2026-09-24 实现记录
@@ -223,3 +223,10 @@ breathofthewild/
 - LAN URL：`http://10.208.167.52:8080`
 - 数据：`data/koroks.json`（900 条，33 种类型全覆盖）
 - 构建脚本：`tools/build_koroks.py`（map 批量 + 并发 detail 回退）
+
+### 部署记录
+
+- GitHub: https://github.com/wangjun1974/breathofthewild
+- GitHub Pages URL: https://wangjun1974.github.io/breathofthewild/
+- 分支: main / 根目录 `/`
+- 验证: index/data/js/leaflet 均 HTTP 200

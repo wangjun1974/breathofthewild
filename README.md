@@ -64,7 +64,13 @@ python3 tools/build_koroks.py
 3. 构建命令留空，输出目录 `/`
 4. 访问分配的 `https://xxx.pages.dev`
 
-### GitHub Pages
+### GitHub Pages（已部署）
+
+在线地址：**https://wangjun1974.github.io/breathofthewild/**
+
+仓库：https://github.com/wangjun1974/breathofthewild
+
+原步骤：
 
 1. 仓库 Settings → Pages → Source: `main` / root
 2. 访问 `https://<user>.github.io/<repo>/`
