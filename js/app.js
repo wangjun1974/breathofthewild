@@ -6,6 +6,7 @@ import {
   clearCollected,
   isCollected,
   matchesFilter,
+  setHideKoroks,
 } from "./state.js";
 import { createOwnedStore } from "./owned.js";
 import { createArmorUi } from "./armors.js";
@@ -54,7 +55,10 @@ function updateKorokProgress() {
   const collected = state.koroks.filter((k) => isCollected(k.id)).length;
   const visible = state.koroks.filter(matchesFilter).length;
   const el = document.getElementById("progress-text");
-  if (el) {
+  if (!el) return;
+  if (state.hideKoroks || state.forceHideKoroks) {
+    el.textContent = `呀哈哈已隐藏 · 已收集 ${collected}/${total}`;
+  } else {
     el.textContent = `显示 ${visible} · 已收集 ${collected}/${total}`;
   }
 }
@@ -110,6 +114,7 @@ function setMode(next) {
     }
     if (hideText) hideText.textContent = "仅未收集";
     document.body.classList.remove("mode-armor", "armor-locating");
+    state.forceHideKoroks = false;
     updateKorokProgress();
     markers?.render();
   } else {
@@ -122,6 +127,7 @@ function setMode(next) {
     if (hideText) hideText.textContent = "隐藏已拥有";
     document.body.classList.add("mode-armor");
     document.body.classList.remove("armor-locating");
+    state.forceHideKoroks = false;
     const only = document.getElementById("only-uncollected");
     armors?.setHideOwned(!!only?.checked);
     armors?.renderList();
@@ -141,13 +147,18 @@ async function main() {
       document.getElementById("armor-back-map").hidden = false;
       document.body.classList.add("armor-locating");
       document.body.classList.remove("mode-armor");
+      state.forceHideKoroks = true;
+      markers.render();
+      updateKorokProgress();
     },
     onBackToList() {
       document.getElementById("armor-panel").hidden = false;
       document.getElementById("armor-back-map").hidden = true;
       document.body.classList.add("mode-armor");
       document.body.classList.remove("armor-locating");
+      state.forceHideKoroks = false;
       armors?.clearTempMarker();
+      markers.render();
     },
   });
 
@@ -190,6 +201,17 @@ async function main() {
   };
 
   renderRegionChips(refreshKorok);
+
+  const hideKoroksEl = document.getElementById("hide-koroks");
+  if (hideKoroksEl) {
+    hideKoroksEl.checked = state.hideKoroks;
+    hideKoroksEl.addEventListener("change", (e) => {
+      setHideKoroks(!!e.target.checked);
+      refreshKorok();
+      toast(state.hideKoroks ? "已隐藏呀哈哈图标" : "已显示呀哈哈图标");
+    });
+  }
+
   refreshKorok();
 
   document.getElementById("only-uncollected")?.addEventListener("change", (e) => {

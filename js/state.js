@@ -1,4 +1,5 @@
 const STORAGE_KEY = "botw-korok-collected-v1";
+const HIDE_KEY = "botw-korok-hide-v1";
 
 function readCollected() {
   try {
@@ -11,13 +12,33 @@ function readCollected() {
   }
 }
 
+function readHideKoroks() {
+  try {
+    return localStorage.getItem(HIDE_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
 export const state = {
   koroks: [],
   collected: readCollected(),
   region: "all",
   onlyUncollected: false,
+  hideKoroks: readHideKoroks(),
+  /** 套装定位等临时强制隐藏，不写入偏好 */
+  forceHideKoroks: false,
   selectedId: null,
 };
+
+export function setHideKoroks(value) {
+  state.hideKoroks = !!value;
+  try {
+    localStorage.setItem(HIDE_KEY, state.hideKoroks ? "1" : "0");
+  } catch {
+    /* ignore */
+  }
+}
 
 export function saveCollected() {
   try {
@@ -43,6 +64,7 @@ export function clearCollected() {
 }
 
 export function matchesFilter(k) {
+  if (state.hideKoroks || state.forceHideKoroks) return false;
   if (state.region !== "all" && k.region !== state.region) return false;
   if (state.onlyUncollected && state.collected.has(k.id)) return false;
   return true;

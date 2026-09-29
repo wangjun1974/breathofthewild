@@ -123,6 +123,7 @@ body {
   padding: 8px 10px;
   background: rgba(8, 12, 24, 0.78);
   border-bottom: 1px solid rgba(240, 199, 94, 0.15);
+  flex-wrap: wrap;
 }
 
 .filter-row {
