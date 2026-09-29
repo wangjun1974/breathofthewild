@@ -2,7 +2,7 @@
 
 ## 当前进度
 
-- **状态**：呀哈哈地图 + 套装图鉴（文字详情）**已完成**
+- **状态**：呀哈哈地图 + 套装图鉴（文字详情）**已完成**；Pages 已更新
 - **在线地址**：https://wangjun1974.github.io/breathofthewild/
 - **工作目录**：`~/git/agent/cursor/breathofthewild`
 - **呀哈哈**：全量 **900**
@@ -27,7 +27,7 @@
 | phase0-plan | Clone 至 cursor 目录并落盘本 PLAN | done |
 | phase1-data | `tools/build_armors.py` → `data/armors.json` | done |
 | phase2-ui | 顶栏切换 + 列表/详情/已拥有/定位 | done |
-| phase3-pages | 推送 GitHub Pages + 更新本文件 | in_progress |
+| phase3-pages | 推送 GitHub Pages + 更新本文件 | done |
 
 ## 技术选型
 
@@ -41,7 +41,7 @@
 - [x] 顶栏可切换「呀哈哈 / 套装」，呀哈哈不回退
 - [x] 全部成套（含 amiibo、DLC）可浏览；详情含获取、效果、升级材料
 - [x] 有坐标的部件可地图定位（51/77 部件有坐标）
-- [ ] GitHub Pages 已更新并可打开套装功能
+- [x] GitHub Pages 已更新并可打开套装功能（`status: built`，`armors.json` HTTP 200）
 
 ## 进度日志
 
@@ -50,7 +50,7 @@
 - [x] 仓库 clone 至 `~/git/agent/cursor/breathofthewild`
 - [x] Phase 1：26 套 / 77 部件；amiibo 可强化材料已收录
 - [x] Phase 2：模式切换、列表、详情、已拥有、临时地图钉
-- [ ] Phase 3：推送 Pages
+- [x] Phase 3：推送 `948d67a` → Pages built
 
 ### 既有呀哈哈（历史）
 
