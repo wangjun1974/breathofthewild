@@ -639,7 +639,11 @@ body.mode-armor #map {
   box-shadow: 0 0 0 3px rgba(240, 199, 94, 0.35);
 }
 
-body.armor-locating .filters {
+body.hide-koroks .leaflet-pane.leaflet-koroks-pane,
+body.hide-koroks .korok-marker,
+body.hide-koroks .korok-icon {
   display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 

@@ -50,6 +50,13 @@ function removeLoading() {
   document.getElementById("loading-overlay")?.remove();
 }
 
+function syncHideClass() {
+  document.body.classList.toggle(
+    "hide-koroks",
+    !!(state.hideKoroks || state.forceHideKoroks)
+  );
+}
+
 function updateKorokProgress() {
   const total = state.koroks.length;
   const collected = state.koroks.filter((k) => isCollected(k.id)).length;
@@ -187,6 +194,7 @@ async function main() {
   console.info("[套装]", meta);
 
   function refreshKorok() {
+    syncHideClass();
     markers.render();
     updateKorokProgress();
   }
@@ -204,12 +212,14 @@ async function main() {
 
   const hideKoroksEl = document.getElementById("hide-koroks");
   if (hideKoroksEl) {
-    hideKoroksEl.checked = state.hideKoroks;
-    hideKoroksEl.addEventListener("change", (e) => {
-      setHideKoroks(!!e.target.checked);
+    hideKoroksEl.checked = !!state.hideKoroks;
+    const applyHide = () => {
+      setHideKoroks(!!hideKoroksEl.checked);
       refreshKorok();
       toast(state.hideKoroks ? "已隐藏呀哈哈图标" : "已显示呀哈哈图标");
-    });
+    };
+    hideKoroksEl.addEventListener("change", applyHide);
+    hideKoroksEl.addEventListener("input", applyHide);
   }
 
   refreshKorok();

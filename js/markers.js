@@ -1,7 +1,6 @@
 import { state, matchesFilter, isCollected } from "./state.js";
 import { xyzToLatLng } from "./map.js";
 
-const ICON_URL = "./assets/korok.png";
 const paneName = "koroks";
 
 function makeIcon(k, selectedId) {
@@ -18,16 +17,37 @@ function makeIcon(k, selectedId) {
   });
 }
 
+function isHidden() {
+  return !!(state.hideKoroks || state.forceHideKoroks);
+}
+
 export function createMarkerLayer(map) {
   if (!map.getPane(paneName)) map.createPane(paneName);
-  map.getPane(paneName).style.zIndex = "650";
+  const pane = map.getPane(paneName);
+  pane.style.zIndex = "650";
 
   const layer = L.layerGroup();
   const byId = new Map();
 
+  function setPaneVisible(visible) {
+    pane.style.display = visible ? "" : "none";
+    pane.style.visibility = visible ? "" : "hidden";
+    pane.style.pointerEvents = visible ? "" : "none";
+  }
+
   function render() {
     layer.clearLayers();
     byId.clear();
+
+    if (isHidden()) {
+      setPaneVisible(false);
+      if (map.hasLayer(layer)) map.removeLayer(layer);
+      return;
+    }
+
+    setPaneVisible(true);
+    if (!map.hasLayer(layer)) layer.addTo(map);
+
     for (const k of state.koroks) {
       if (!matchesFilter(k)) continue;
       const marker = L.marker(xyzToLatLng(k.x, k.z), {
@@ -53,6 +73,7 @@ export function createMarkerLayer(map) {
     layer,
     render,
     refreshIcons() {
+      if (isHidden()) return;
       for (const [id, marker] of byId) {
         const k = state.koroks.find((x) => x.id === id);
         if (k) marker.setIcon(makeIcon(k, state.selectedId));
