@@ -122,6 +122,7 @@ function setMode(next) {
     if (hideText) hideText.textContent = "仅未收集";
     document.body.classList.remove("mode-armor", "armor-locating");
     state.forceHideKoroks = false;
+    syncHideClass();
     updateKorokProgress();
     markers?.render();
   } else {
@@ -135,6 +136,7 @@ function setMode(next) {
     document.body.classList.add("mode-armor");
     document.body.classList.remove("armor-locating");
     state.forceHideKoroks = false;
+    syncHideClass();
     const only = document.getElementById("only-uncollected");
     armors?.setHideOwned(!!only?.checked);
     armors?.renderList();
@@ -155,6 +157,7 @@ async function main() {
       document.body.classList.add("armor-locating");
       document.body.classList.remove("mode-armor");
       state.forceHideKoroks = true;
+      syncHideClass();
       markers.render();
       updateKorokProgress();
     },
@@ -165,6 +168,7 @@ async function main() {
       document.body.classList.remove("armor-locating");
       state.forceHideKoroks = false;
       armors?.clearTempMarker();
+      syncHideClass();
       markers.render();
     },
   });
