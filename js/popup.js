@@ -1,4 +1,4 @@
-import { state, isCollected, toggleCollected } from "./state.js";
+import { state, isCollected, toggleCollected } from "./state.js?v=20260929-hide3";
 
 const sheet = () => document.getElementById("sheet");
 const body = () => document.getElementById("sheet-body");

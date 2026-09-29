@@ -1,15 +1,15 @@
-import { createMap } from "./map.js";
-import { createMarkerLayer } from "./markers.js";
-import { showKorokSheet, hideSheet, toast } from "./popup.js";
+import { createMap } from "./map.js?v=20260929-hide3";
+import { createMarkerLayer } from "./markers.js?v=20260929-hide3";
+import { showKorokSheet, hideSheet, toast } from "./popup.js?v=20260929-hide3";
 import {
   state,
   clearCollected,
   isCollected,
   matchesFilter,
   setHideKoroks,
-} from "./state.js";
-import { createOwnedStore } from "./owned.js";
-import { createArmorUi } from "./armors.js";
+} from "./state.js?v=20260929-hide3";
+import { createOwnedStore } from "./owned.js?v=20260929-hide3";
+import { createArmorUi } from "./armors.js?v=20260929-hide3";
 
 const REGION_LABELS = [
   ["all", "全部"],
