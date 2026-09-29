@@ -7,6 +7,8 @@ import {
   isCollected,
   matchesFilter,
 } from "./state.js";
+import { createOwnedStore } from "./owned.js";
+import { createArmorUi } from "./armors.js";
 
 const REGION_LABELS = [
   ["all", "全部"],
@@ -28,6 +30,12 @@ const REGION_LABELS = [
   ["wasteland", "荒野"],
 ];
 
+let mode = "korok";
+let map;
+let markers;
+let armors;
+const ownedStore = createOwnedStore();
+
 function showLoading(text) {
   removeLoading();
   const el = document.createElement("div");
@@ -41,7 +49,7 @@ function removeLoading() {
   document.getElementById("loading-overlay")?.remove();
 }
 
-function updateProgress() {
+function updateKorokProgress() {
   const total = state.koroks.length;
   const collected = state.koroks.filter((k) => isCollected(k.id)).length;
   const visible = state.koroks.filter(matchesFilter).length;
@@ -72,77 +80,158 @@ function renderRegionChips(onChange) {
   }
 }
 
-async function main() {
-  showLoading("加载呀哈哈数据…");
-  const map = createMap("map");
-  const markers = createMarkerLayer(map);
+function setMode(next) {
+  mode = next;
+  document.querySelectorAll(".mode-btn").forEach((btn) => {
+    const active = btn.getAttribute("data-mode") === mode;
+    btn.classList.toggle("is-active", active);
+    btn.setAttribute("aria-selected", active ? "true" : "false");
+  });
 
-  let data;
+  const brand = document.getElementById("brand-title");
+  const filters = document.getElementById("korok-filters");
+  const armorPanel = document.getElementById("armor-panel");
+  const armorBack = document.getElementById("armor-back-map");
+  const resetBtn = document.getElementById("btn-reset-collected");
+  const hideText = document.getElementById("hide-found-text");
+
+  armors?.clearTempMarker();
+  if (armorBack) armorBack.hidden = true;
+  hideSheet();
+  armors?.closeSheet();
+
+  if (mode === "korok") {
+    if (brand) brand.textContent = "呀哈哈地图";
+    if (filters) filters.hidden = false;
+    if (armorPanel) armorPanel.hidden = true;
+    if (resetBtn) {
+      resetBtn.hidden = false;
+      resetBtn.textContent = "重置收集";
+    }
+    if (hideText) hideText.textContent = "仅未收集";
+    document.body.classList.remove("mode-armor", "armor-locating");
+    updateKorokProgress();
+    markers?.render();
+  } else {
+    if (brand) brand.textContent = "套装图鉴";
+    if (filters) filters.hidden = true;
+    if (armorPanel) armorPanel.hidden = false;
+    if (resetBtn) {
+      resetBtn.hidden = true;
+    }
+    if (hideText) hideText.textContent = "隐藏已拥有";
+    document.body.classList.add("mode-armor");
+    document.body.classList.remove("armor-locating");
+    const only = document.getElementById("only-uncollected");
+    armors?.setHideOwned(!!only?.checked);
+    armors?.renderList();
+  }
+}
+
+async function main() {
+  showLoading("加载数据…");
+  map = createMap("map");
+  markers = createMarkerLayer(map);
+
+  armors = createArmorUi({
+    map,
+    ownedStore,
+    onLocate() {
+      document.getElementById("armor-panel").hidden = true;
+      document.getElementById("armor-back-map").hidden = false;
+      document.body.classList.add("armor-locating");
+      document.body.classList.remove("mode-armor");
+    },
+    onBackToList() {
+      document.getElementById("armor-panel").hidden = false;
+      document.getElementById("armor-back-map").hidden = true;
+      document.body.classList.add("mode-armor");
+      document.body.classList.remove("armor-locating");
+      armors?.clearTempMarker();
+    },
+  });
+
+  let korokData;
+  let armorData;
   try {
-    const res = await fetch("./data/koroks.json");
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    data = await res.json();
+    const [kRes, aRes] = await Promise.all([
+      fetch("./data/koroks.json"),
+      fetch("./data/armors.json"),
+    ]);
+    if (!kRes.ok) throw new Error(`koroks HTTP ${kRes.status}`);
+    if (!aRes.ok) throw new Error(`armors HTTP ${aRes.status}`);
+    korokData = await kRes.json();
+    armorData = await aRes.json();
   } catch (e) {
     removeLoading();
     toast(`数据加载失败：${e.message || e}`);
     throw e;
   }
 
-  state.koroks = data.koroks || [];
+  state.koroks = korokData.koroks || [];
   if (state.koroks.length !== 900) {
     console.warn("korok count", state.koroks.length);
   }
+  const meta = armors.load(armorData);
+  console.info("[套装]", meta);
 
-  function refresh() {
+  function refreshKorok() {
     markers.render();
-    updateProgress();
+    updateKorokProgress();
   }
 
   window.onKorokClick = (k) => {
+    if (mode !== "korok") return;
     state.selectedId = k.id;
     markers.refreshIcons();
     markers.zoomTo(k);
-    showKorokSheet(k, { onToggle: refresh });
-    updateProgress();
+    showKorokSheet(k, { onToggle: refreshKorok });
+    updateKorokProgress();
   };
 
-  renderRegionChips(refresh);
-  refresh();
+  renderRegionChips(refreshKorok);
+  refreshKorok();
 
   document.getElementById("only-uncollected")?.addEventListener("change", (e) => {
-    state.onlyUncollected = !!e.target.checked;
-    refresh();
+    const checked = !!e.target.checked;
+    if (mode === "korok") {
+      state.onlyUncollected = checked;
+      refreshKorok();
+    } else {
+      armors?.setHideOwned(checked);
+    }
   });
 
   document.getElementById("btn-reset-collected")?.addEventListener("click", () => {
+    if (mode !== "korok") return;
     if (!confirm("确定清空所有已收集标记？")) return;
     clearCollected();
-    refresh();
+    refreshKorok();
     if (state.selectedId) {
       const k = state.koroks.find((x) => x.id === state.selectedId);
-      if (k) showKorokSheet(k, { onToggle: refresh });
+      if (k) showKorokSheet(k, { onToggle: refreshKorok });
     }
     toast("已重置收集状态");
   });
 
-  document.getElementById("btn-close-sheet")?.addEventListener("click", () => {
+  const closeSheet = () => {
     hideSheet();
+    armors?.closeSheet();
     markers.refreshIcons();
-  });
-  document.getElementById("btn-close-sheet-top")?.addEventListener("click", () => {
-    hideSheet();
-    markers.refreshIcons();
+  };
+  document.getElementById("btn-close-sheet")?.addEventListener("click", closeSheet);
+  document.getElementById("btn-close-sheet-top")?.addEventListener("click", closeSheet);
+
+  document.querySelectorAll(".mode-btn").forEach((btn) => {
+    btn.addEventListener("click", () => setMode(btn.getAttribute("data-mode")));
   });
 
-  // Close sheet on map drag start for cleaner mobile UX
-  map.on("dragstart", () => {
-    if (!document.getElementById("sheet")?.hidden) {
-      // keep sheet open; user may pan while reading
-    }
+  ownedStore.onChange(() => {
+    if (mode === "armor") armors?.updateCount();
   });
 
   removeLoading();
-  toast("已加载 900 个呀哈哈");
+  toast(`已加载 ${state.koroks.length} 呀哈哈 · ${meta.setCount || "?"} 套装`);
 }
 
 main().catch((e) => console.error(e));

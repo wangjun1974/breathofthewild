@@ -1,7 +1,7 @@
 {
-  "name": "BotW 呀哈哈地图",
-  "short_name": "呀哈哈",
-  "description": "旷野之息 900 个呀哈哈位置、坐标与找法提示",
+  "name": "旷野之息助手",
+  "short_name": "旷野之息",
+  "description": "旷野之息呀哈哈地图与套装图鉴：坐标、找法、获取与升级材料",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0b1020",

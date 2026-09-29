@@ -1,14 +1,26 @@
-# BotW 呀哈哈地图（HTML5 / iPhone）
+# 旷野之息助手（HTML5 / iPhone）
 
-在《塞尔达传说：旷野之息》海拉鲁地图上标出 **900 个呀哈哈**，点击图标查看 **坐标、地点与如何找到**。
+《塞尔达传说：旷野之息》**呀哈哈地图** + **套装图鉴**（获取说明、套装效果、升级材料、地图定位）。
+
+在线：https://wangjun1974.github.io/breathofthewild/
 
 ## 功能
+
+### 呀哈哈
 
 - 全部 900 个呀哈哈图标
 - 点击弹层：X/Y/Z 坐标、海拔、地图格、区域、最近地名、解谜类型、中文找法
 - 按区域筛选、仅看未收集
 - 已收集标记（localStorage，刷新不丢）
-- 移动端底部卡片 + PWA manifest（可添加到 iPhone 主屏幕）
+
+### 套装
+
+- 顶栏切换「呀哈哈 / 套装」
+- 全部可成套防具（本体 + DLC + amiibo）：列表、搜索、已拥有
+- 详情：说明、套装效果、各件获取方式、防御阶梯、★1–★4 升级材料
+- 有坐标的部件可「在地图上显示」
+
+移动端底部卡片 + PWA manifest（可添加到 iPhone 主屏幕）。
 
 ## 本地运行（iPhone 同一 WiFi）
 
@@ -27,10 +39,9 @@ iPhone Safari 打开：`http://<Mac-IP>:8080`
 
 ## 数据构建（开发时）
 
-重新生成 `data/koroks.json`：
-
 ```bash
-python3 tools/build_koroks.py
+python3 tools/build_koroks.py   # data/koroks.json
+python3 tools/build_armors.py   # data/armors.json
 ```
 
 数据源：
@@ -94,10 +105,12 @@ python3 tools/build_koroks.py
 index.html
 manifest.webmanifest
 css/app.css
-js/{app,map,markers,popup,state}.js
+js/{app,map,markers,popup,state,armors,owned}.js
 data/koroks.json
+data/armors.json
 data/overrides.json
 tools/build_koroks.py
+tools/build_armors.py
 assets/korok.png
 vendor/leaflet/
 PLAN.md

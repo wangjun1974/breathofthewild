@@ -396,4 +396,249 @@ body {
   .brand h1 {
     font-size: 18px;
   }
+
+  .armor-panel {
+    top: calc(var(--topbar-h) + var(--safe-top));
+  }
 }
+
+/* Mode switch */
+.mode-switch {
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.28);
+  flex-shrink: 0;
+}
+
+.mode-btn {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  min-height: 32px;
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  background: transparent;
+}
+
+.mode-btn.is-active {
+  background: rgba(240, 199, 94, 0.22);
+  color: #ffe7a1;
+}
+
+.topbar {
+  flex-wrap: wrap;
+}
+
+.filters[hidden] {
+  display: none !important;
+}
+
+/* Armor mode */
+.armor-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--topbar-h) + var(--safe-top));
+  bottom: 0;
+  z-index: 950;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(13, 18, 34, 0.98), rgba(8, 12, 24, 0.98));
+  border-top: 1px solid var(--border);
+  padding-bottom: var(--safe-bottom);
+}
+
+.armor-panel[hidden] {
+  display: none !important;
+}
+
+body.mode-armor #map {
+  visibility: hidden;
+}
+
+.armor-toolbar {
+  padding: 10px 12px 6px;
+  flex: 0 0 auto;
+}
+
+.armor-search {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  font-size: 1rem;
+  padding: 12px 14px;
+  min-height: 44px;
+  outline: none;
+}
+
+.armor-search::placeholder {
+  color: var(--muted);
+}
+
+.armor-list {
+  flex: 1 1 auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 10px 16px;
+}
+
+.armor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  width: 100%;
+  text-align: left;
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid rgba(243, 234, 208, 0.12);
+  background: transparent;
+  color: var(--text);
+  padding: 14px 10px;
+  min-height: 56px;
+}
+
+.armor-item:active {
+  background: rgba(240, 199, 94, 0.08);
+}
+
+.armor-item-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent-2);
+}
+
+.armor-item-meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.armor-empty {
+  margin: 24px 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.armor-desc {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.armor-pieces h3,
+.armor-upgrade-block h3 {
+  margin: 14px 0 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.armor-piece {
+  padding: 12px 0;
+  border-top: 1px solid rgba(243, 234, 208, 0.12);
+}
+
+.armor-piece header {
+  margin-bottom: 6px;
+}
+
+.armor-def,
+.armor-effect {
+  margin: 0 0 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.armor-piece p {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.owned-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 12px 8px 0;
+  font-size: 0.95rem;
+  color: var(--accent);
+  min-height: 40px;
+  user-select: none;
+}
+
+.owned-check input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent);
+}
+
+.locate-btn {
+  margin: 4px 0 0;
+  border-radius: 10px !important;
+}
+
+.armor-upgrades {
+  margin: 0;
+  padding-left: 1.1em;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.armor-upgrades li {
+  margin-bottom: 6px;
+}
+
+.armor-note {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.armor-back-map {
+  position: absolute;
+  left: 50%;
+  bottom: calc(18px + var(--safe-bottom));
+  transform: translateX(-50%);
+  z-index: 1100;
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  min-height: 44px;
+  font-weight: 700;
+  color: #062014;
+  background: linear-gradient(180deg, #8be0a8, #4fbf82);
+  box-shadow: var(--shadow);
+}
+
+.armor-back-map[hidden] {
+  display: none !important;
+}
+
+.armor-pin {
+  background: transparent !important;
+  border: none !important;
+}
+
+.armor-pin-dot {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #f0c75e;
+  border: 2px solid #0b1020;
+  box-shadow: 0 0 0 3px rgba(240, 199, 94, 0.35);
+}
+
+body.armor-locating .filters {
+  display: none !important;
+}
+

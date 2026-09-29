@@ -8,10 +8,10 @@
   />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="呀哈哈" />
+  <meta name="apple-mobile-web-app-title" content="旷野之息助手" />
   <meta name="theme-color" content="#0b1020" />
-  <meta name="description" content="旷野之息呀哈哈地图：坐标、地点与找法" />
-  <title>BotW 呀哈哈地图</title>
+  <meta name="description" content="旷野之息呀哈哈地图与套装图鉴：坐标、找法、获取与升级材料" />
+  <title>旷野之息助手</title>
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="apple-touch-icon" href="./assets/korok.png" />
   <link rel="stylesheet" href="./vendor/leaflet/leaflet.css" />
@@ -23,25 +23,47 @@
       <div class="brand">
         <img src="./assets/korok.png" alt="" class="brand-icon" />
         <div>
-          <h1>呀哈哈地图</h1>
+          <h1 id="brand-title">呀哈哈地图</h1>
           <p id="progress-text">加载中…</p>
         </div>
       </div>
+      <nav class="mode-switch" role="tablist" aria-label="功能模式">
+        <button type="button" class="mode-btn is-active" data-mode="korok" role="tab" aria-selected="true">
+          呀哈哈
+        </button>
+        <button type="button" class="mode-btn" data-mode="armor" role="tab" aria-selected="false">套装</button>
+      </nav>
       <div class="topbar-actions">
         <button id="btn-reset-collected" class="btn ghost" type="button">重置收集</button>
         <button id="btn-close-sheet-top" class="btn ghost" type="button" hidden>关闭</button>
       </div>
     </header>
 
-    <nav class="filters" aria-label="筛选">
+    <nav class="filters" id="korok-filters" aria-label="筛选">
       <div class="filter-row" id="region-chips" role="tablist"></div>
       <label class="toggle">
         <input type="checkbox" id="only-uncollected" />
-        <span>仅未收集</span>
+        <span id="hide-found-text">仅未收集</span>
       </label>
     </nav>
 
     <main id="map" role="application" aria-label="海拉鲁地图"></main>
+
+    <section id="armor-panel" class="armor-panel" hidden aria-label="套装列表">
+      <div class="armor-toolbar">
+        <input
+          type="search"
+          id="armor-search"
+          class="armor-search"
+          placeholder="搜索套装或部件名"
+          autocomplete="off"
+          enterkeyhint="search"
+        />
+      </div>
+      <div id="armor-list" class="armor-list"></div>
+    </section>
+
+    <button type="button" id="armor-back-map" class="armor-back-map" hidden>返回套装列表</button>
 
     <aside id="sheet" class="sheet" hidden aria-live="polite">
       <div class="sheet-handle" id="sheet-handle" aria-hidden="true"></div>

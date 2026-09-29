@@ -1,0 +1,2699 @@
+{
+  "meta": {
+    "game": "botw",
+    "setCount": 26,
+    "pieceCount": 77,
+    "generated": "2026-09-29T09:18:34Z"
+  },
+  "sets": [
+    {
+      "id": "hylian",
+      "name": "海利亚套装",
+      "category": "商店",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "海拉鲁各地防具店出售的基础旅行装，均衡而实用。",
+      "setBonus": {
+        "level2": null,
+        "note": "无套装加成；单件无特殊效果，适合早期替换初始装。"
+      },
+      "pieces": [
+        {
+          "id": "hylian_head",
+          "slot": "head",
+          "name": "海利亚兜帽",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "在卡卡利科村或哈特诺村防具店购买。",
+          "effect": "无特殊效果。",
+          "location": {
+            "x": 1846,
+            "y": 0,
+            "z": 1007,
+            "label": "卡卡利科村 防具店"
+          }
+        },
+        {
+          "id": "hylian_body",
+          "slot": "body",
+          "name": "海利亚服",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "在卡卡利科村或哈特诺村防具店购买。",
+          "effect": "无特殊效果。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺村 防具店"
+          }
+        },
+        {
+          "id": "hylian_legs",
+          "slot": "legs",
+          "name": "海利亚裤子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "在卡卡利科村或哈特诺村防具店购买。",
+          "effect": "无特殊效果。",
+          "location": {
+            "x": 1846,
+            "y": 0,
+            "z": 1007,
+            "label": "卡卡利科村 防具店"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "bokoblin_horn",
+            "item": "波克布林的犄角",
+            "count": 5
+          }
+        ],
+        "star2": [
+          {
+            "id": "blue_bokoblin_horn",
+            "item": "蓝色波克布林的犄角",
+            "count": 5
+          },
+          {
+            "id": "bokoblin_fang",
+            "item": "波克布林的牙齿",
+            "count": 3
+          }
+        ],
+        "star3": [
+          {
+            "id": "black_bokoblin_horn",
+            "item": "黑色波克布林的犄角",
+            "count": 5
+          },
+          {
+            "id": "bokoblin_guts",
+            "item": "波克布林的肝脏",
+            "count": 3
+          },
+          {
+            "id": "amber",
+            "item": "琥珀",
+            "count": 20
+          }
+        ],
+        "star4": [
+          {
+            "id": "silver_bokoblin_horn",
+            "item": "银色波克布林的犄角",
+            "count": 5
+          },
+          {
+            "id": "bokoblin_guts",
+            "item": "波克布林的肝脏",
+            "count": 5
+          },
+          {
+            "id": "amber",
+            "item": "琥珀",
+            "count": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "soldier",
+      "name": "士兵套装",
+      "category": "战斗",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "高防御重型护甲，无套装特技，适合纯减伤构筑。",
+      "setBonus": {
+        "level2": null,
+        "note": "无套装加成。"
+      },
+      "pieces": [
+        {
+          "id": "soldier_head",
+          "slot": "head",
+          "name": "士兵头盔",
+          "defense": [
+            4,
+            7,
+            12,
+            18,
+            28
+          ],
+          "howToGet": "哈特诺村防具店购买（需完成一定主线进度后上架）。",
+          "effect": "无特殊效果。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺村 防具店"
+          }
+        },
+        {
+          "id": "soldier_body",
+          "slot": "body",
+          "name": "士兵铠甲",
+          "defense": [
+            4,
+            7,
+            12,
+            18,
+            28
+          ],
+          "howToGet": "哈特诺村防具店购买。",
+          "effect": "无特殊效果。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺村 防具店"
+          }
+        },
+        {
+          "id": "soldier_legs",
+          "slot": "legs",
+          "name": "士兵护胫",
+          "defense": [
+            4,
+            7,
+            12,
+            18,
+            28
+          ],
+          "howToGet": "哈特诺村防具店购买。",
+          "effect": "无特殊效果。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺村 防具店"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "chuchu_jelly",
+            "item": "丘丘胶",
+            "count": 5
+          },
+          {
+            "id": "bokoblin_guts",
+            "item": "波克布林的肝脏",
+            "count": 3
+          }
+        ],
+        "star2": [
+          {
+            "id": "keese_eyeball",
+            "item": "蝙蝠的眼珠",
+            "count": 5
+          },
+          {
+            "id": "moblin_guts",
+            "item": "莫力布林的肝脏",
+            "count": 3
+          }
+        ],
+        "star3": [
+          {
+            "id": "lizalfos_tail",
+            "item": "蜥蜴战士的尾巴",
+            "count": 3
+          },
+          {
+            "id": "hinox_guts",
+            "item": "西诺克斯的肝脏",
+            "count": 3
+          },
+          {
+            "id": "flint",
+            "item": "打火石",
+            "count": 30
+          }
+        ],
+        "star4": [
+          {
+            "id": "lynel_hoof",
+            "item": "莱尼尔的蹄子",
+            "count": 5
+          },
+          {
+            "id": "lynel_guts",
+            "item": "莱尼尔的肝脏",
+            "count": 5
+          },
+          {
+            "id": "amber",
+            "item": "琥珀",
+            "count": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "snowquill",
+      "name": "利特防寒服套装",
+      "category": "环境",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "利特族传统防寒装，抵御寒冷与冰冻。",
+      "setBonus": {
+        "level2": "抗冻",
+        "note": "两件起：免疫冰冻状态（仍受极端寒冷伤害，需配合料理）。"
+      },
+      "pieces": [
+        {
+          "id": "snowquill_head",
+          "slot": "head",
+          "name": "雪鸟头饰",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "利特村防具店购买。",
+          "effect": "抗寒。",
+          "location": {
+            "x": -3615,
+            "y": 0,
+            "z": -1815,
+            "label": "利特村 防具店"
+          }
+        },
+        {
+          "id": "snowquill_body",
+          "slot": "body",
+          "name": "雪鸟羽饰",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "利特村防具店购买。",
+          "effect": "抗寒。",
+          "location": {
+            "x": -3615,
+            "y": 0,
+            "z": -1815,
+            "label": "利特村 防具店"
+          }
+        },
+        {
+          "id": "snowquill_legs",
+          "slot": "legs",
+          "name": "雪鸟长裤",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "利特村防具店购买。",
+          "effect": "抗寒。",
+          "location": {
+            "x": -3615,
+            "y": 0,
+            "z": -1815,
+            "label": "利特村 防具店"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "red_chuchu_jelly",
+            "item": "红色丘丘胶",
+            "count": 3
+          }
+        ],
+        "star2": [
+          {
+            "id": "red_chuchu_jelly",
+            "item": "红色丘丘胶",
+            "count": 5
+          },
+          {
+            "id": "warm_safflina",
+            "item": "暖暖草果",
+            "count": 3
+          }
+        ],
+        "star3": [
+          {
+            "id": "fire_keese_wing",
+            "item": "火蝙蝠的翅膀",
+            "count": 5
+          },
+          {
+            "id": "fire_breath_lizalfos_tail",
+            "item": "喷火蜥蜴战士的尾巴",
+            "count": 3
+          },
+          {
+            "id": "sunshroom",
+            "item": "阳光蘑菇",
+            "count": 5
+          }
+        ],
+        "star4": [
+          {
+            "id": "fire_breath_lizalfos_horn",
+            "item": "喷火蜥蜴战士的犄角",
+            "count": 5
+          },
+          {
+            "id": "fire_breath_lizalfos_tail",
+            "item": "喷火蜥蜴战士的尾巴",
+            "count": 10
+          },
+          {
+            "id": "ruby",
+            "item": "红宝石",
+            "count": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "desert_voe",
+      "name": "沙漠服套装",
+      "category": "环境",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "格鲁德族耐热装，并可在升级后进一步抗雷。",
+      "setBonus": {
+        "level2": "防雷",
+        "note": "单件耐热；两件起（需★2）：免疫触电与雷电伤害。"
+      },
+      "pieces": [
+        {
+          "id": "desert_voe_head",
+          "slot": "head",
+          "name": "沙漠伏特头巾",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "格鲁德小镇防具店购买（需先取得「瓦伊」伪装进入）。",
+          "effect": "耐热。",
+          "location": {
+            "x": -3827,
+            "y": 0,
+            "z": 2917,
+            "label": "格鲁德小镇 防具店"
+          }
+        },
+        {
+          "id": "desert_voe_body",
+          "slot": "body",
+          "name": "沙漠伏特护肩",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "格鲁德小镇防具店购买。",
+          "effect": "耐热。",
+          "location": {
+            "x": -3827,
+            "y": 0,
+            "z": 2917,
+            "label": "格鲁德小镇 防具店"
+          }
+        },
+        {
+          "id": "desert_voe_legs",
+          "slot": "legs",
+          "name": "沙漠伏特长裤",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "格鲁德小镇防具店购买。",
+          "effect": "耐热。",
+          "location": {
+            "x": -3827,
+            "y": 0,
+            "z": 2917,
+            "label": "格鲁德小镇 防具店"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "white_chuchu_jelly",
+            "item": "白色丘丘胶",
+            "count": 3
+          }
+        ],
+        "star2": [
+          {
+            "id": "white_chuchu_jelly",
+            "item": "白色丘丘胶",
+            "count": 5
+          },
+          {
+            "id": "cool_safflina",
+            "item": "清凉草果",
+            "count": 3
+          }
+        ],
+        "star3": [
+          {
+            "id": "ice_keese_wing",
+            "item": "冰蝙蝠的翅膀",
+            "count": 5
+          },
+          {
+            "id": "ice_breath_lizalfos_tail",
+            "item": "喷冰蜥蜴战士的尾巴",
+            "count": 3
+          },
+          {
+            "id": "chillshroom",
+            "item": "冰冷蘑菇",
+            "count": 5
+          }
+        ],
+        "star4": [
+          {
+            "id": "ice_breath_lizalfos_horn",
+            "item": "喷冰蜥蜴战士的犄角",
+            "count": 5
+          },
+          {
+            "id": "ice_breath_lizalfos_tail",
+            "item": "喷冰蜥蜴战士的尾巴",
+            "count": 10
+          },
+          {
+            "id": "sapphire",
+            "item": "蓝宝石",
+            "count": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "gerudo",
+      "name": "格鲁德套装",
+      "category": "特殊",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": false,
+      "description": "格鲁德族「瓦伊」伪装，用于进入格鲁德小镇；不可在大精灵处升级。",
+      "setBonus": {
+        "level2": "耐热",
+        "note": "两件起：额外耐热；三件齐全时可伪装成瓦伊进入格鲁德小镇。"
+      },
+      "pieces": [
+        {
+          "id": "gerudo_head",
+          "slot": "head",
+          "name": "格鲁德兜帽",
+          "defense": [
+            3
+          ],
+          "howToGet": "格鲁德小镇防具店购买。",
+          "effect": "伪装成瓦伊。",
+          "location": {
+            "x": -3827,
+            "y": 0,
+            "z": 2917,
+            "label": "格鲁德小镇 防具店"
+          }
+        },
+        {
+          "id": "gerudo_body",
+          "slot": "body",
+          "name": "格鲁德上衣",
+          "defense": [
+            3
+          ],
+          "howToGet": "格鲁德小镇防具店购买。",
+          "effect": "伪装成瓦伊。",
+          "location": {
+            "x": -3827,
+            "y": 0,
+            "z": 2917,
+            "label": "格鲁德小镇 防具店"
+          }
+        },
+        {
+          "id": "gerudo_legs",
+          "slot": "legs",
+          "name": "格鲁德裤",
+          "defense": [
+            3
+          ],
+          "howToGet": "格鲁德小镇防具店购买。",
+          "effect": "伪装成瓦伊。",
+          "location": {
+            "x": -3827,
+            "y": 0,
+            "z": 2917,
+            "label": "格鲁德小镇 防具店"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rubber",
+      "name": "橡胶套装",
+      "category": "环境",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "绝缘橡胶装，防雷击，升级后可完全免疫电流。",
+      "setBonus": {
+        "level2": "绝缘",
+        "note": "两件起：免疫触电与雷电伤害。"
+      },
+      "pieces": [
+        {
+          "id": "rubber_head",
+          "slot": "head",
+          "name": "橡胶头盔",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "完成「橡胶制」支线：在费罗尼地区找到三处橡胶制部件并交给商人。",
+          "effect": "抗雷。",
+          "location": {
+            "x": 2745,
+            "y": 0,
+            "z": -1200,
+            "label": "费罗尼 橡胶制商人"
+          }
+        },
+        {
+          "id": "rubber_body",
+          "slot": "body",
+          "name": "橡胶铠甲",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "橡胶制支线奖励。",
+          "effect": "抗雷。"
+        },
+        {
+          "id": "rubber_legs",
+          "slot": "legs",
+          "name": "橡胶紧身裤",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "橡胶制支线奖励。",
+          "effect": "抗雷。"
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "electric_lizalfos_horn",
+            "item": "电蜥蜴战士的犄角",
+            "count": 1
+          },
+          {
+            "id": "yellow_chuchu_jelly",
+            "item": "黄色丘丘胶",
+            "count": 3
+          }
+        ],
+        "star2": [
+          {
+            "id": "yellow_chuchu_jelly",
+            "item": "黄色丘丘胶",
+            "count": 8
+          },
+          {
+            "id": "voltfruit",
+            "item": "伏特水果",
+            "count": 5
+          }
+        ],
+        "star3": [
+          {
+            "id": "zapshroom",
+            "item": "雷电蘑菇",
+            "count": 5
+          },
+          {
+            "id": "electric_lizalfos_tail",
+            "item": "电蜥蜴战士的尾巴",
+            "count": 5
+          },
+          {
+            "id": "electric_safflina",
+            "item": "电草",
+            "count": 8
+          }
+        ],
+        "star4": [
+          {
+            "id": "electric_lizalfos_horn",
+            "item": "电蜥蜴战士的犄角",
+            "count": 5
+          },
+          {
+            "id": "topaz",
+            "item": "黄宝石",
+            "count": 5
+          },
+          {
+            "id": "electric_lizalfos_tail",
+            "item": "电蜥蜴战士的尾巴",
+            "count": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "flamebreaker",
+      "name": "防火套装",
+      "category": "环境",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "鼓隆族防火装，在奥尔汀火山区域必备。",
+      "setBonus": {
+        "level2": "防火",
+        "note": "两件起：免疫火焰与燃烧（仍无法裸身进入超高温岩浆）。"
+      },
+      "pieces": [
+        {
+          "id": "flamebreaker_head",
+          "slot": "head",
+          "name": "防火头盔",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "鼓隆城防具店购买。",
+          "effect": "防火。",
+          "location": {
+            "x": 1674,
+            "y": 0,
+            "z": 2424,
+            "label": "鼓隆城 防具店"
+          }
+        },
+        {
+          "id": "flamebreaker_body",
+          "slot": "body",
+          "name": "防火铠甲",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "鼓隆城防具店购买。",
+          "effect": "防火。",
+          "location": {
+            "x": 1674,
+            "y": 0,
+            "z": 2424,
+            "label": "鼓隆城 防具店"
+          }
+        },
+        {
+          "id": "flamebreaker_legs",
+          "slot": "legs",
+          "name": "防火靴",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "鼓隆城防具店购买。",
+          "effect": "防火。",
+          "location": {
+            "x": 1674,
+            "y": 0,
+            "z": 2424,
+            "label": "鼓隆城 防具店"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "moblin_horn",
+            "item": "莫力布林的犄角",
+            "count": 3
+          }
+        ],
+        "star2": [
+          {
+            "id": "moblin_fang",
+            "item": "莫力布林的牙齿",
+            "count": 5
+          },
+          {
+            "id": "fireproof_lizard",
+            "item": "防火蜥蜴",
+            "count": 5
+          }
+        ],
+        "star3": [
+          {
+            "id": "blue_moblin_horn",
+            "item": "蓝色莫力布林的犄角",
+            "count": 5
+          },
+          {
+            "id": "smotherwing_butterfly",
+            "item": "耐火凤蝶",
+            "count": 3
+          },
+          {
+            "id": "flint",
+            "item": "打火石",
+            "count": 15
+          }
+        ],
+        "star4": [
+          {
+            "id": "black_moblin_horn",
+            "item": "黑色莫力布林的犄角",
+            "count": 5
+          },
+          {
+            "id": "smotherwing_butterfly",
+            "item": "耐火凤蝶",
+            "count": 5
+          },
+          {
+            "id": "flint",
+            "item": "打火石",
+            "count": 30
+          }
+        ]
+      }
+    },
+    {
+      "id": "zora",
+      "name": "卓拉套装",
+      "category": "探索",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "卓拉族护甲，提升游泳能力。",
+      "setBonus": {
+        "level2": "游泳冲刺",
+        "note": "两件起：可在水面发动冲刺攻击（消耗精力）。"
+      },
+      "pieces": [
+        {
+          "id": "zora_head",
+          "slot": "head",
+          "name": "卓拉头盔",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "完成卓拉主线「水之神兽瓦·露塔」相关流程后，在卓拉域购买。",
+          "effect": "游泳速度提升。",
+          "location": {
+            "x": 3279,
+            "y": 0,
+            "z": -430,
+            "label": "卓拉域 防具店"
+          }
+        },
+        {
+          "id": "zora_body",
+          "slot": "body",
+          "name": "卓拉铠甲",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "卓拉域防具店购买。",
+          "effect": "游泳速度提升；可攀瀑（需精力）。",
+          "location": {
+            "x": 3279,
+            "y": 0,
+            "z": -430,
+            "label": "卓拉域 防具店"
+          }
+        },
+        {
+          "id": "zora_legs",
+          "slot": "legs",
+          "name": "卓拉护胫",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "卓拉域防具店购买。",
+          "effect": "游泳速度提升。",
+          "location": {
+            "x": 3279,
+            "y": 0,
+            "z": -430,
+            "label": "卓拉域 防具店"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "lizalfos_horn",
+            "item": "蜥蜴战士的犄角",
+            "count": 3
+          }
+        ],
+        "star2": [
+          {
+            "id": "lizalfos_talon",
+            "item": "蜥蜴战士的爪子",
+            "count": 5
+          },
+          {
+            "id": "hyrule_bass",
+            "item": "海拉鲁鲈鱼",
+            "count": 5
+          }
+        ],
+        "star3": [
+          {
+            "id": "blue_lizalfos_horn",
+            "item": "蓝色蜥蜴战士的犄角",
+            "count": 5
+          },
+          {
+            "id": "lizalfos_tail",
+            "item": "蜥蜴战士的尾巴",
+            "count": 3
+          },
+          {
+            "id": "hearty_bass",
+            "item": "大鲈鱼",
+            "count": 3
+          }
+        ],
+        "star4": [
+          {
+            "id": "black_lizalfos_horn",
+            "item": "黑色蜥蜴战士的犄角",
+            "count": 5
+          },
+          {
+            "id": "blue_lizalfos_tail",
+            "item": "蓝色蜥蜴战士的尾巴",
+            "count": 5
+          },
+          {
+            "id": "opal",
+            "item": "蛋白石",
+            "count": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "stealth",
+      "name": "潜行套装",
+      "category": "探索",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "依盖队风格潜行装，提升隐蔽性。",
+      "setBonus": {
+        "level2": "潜行强化",
+        "note": "两件起：潜行效果进一步提升。"
+      },
+      "pieces": [
+        {
+          "id": "stealth_head",
+          "slot": "head",
+          "name": "潜行面罩",
+          "defense": [
+            2,
+            4,
+            6,
+            9,
+            16
+          ],
+          "howToGet": "完成卡卡利科村「潜行套」支线（多座神庙挑战）后购买。",
+          "effect": "潜行提升。",
+          "location": {
+            "x": 1846,
+            "y": 0,
+            "z": 1007,
+            "label": "卡卡利科村 潜行套商人"
+          }
+        },
+        {
+          "id": "stealth_body",
+          "slot": "body",
+          "name": "潜行胸甲",
+          "defense": [
+            2,
+            4,
+            6,
+            9,
+            16
+          ],
+          "howToGet": "潜行套支线奖励后购买。",
+          "effect": "潜行提升。",
+          "location": {
+            "x": 1846,
+            "y": 0,
+            "z": 1007,
+            "label": "卡卡利科村 潜行套商人"
+          }
+        },
+        {
+          "id": "stealth_legs",
+          "slot": "legs",
+          "name": "潜行紧身裤",
+          "defense": [
+            2,
+            4,
+            6,
+            9,
+            16
+          ],
+          "howToGet": "潜行套支线奖励后购买。",
+          "effect": "潜行提升。",
+          "location": {
+            "x": 1846,
+            "y": 0,
+            "z": 1007,
+            "label": "卡卡利科村 潜行套商人"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "blue_nightshade",
+            "item": "蓝夜影",
+            "count": 3
+          }
+        ],
+        "star2": [
+          {
+            "id": "blue_nightshade",
+            "item": "蓝夜影",
+            "count": 5
+          },
+          {
+            "id": "sunset_firefly",
+            "item": "落日萤火虫",
+            "count": 5
+          }
+        ],
+        "star3": [
+          {
+            "id": "silent_shroom",
+            "item": "潜行蘑菇",
+            "count": 8
+          },
+          {
+            "id": "sneaky_river_snail",
+            "item": "潜行蜗牛",
+            "count": 5
+          },
+          {
+            "id": "sticky_frog",
+            "item": "贴贴蛙",
+            "count": 5
+          }
+        ],
+        "star4": [
+          {
+            "id": "sneaky_river_snail",
+            "item": "潜行蜗牛",
+            "count": 10
+          },
+          {
+            "id": "silent_princess",
+            "item": "静谧公主",
+            "count": 5
+          },
+          {
+            "id": "octorok_eyeball",
+            "item": "八爪怪的眼珠",
+            "count": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": "climbing",
+      "name": "攀登套装",
+      "category": "探索",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "提升攀爬速度与跳跃精力效率。",
+      "setBonus": {
+        "level2": "攀爬跳跃",
+        "note": "两件起：攀爬跳跃消耗精力减少。"
+      },
+      "pieces": [
+        {
+          "id": "climbing_head",
+          "slot": "head",
+          "name": "攀爬头巾",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "完成「攀爬套」相关神庙：Ree Dahee、Tahno O'ah 等，在商店购买部件。",
+          "effect": "攀爬速度提升。",
+          "location": {
+            "x": 4550,
+            "y": 0,
+            "z": -1680,
+            "label": "双子山 Ree Dahee 神庙附近"
+          }
+        },
+        {
+          "id": "climbing_body",
+          "slot": "body",
+          "name": "攀爬护手",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "攀爬套神庙挑战后购买。",
+          "effect": "攀爬速度提升。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺村 攀爬套商人"
+          }
+        },
+        {
+          "id": "climbing_legs",
+          "slot": "legs",
+          "name": "攀爬靴",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "攀爬套神庙挑战后购买。",
+          "effect": "攀爬速度提升。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺村 攀爬套商人"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "keese_wing",
+            "item": "蝙蝠的翅膀",
+            "count": 3
+          },
+          {
+            "id": "rushroom",
+            "item": "速速蘑菇",
+            "count": 3
+          }
+        ],
+        "star2": [
+          {
+            "id": "electric_keese_wing",
+            "item": "电蝙蝠的翅膀",
+            "count": 5
+          },
+          {
+            "id": "hightail_lizard",
+            "item": "速速蜥蜴",
+            "count": 5
+          }
+        ],
+        "star3": [
+          {
+            "id": "ice_keese_wing",
+            "item": "冰蝙蝠的翅膀",
+            "count": 8
+          },
+          {
+            "id": "hot_footed_frog",
+            "item": "热火蛙",
+            "count": 10
+          }
+        ],
+        "star4": [
+          {
+            "id": "fire_keese_wing",
+            "item": "火蝙蝠的翅膀",
+            "count": 10
+          },
+          {
+            "id": "swift_violet",
+            "item": "速速紫罗兰",
+            "count": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "barbarian",
+      "name": "蛮族套装",
+      "category": "战斗",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "高攻击向护甲，升级材料需求苛刻。",
+      "setBonus": {
+        "level2": "攻击提升",
+        "note": "两件起：攻击力提升（与料理/武器加成叠加）。"
+      },
+      "pieces": [
+        {
+          "id": "barbarian_head",
+          "slot": "head",
+          "name": "蛮族头盔",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "完成三处与蛮族套相关的试炼神庙后，在相应地点领取。",
+          "effect": "无单件特技。",
+          "location": {
+            "x": -2400,
+            "y": 0,
+            "z": 3200,
+            "label": "格鲁德高地 卡·奥耀神庙"
+          }
+        },
+        {
+          "id": "barbarian_body",
+          "slot": "body",
+          "name": "蛮族铠甲",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "完成「达·卡索」等试炼神庙后领取。",
+          "effect": "无单件特技。",
+          "location": {
+            "x": -150,
+            "y": 0,
+            "z": 1900,
+            "label": "初始台地 达·卡索神庙"
+          }
+        },
+        {
+          "id": "barbarian_legs",
+          "slot": "legs",
+          "name": "蛮族护腿",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "完成「卡·姆·耀」试炼神庙后领取。",
+          "effect": "无单件特技。",
+          "location": {
+            "x": 400,
+            "y": 0,
+            "z": 1200,
+            "label": "海拉鲁城堡 卡·姆·耀神庙"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "lynel_horn",
+            "item": "莱尼尔的犄角",
+            "count": 10
+          }
+        ],
+        "star2": [
+          {
+            "id": "lynel_horn",
+            "item": "莱尼尔的犄角",
+            "count": 15
+          },
+          {
+            "id": "lynel_hoof",
+            "item": "莱尼尔的蹄子",
+            "count": 10
+          }
+        ],
+        "star3": [
+          {
+            "id": "lynel_horn",
+            "item": "莱尼尔的犄角",
+            "count": 20
+          },
+          {
+            "id": "lynel_guts",
+            "item": "莱尼尔的肝脏",
+            "count": 3
+          }
+        ],
+        "star4": [
+          {
+            "id": "lynel_guts",
+            "item": "莱尼尔的肝脏",
+            "count": 5
+          },
+          {
+            "id": "lynel_hoof",
+            "item": "莱尼尔的蹄子",
+            "count": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "radiant",
+      "name": "夜光套装",
+      "category": "战斗",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "由夜光石与怪物素材制成，对骷髅系敌人特化。",
+      "setBonus": {
+        "level2": "骨骼武器强化",
+        "note": "两件起：骨骼类武器攻击力提升；单件可让骷髅敌人发光暴露。"
+      },
+      "pieces": [
+        {
+          "id": "radiant_head",
+          "slot": "head",
+          "name": "夜光面罩",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "在格鲁德小镇附近的「骷髅」支线完成后，向商人购买。",
+          "effect": "骷髅敌人持续发光。",
+          "location": {
+            "x": -3827,
+            "y": 0,
+            "z": 2917,
+            "label": "格鲁德小镇 夜光套商人"
+          }
+        },
+        {
+          "id": "radiant_body",
+          "slot": "body",
+          "name": "夜光服",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "夜光套商人处购买。",
+          "effect": "骷髅敌人持续发光。",
+          "location": {
+            "x": -3827,
+            "y": 0,
+            "z": 2917,
+            "label": "格鲁德小镇 夜光套商人"
+          }
+        },
+        {
+          "id": "radiant_legs",
+          "slot": "legs",
+          "name": "夜光紧身裤",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "夜光套商人处购买。",
+          "effect": "骷髅敌人持续发光。",
+          "location": {
+            "x": -3827,
+            "y": 0,
+            "z": 2917,
+            "label": "格鲁德小镇 夜光套商人"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "luminous_stone",
+            "item": "夜光石",
+            "count": 10
+          },
+          {
+            "id": "bokoblin_guts",
+            "item": "波克布林的肝脏",
+            "count": 1
+          }
+        ],
+        "star2": [
+          {
+            "id": "luminous_stone",
+            "item": "夜光石",
+            "count": 15
+          },
+          {
+            "id": "moblin_guts",
+            "item": "莫力布林的肝脏",
+            "count": 2
+          }
+        ],
+        "star3": [
+          {
+            "id": "luminous_stone",
+            "item": "夜光石",
+            "count": 20
+          },
+          {
+            "id": "molduga_guts",
+            "item": "莫尔德拉吉克的肝脏",
+            "count": 2
+          },
+          {
+            "id": "molduga_fin",
+            "item": "莫尔德拉吉克的鳍",
+            "count": 2
+          },
+          {
+            "id": "bokoblin_guts",
+            "item": "波克布林的肝脏",
+            "count": 5
+          }
+        ],
+        "star4": [
+          {
+            "id": "luminous_stone",
+            "item": "夜光石",
+            "count": 30
+          },
+          {
+            "id": "star_fragment",
+            "item": "星星碎片",
+            "count": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "ancient",
+      "name": "古代套装",
+      "category": "战斗",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "阿卡莱古代研究所研制，抗守护者并强化古代/守护者武器。",
+      "setBonus": {
+        "level2": "古代精通",
+        "note": "两件起：古代与守护者系列武器攻击力大幅提升。"
+      },
+      "pieces": [
+        {
+          "id": "ancient_head",
+          "slot": "head",
+          "name": "古代头盔",
+          "defense": [
+            4,
+            7,
+            12,
+            18,
+            28
+          ],
+          "howToGet": "在阿卡莱古代研究所用古代材料与卢比兑换（需完成「古代兵装」研究）。",
+          "effect": "守护者抗性提升。",
+          "location": {
+            "x": 4508,
+            "y": 0,
+            "z": -3160,
+            "label": "阿卡莱古代研究所"
+          }
+        },
+        {
+          "id": "ancient_body",
+          "slot": "body",
+          "name": "古代铠甲",
+          "defense": [
+            4,
+            7,
+            12,
+            18,
+            28
+          ],
+          "howToGet": "阿卡莱古代研究所兑换。",
+          "effect": "守护者抗性提升。",
+          "location": {
+            "x": 4508,
+            "y": 0,
+            "z": -3160,
+            "label": "阿卡莱古代研究所"
+          }
+        },
+        {
+          "id": "ancient_legs",
+          "slot": "legs",
+          "name": "古代护胫",
+          "defense": [
+            4,
+            7,
+            12,
+            18,
+            28
+          ],
+          "howToGet": "阿卡莱古代研究所兑换。",
+          "effect": "守护者抗性提升。",
+          "location": {
+            "x": 4508,
+            "y": 0,
+            "z": -3160,
+            "label": "阿卡莱古代研究所"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "ancient_screw",
+            "item": "古代螺丝",
+            "count": 5
+          },
+          {
+            "id": "ancient_spring",
+            "item": "古代弹簧",
+            "count": 5
+          }
+        ],
+        "star2": [
+          {
+            "id": "ancient_gear",
+            "item": "古代齿轮",
+            "count": 5
+          },
+          {
+            "id": "ancient_shaft",
+            "item": "古代轴",
+            "count": 5
+          }
+        ],
+        "star3": [
+          {
+            "id": "ancient_core",
+            "item": "古代核心",
+            "count": 5
+          },
+          {
+            "id": "ancient_screw",
+            "item": "古代螺丝",
+            "count": 5
+          }
+        ],
+        "star4": [
+          {
+            "id": "giant_ancient_core",
+            "item": "巨大古代核心",
+            "count": 1
+          },
+          {
+            "id": "star_fragment",
+            "item": "星星碎片",
+            "count": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "wild",
+      "name": "旷野之勇者套装",
+      "category": "奖励",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": true,
+      "description": "集齐全部 120 座神庙后，在林克小屋旁宝箱领取；非 amiibo 获取。",
+      "setBonus": {
+        "level2": "大师之剑光束强化",
+        "note": "两件起：大师之剑剑气伤害提升（需满精力挥剑触发）。"
+      },
+      "pieces": [
+        {
+          "id": "wild_head",
+          "slot": "head",
+          "name": "旷野之息帽",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "完成 120 座神庙后，在哈特诺林克小屋旁宝箱开启。",
+          "effect": "无单件特技。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺 林克小屋"
+          }
+        },
+        {
+          "id": "wild_body",
+          "slot": "body",
+          "name": "旷野之息服",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "120 神庙奖励宝箱。",
+          "effect": "无单件特技。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺 林克小屋"
+          }
+        },
+        {
+          "id": "wild_legs",
+          "slot": "legs",
+          "name": "旷野之息裤",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "120 神庙奖励宝箱。",
+          "effect": "无单件特技。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺 林克小屋"
+          }
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "acorn",
+            "item": "橡果",
+            "count": 50
+          }
+        ],
+        "star2": [
+          {
+            "id": "courser_bee_honey",
+            "item": "精力蜜蜂蜂蜜",
+            "count": 5
+          }
+        ],
+        "star3": [
+          {
+            "id": "keese_eyeball",
+            "item": "蝙蝠的眼珠",
+            "count": 10
+          },
+          {
+            "id": "sunshroom",
+            "item": "阳光蘑菇",
+            "count": 10
+          }
+        ],
+        "star4": [
+          {
+            "id": "star_fragment",
+            "item": "星星碎片",
+            "count": 3
+          },
+          {
+            "id": "diamond",
+            "item": "钻石",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "dark",
+      "name": "暗黑套装",
+      "category": "特殊",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": false,
+      "description": "基顿商店兑换，夜间移动更快；不可升级。",
+      "setBonus": {
+        "level2": "夜间移速",
+        "note": "两件起：夜间移动速度提升（每件单穿也有夜间加速）。"
+      },
+      "pieces": [
+        {
+          "id": "dark_head",
+          "slot": "head",
+          "name": "暗黑兜帽",
+          "defense": [
+            3
+          ],
+          "howToGet": "在「怪物商店」用怪物素材兑换（需先完成相关支线解锁商店）。",
+          "effect": "夜间移动速度提升。",
+          "location": {
+            "x": 3500,
+            "y": 0,
+            "z": 2100,
+            "label": "哈特诺附近 怪物商店"
+          }
+        },
+        {
+          "id": "dark_body",
+          "slot": "body",
+          "name": "暗黑服",
+          "defense": [
+            3
+          ],
+          "howToGet": "怪物商店兑换。",
+          "effect": "夜间移动速度提升。",
+          "location": {
+            "x": 3500,
+            "y": 0,
+            "z": 2100,
+            "label": "怪物商店"
+          }
+        },
+        {
+          "id": "dark_legs",
+          "slot": "legs",
+          "name": "暗黑裤",
+          "defense": [
+            3
+          ],
+          "howToGet": "怪物商店兑换。",
+          "effect": "夜间移动速度提升。",
+          "location": {
+            "x": 3500,
+            "y": 0,
+            "z": 2100,
+            "label": "怪物商店"
+          }
+        }
+      ]
+    },
+    {
+      "id": "worn",
+      "name": "破旧套装",
+      "category": "剧情",
+      "amiibo": false,
+      "dlc": false,
+      "upgradable": false,
+      "description": "林克苏醒时的旧衣（仅上衣与裤子两件），无加成也不可升级。",
+      "setBonus": {
+        "level2": null,
+        "note": "无套装加成；游戏中无对应头饰。"
+      },
+      "pieces": [
+        {
+          "id": "worn_body",
+          "slot": "body",
+          "name": "破旧的外衣",
+          "defense": [
+            1
+          ],
+          "howToGet": "复苏神庙苏醒时自带；丢失后可在哈特诺林克小屋衣柜找回。",
+          "effect": "无特殊效果。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺 林克小屋"
+          }
+        },
+        {
+          "id": "worn_legs",
+          "slot": "legs",
+          "name": "破旧的裤子",
+          "defense": [
+            1
+          ],
+          "howToGet": "苏醒时自带；可在林克小屋找回。",
+          "effect": "无特殊效果。",
+          "location": {
+            "x": 3378,
+            "y": 0,
+            "z": 2133,
+            "label": "哈特诺 林克小屋"
+          }
+        }
+      ]
+    },
+    {
+      "id": "royal_guard",
+      "name": "近卫兵套装",
+      "category": "DLC",
+      "amiibo": false,
+      "dlc": true,
+      "upgradable": false,
+      "description": "扩充票「试炼之剑」DLC 宝箱；高攻低防，不可升级。",
+      "setBonus": {
+        "level2": "攻击提升",
+        "note": "两件起：攻击力提升（防御低于一般护甲）。"
+      },
+      "pieces": [
+        {
+          "id": "royal_guard_head",
+          "slot": "head",
+          "name": "近卫帽",
+          "defense": [
+            4
+          ],
+          "howToGet": "DLC 宝箱：海拉鲁城堡内近卫室等地。",
+          "effect": "无单件特技。",
+          "location": {
+            "x": 400,
+            "y": 0,
+            "z": 1200,
+            "label": "海拉鲁城堡 近卫室"
+          }
+        },
+        {
+          "id": "royal_guard_body",
+          "slot": "body",
+          "name": "近卫服",
+          "defense": [
+            4
+          ],
+          "howToGet": "DLC 宝箱：海拉鲁城堡。",
+          "effect": "无单件特技。",
+          "location": {
+            "x": 400,
+            "y": 0,
+            "z": 1200,
+            "label": "海拉鲁城堡"
+          }
+        },
+        {
+          "id": "royal_guard_legs",
+          "slot": "legs",
+          "name": "近卫靴",
+          "defense": [
+            4
+          ],
+          "howToGet": "DLC 宝箱：海拉鲁城堡。",
+          "effect": "无单件特技。",
+          "location": {
+            "x": 400,
+            "y": 0,
+            "z": 1200,
+            "label": "海拉鲁城堡"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phantom",
+      "name": "幻影套装",
+      "category": "DLC",
+      "amiibo": false,
+      "dlc": true,
+      "upgradable": false,
+      "description": "扩充票 DLC 宝箱；不可升级。",
+      "setBonus": {
+        "level2": "攻击提升",
+        "note": "两件起：攻击力提升。"
+      },
+      "pieces": [
+        {
+          "id": "phantom_head",
+          "slot": "head",
+          "name": "幻影盖侬头盔",
+          "defense": [
+            4
+          ],
+          "howToGet": "DLC 宝箱：费罗尼「里·梅·乔」神庙附近等标记点。",
+          "effect": "无单件特技。",
+          "location": {
+            "x": 2200,
+            "y": 0,
+            "z": -900,
+            "label": "费罗尼 DLC 宝箱"
+          }
+        },
+        {
+          "id": "phantom_body",
+          "slot": "body",
+          "name": "幻影盖侬铠甲",
+          "defense": [
+            4
+          ],
+          "howToGet": "DLC 宝箱散布各地。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "phantom_legs",
+          "slot": "legs",
+          "name": "幻影盖侬护胫",
+          "defense": [
+            4
+          ],
+          "howToGet": "DLC 宝箱散布各地。",
+          "effect": "无单件特技。"
+        }
+      ]
+    },
+    {
+      "id": "tingle",
+      "name": "汀空套装",
+      "category": "DLC",
+      "amiibo": false,
+      "dlc": true,
+      "upgradable": false,
+      "description": "扩充票 DLC 宝箱；汀格尔主题，不可升级。",
+      "setBonus": {
+        "level2": null,
+        "note": "无战斗套装加成；整套装扮为彩蛋向外观。"
+      },
+      "pieces": [
+        {
+          "id": "tingle_head",
+          "slot": "head",
+          "name": "汀格尔头饰",
+          "defense": [
+            3
+          ],
+          "howToGet": "DLC 宝箱：海拉鲁各地地图标记处。",
+          "effect": "无特殊效果。",
+          "location": {
+            "x": 1800,
+            "y": 0,
+            "z": 1000,
+            "label": "卡卡利科附近 DLC 宝箱"
+          }
+        },
+        {
+          "id": "tingle_body",
+          "slot": "body",
+          "name": "汀格尔上衣",
+          "defense": [
+            3
+          ],
+          "howToGet": "DLC 宝箱。",
+          "effect": "无特殊效果。"
+        },
+        {
+          "id": "tingle_legs",
+          "slot": "legs",
+          "name": "汀格尔紧身裤",
+          "defense": [
+            3
+          ],
+          "howToGet": "DLC 宝箱。",
+          "effect": "无特殊效果。"
+        }
+      ]
+    },
+    {
+      "id": "salvager",
+      "name": "打捞员套装",
+      "category": "DLC",
+      "amiibo": false,
+      "dlc": true,
+      "upgradable": false,
+      "description": "扩充票 DLC 宝箱；提升游泳速度，不可升级。",
+      "setBonus": {
+        "level2": "游泳速度",
+        "note": "两件起：游泳速度提升。"
+      },
+      "pieces": [
+        {
+          "id": "salvager_head",
+          "slot": "head",
+          "name": "打捞员头盔",
+          "defense": [
+            3
+          ],
+          "howToGet": "DLC 宝箱：拉聂尔相关标记点。",
+          "effect": "游泳速度提升。",
+          "location": {
+            "x": 3200,
+            "y": 0,
+            "z": -500,
+            "label": "拉聂尔 DLC 宝箱"
+          }
+        },
+        {
+          "id": "salvager_body",
+          "slot": "body",
+          "name": "打捞员背心",
+          "defense": [
+            3
+          ],
+          "howToGet": "DLC 宝箱。",
+          "effect": "游泳速度提升。"
+        },
+        {
+          "id": "salvager_legs",
+          "slot": "legs",
+          "name": "打捞员长裤",
+          "defense": [
+            3
+          ],
+          "howToGet": "DLC 宝箱。",
+          "effect": "游泳速度提升。"
+        }
+      ]
+    },
+    {
+      "id": "hero",
+      "name": "初始之勇者套装",
+      "category": "Amiibo",
+      "amiibo": true,
+      "dlc": false,
+      "upgradable": true,
+      "description": "8-Bit Link / 经典林克 amiibo 随机掉落部件。 可在大精灵之泉强化（需星之碎片等材料）。",
+      "setBonus": {
+        "level2": "大师之剑光束强化",
+        "note": "三件均★2+且穿戴：大师之剑剑气强化。"
+      },
+      "pieces": [
+        {
+          "id": "hero_head",
+          "slot": "head",
+          "name": "初始之勇者的帽子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "8-Bit Link / 经典林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "hero_body",
+          "slot": "body",
+          "name": "初始之勇者的服装",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "8-Bit Link / 经典林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "hero_legs",
+          "slot": "legs",
+          "name": "初始之勇者的裤子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "8-Bit Link / 经典林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "ruby",
+            "item": "红宝石",
+            "count": 1
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star2": [
+          {
+            "id": "ruby",
+            "item": "红宝石",
+            "count": 3
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star3": [
+          {
+            "id": "ruby",
+            "item": "红宝石",
+            "count": 5
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star4": [
+          {
+            "id": "ruby",
+            "item": "红宝石",
+            "count": 10
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "time",
+      "name": "时之勇者套装",
+      "category": "Amiibo",
+      "amiibo": true,
+      "dlc": false,
+      "upgradable": true,
+      "description": "《时之笛》林克 amiibo 随机掉落部件。 可在大精灵之泉强化（需星之碎片等材料）。",
+      "setBonus": {
+        "level2": "大师之剑光束强化",
+        "note": "三件均★2+且穿戴：大师之剑剑气强化。"
+      },
+      "pieces": [
+        {
+          "id": "time_head",
+          "slot": "head",
+          "name": "时之勇者的帽子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《时之笛》林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "time_body",
+          "slot": "body",
+          "name": "时之勇者的服装",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《时之笛》林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "time_legs",
+          "slot": "legs",
+          "name": "时之勇者的裤子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《时之笛》林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "amber",
+            "item": "琥珀",
+            "count": 1
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star2": [
+          {
+            "id": "amber",
+            "item": "琥珀",
+            "count": 3
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star3": [
+          {
+            "id": "amber",
+            "item": "琥珀",
+            "count": 5
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star4": [
+          {
+            "id": "amber",
+            "item": "琥珀",
+            "count": 10
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "wind",
+      "name": "风之勇者套装",
+      "category": "Amiibo",
+      "amiibo": true,
+      "dlc": false,
+      "upgradable": true,
+      "description": "《风之律动》林克 / Toon Link amiibo 随机掉落部件。 可在大精灵之泉强化（需星之碎片等材料）。",
+      "setBonus": {
+        "level2": "大师之剑光束强化",
+        "note": "三件均★2+且穿戴：大师之剑剑气强化。"
+      },
+      "pieces": [
+        {
+          "id": "wind_head",
+          "slot": "head",
+          "name": "风之勇者的帽子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《风之律动》林克 / Toon Link amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "wind_body",
+          "slot": "body",
+          "name": "风之勇者的服装",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《风之律动》林克 / Toon Link amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "wind_legs",
+          "slot": "legs",
+          "name": "风之勇者的裤子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《风之律动》林克 / Toon Link amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "opal",
+            "item": "蛋白石",
+            "count": 1
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star2": [
+          {
+            "id": "opal",
+            "item": "蛋白石",
+            "count": 3
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star3": [
+          {
+            "id": "opal",
+            "item": "蛋白石",
+            "count": 5
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star4": [
+          {
+            "id": "opal",
+            "item": "蛋白石",
+            "count": 10
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "twilight",
+      "name": "黄昏之勇者套装",
+      "category": "Amiibo",
+      "amiibo": true,
+      "dlc": false,
+      "upgradable": true,
+      "description": "《黄昏公主》林克 / 狼林克 amiibo 随机掉落部件。 可在大精灵之泉强化（需星之碎片等材料）。",
+      "setBonus": {
+        "level2": "大师之剑光束强化",
+        "note": "三件均★2+且穿戴：大师之剑剑气强化。"
+      },
+      "pieces": [
+        {
+          "id": "twilight_head",
+          "slot": "head",
+          "name": "黄昏之勇者的帽子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《黄昏公主》林克 / 狼林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "twilight_body",
+          "slot": "body",
+          "name": "黄昏之勇者的服装",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《黄昏公主》林克 / 狼林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "twilight_legs",
+          "slot": "legs",
+          "name": "黄昏之勇者的裤子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《黄昏公主》林克 / 狼林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "topaz",
+            "item": "黄玉",
+            "count": 1
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star2": [
+          {
+            "id": "topaz",
+            "item": "黄玉",
+            "count": 3
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star3": [
+          {
+            "id": "topaz",
+            "item": "黄玉",
+            "count": 5
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star4": [
+          {
+            "id": "topaz",
+            "item": "黄玉",
+            "count": 10
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "sky",
+      "name": "天空之勇者套装",
+      "category": "Amiibo",
+      "amiibo": true,
+      "dlc": false,
+      "upgradable": true,
+      "description": "《天空之剑》林克 amiibo 随机掉落部件。 可在大精灵之泉强化（需星之碎片等材料）。",
+      "setBonus": {
+        "level2": "大师之剑光束强化",
+        "note": "三件均★2+且穿戴：大师之剑剑气强化。"
+      },
+      "pieces": [
+        {
+          "id": "sky_head",
+          "slot": "head",
+          "name": "天空之勇者的帽子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《天空之剑》林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "sky_body",
+          "slot": "body",
+          "name": "天空之勇者的服装",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《天空之剑》林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        },
+        {
+          "id": "sky_legs",
+          "slot": "legs",
+          "name": "天空之勇者的裤子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《天空之剑》林克 amiibo 随机掉落部件。",
+          "effect": "无单件特技。"
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "sapphire",
+            "item": "蓝宝石",
+            "count": 1
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star2": [
+          {
+            "id": "sapphire",
+            "item": "蓝宝石",
+            "count": 3
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star3": [
+          {
+            "id": "sapphire",
+            "item": "蓝宝石",
+            "count": 5
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ],
+        "star4": [
+          {
+            "id": "sapphire",
+            "item": "蓝宝石",
+            "count": 10
+          },
+          {
+            "id": "star_fragment",
+            "item": "星之碎片",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "fierce_deity",
+      "name": "鬼神套装",
+      "category": "Amiibo",
+      "amiibo": true,
+      "dlc": false,
+      "upgradable": true,
+      "description": "《穆修拉的假面》林克 amiibo 随机掉落部件。 可在大精灵之泉强化（需星之碎片等材料）。",
+      "setBonus": {
+        "level2": "蓄力攻击精力减少",
+        "note": "三件均★2+且穿戴：蓄力攻击精力消耗减少；各件自带攻击力提升。"
+      },
+      "pieces": [
+        {
+          "id": "fierce_deity_head",
+          "slot": "head",
+          "name": "鬼神的面具",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《穆修拉的假面》林克 amiibo 随机掉落部件。",
+          "effect": "攻击力提升。"
+        },
+        {
+          "id": "fierce_deity_body",
+          "slot": "body",
+          "name": "鬼神的服装",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《穆修拉的假面》林克 amiibo 随机掉落部件。",
+          "effect": "攻击力提升。"
+        },
+        {
+          "id": "fierce_deity_legs",
+          "slot": "legs",
+          "name": "鬼神的靴子",
+          "defense": [
+            3,
+            5,
+            8,
+            12,
+            20
+          ],
+          "howToGet": "《穆修拉的假面》林克 amiibo 随机掉落部件。",
+          "effect": "攻击力提升。"
+        }
+      ],
+      "upgrades": {
+        "star1": [
+          {
+            "id": "hinox_tooth",
+            "item": "西诺克斯的牙齿",
+            "count": 5
+          },
+          {
+            "id": "dinraal_scale",
+            "item": "奥尔龙的鳞片",
+            "count": 1
+          }
+        ],
+        "star2": [
+          {
+            "id": "hinox_guts",
+            "item": "西诺克斯的肝脏",
+            "count": 5
+          },
+          {
+            "id": "dinraal_claw",
+            "item": "奥尔龙的爪子",
+            "count": 1
+          }
+        ],
+        "star3": [
+          {
+            "id": "lynel_guts",
+            "item": "莱尼尔的肝脏",
+            "count": 2
+          },
+          {
+            "id": "shard_dinraal_fang",
+            "item": "奥尔龙的牙齿碎片",
+            "count": 1
+          }
+        ],
+        "star4": [
+          {
+            "id": "lynel_guts",
+            "item": "莱尼尔的肝脏",
+            "count": 2
+          },
+          {
+            "id": "shard_dinraal_horn",
+            "item": "奥尔龙的犄角碎片",
+            "count": 1
+          }
+        ]
+      }
+    }
+  ]
+}
