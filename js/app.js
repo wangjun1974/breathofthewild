@@ -1,15 +1,18 @@
-import { createMap } from "./map.js?v=20260929-hide3";
-import { createMarkerLayer } from "./markers.js?v=20260929-hide3";
-import { showKorokSheet, hideSheet, toast } from "./popup.js?v=20260929-hide3";
+import { createMap } from "./map.js?v=20260930-lm1";
+import { createMarkerLayer } from "./markers.js?v=20260930-lm1";
+import { createLandmarkLayers } from "./landmarks.js?v=20260930-lm1";
+import { showKorokSheet, showLandmarkSheet, hideSheet, toast } from "./popup.js?v=20260930-lm1";
 import {
   state,
   clearCollected,
   isCollected,
   matchesFilter,
   setHideKoroks,
-} from "./state.js?v=20260929-hide3";
-import { createOwnedStore } from "./owned.js?v=20260929-hide3";
-import { createArmorUi } from "./armors.js?v=20260929-hide3";
+  setHideShrines,
+  setHideTowers,
+} from "./state.js?v=20260930-lm1";
+import { createOwnedStore } from "./owned.js?v=20260930-lm1";
+import { createArmorUi } from "./armors.js?v=20260930-lm1";
 
 const REGION_LABELS = [
   ["all", "全部"],
@@ -34,6 +37,7 @@ const REGION_LABELS = [
 let mode = "korok";
 let map;
 let markers;
+let landmarks;
 let armors;
 const ownedStore = createOwnedStore();
 
@@ -125,6 +129,7 @@ function setMode(next) {
     syncHideClass();
     updateKorokProgress();
     markers?.render();
+    landmarks?.render();
   } else {
     if (brand) brand.textContent = "套装图鉴";
     if (filters) filters.hidden = true;
@@ -147,6 +152,7 @@ async function main() {
   showLoading("加载数据…");
   map = createMap("map");
   markers = createMarkerLayer(map);
+  landmarks = createLandmarkLayers(map);
 
   armors = createArmorUi({
     map,
@@ -159,6 +165,7 @@ async function main() {
       state.forceHideKoroks = true;
       syncHideClass();
       markers.render();
+      landmarks.render();
       updateKorokProgress();
     },
     onBackToList() {
@@ -170,20 +177,25 @@ async function main() {
       armors?.clearTempMarker();
       syncHideClass();
       markers.render();
+      landmarks.render();
     },
   });
 
   let korokData;
   let armorData;
+  let landmarkData;
   try {
-    const [kRes, aRes] = await Promise.all([
+    const [kRes, aRes, lRes] = await Promise.all([
       fetch("./data/koroks.json"),
       fetch("./data/armors.json"),
+      fetch("./data/landmarks.json"),
     ]);
     if (!kRes.ok) throw new Error(`koroks HTTP ${kRes.status}`);
     if (!aRes.ok) throw new Error(`armors HTTP ${aRes.status}`);
+    if (!lRes.ok) throw new Error(`landmarks HTTP ${lRes.status}`);
     korokData = await kRes.json();
     armorData = await aRes.json();
+    landmarkData = await lRes.json();
   } catch (e) {
     removeLoading();
     toast(`数据加载失败：${e.message || e}`);
@@ -194,12 +206,17 @@ async function main() {
   if (state.koroks.length !== 900) {
     console.warn("korok count", state.koroks.length);
   }
+  state.shrines = landmarkData.shrines || [];
+  state.towers = landmarkData.towers || [];
+  console.info("[地标]", `${state.shrines.length} 神庙, ${state.towers.length} 希卡塔`);
+
   const meta = armors.load(armorData);
   console.info("[套装]", meta);
 
   function refreshKorok() {
     syncHideClass();
     markers.render();
+    landmarks.render();
     updateKorokProgress();
   }
 
@@ -210,6 +227,18 @@ async function main() {
     markers.zoomTo(k);
     showKorokSheet(k, { onToggle: refreshKorok });
     updateKorokProgress();
+  };
+
+  window.onShrineClick = (s) => {
+    if (mode !== "korok") return;
+    hideSheet();
+    showLandmarkSheet(s, "shrine");
+  };
+
+  window.onTowerClick = (t) => {
+    if (mode !== "korok") return;
+    hideSheet();
+    showLandmarkSheet(t, "tower");
   };
 
   renderRegionChips(refreshKorok);
@@ -224,6 +253,30 @@ async function main() {
     };
     hideKoroksEl.addEventListener("change", applyHide);
     hideKoroksEl.addEventListener("input", applyHide);
+  }
+
+  const hideShrinesEl = document.getElementById("hide-shrines");
+  if (hideShrinesEl) {
+    hideShrinesEl.checked = !!state.hideShrines;
+    const applyHide = () => {
+      setHideShrines(!!hideShrinesEl.checked);
+      landmarks.renderShrines();
+      toast(state.hideShrines ? "已隐藏神庙图标" : "已显示神庙图标");
+    };
+    hideShrinesEl.addEventListener("change", applyHide);
+    hideShrinesEl.addEventListener("input", applyHide);
+  }
+
+  const hideTowersEl = document.getElementById("hide-towers");
+  if (hideTowersEl) {
+    hideTowersEl.checked = !!state.hideTowers;
+    const applyHide = () => {
+      setHideTowers(!!hideTowersEl.checked);
+      landmarks.renderTowers();
+      toast(state.hideTowers ? "已隐藏希卡塔图标" : "已显示希卡塔图标");
+    };
+    hideTowersEl.addEventListener("change", applyHide);
+    hideTowersEl.addEventListener("input", applyHide);
   }
 
   refreshKorok();
@@ -267,7 +320,7 @@ async function main() {
   });
 
   removeLoading();
-  toast(`已加载 ${state.koroks.length} 呀哈哈 · ${meta.setCount || "?"} 套装`);
+  toast(`已加载 ${state.koroks.length} 呀哈哈 · ${state.shrines.length} 神庙 · ${state.towers.length} 塔 · ${meta.setCount || "?"} 套装`);
 }
 
 main().catch((e) => console.error(e));

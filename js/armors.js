@@ -1,5 +1,5 @@
-import { xyzToLatLng } from "./map.js?v=20260929-hide3";
-import { hideSheet, toast } from "./popup.js?v=20260929-hide3";
+import { xyzToLatLng } from "./map.js?v=20260930-lm1";
+import { hideSheet, toast } from "./popup.js?v=20260930-lm1";
 
 const SLOT_LABEL = { head: "头", body: "身", legs: "腿" };
 const STAR_LABEL = { star1: "★", star2: "★★", star3: "★★★", star4: "★★★★" };

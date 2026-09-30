@@ -1,6 +1,6 @@
 # 旷野之息助手（HTML5 / iPhone）
 
-《塞尔达传说：旷野之息》**呀哈哈地图** + **套装图鉴**（获取说明、套装效果、升级材料、地图定位）。
+《塞尔达传说：旷野之息》**呀哈哈地图** + **神庙 / 希卡塔** + **套装图鉴**（获取说明、套装效果、升级材料、地图定位）。
 
 在线：https://wangjun1974.github.io/breathofthewild/
 
@@ -12,6 +12,13 @@
 - 点击弹层：X/Y/Z 坐标、海拔、地图格、区域、最近地名、解谜类型、中文找法
 - 按区域筛选、仅看未收集
 - 已收集标记（localStorage，刷新不丢）
+
+### 神庙 + 希卡塔
+
+- 136 神庙（120 本体 + 16 DLC）图标
+- 15 希卡塔（Sheikah Tower）图标
+- 各自可独立显示/隐藏（localStorage 持久化）
+- 点击弹层：名称、坐标、复制坐标
 
 ### 套装
 
@@ -40,8 +47,9 @@ iPhone Safari 打开：`http://<Mac-IP>:8080`
 ## 数据构建（开发时）
 
 ```bash
-python3 tools/build_koroks.py   # data/koroks.json
-python3 tools/build_armors.py   # data/armors.json
+python3 tools/build_koroks.py     # data/koroks.json
+python3 tools/build_armors.py     # data/armors.json
+python3 tools/build_landmarks.py  # data/landmarks.json
 ```
 
 数据源：
@@ -105,12 +113,14 @@ python3 tools/build_armors.py   # data/armors.json
 index.html
 manifest.webmanifest
 css/app.css
-js/{app,map,markers,popup,state,armors,owned}.js
+js/{app,map,markers,landmarks,popup,state,armors,owned}.js
 data/koroks.json
 data/armors.json
+data/landmarks.json
 data/overrides.json
 tools/build_koroks.py
 tools/build_armors.py
+tools/build_landmarks.py
 assets/korok.png
 vendor/leaflet/
 PLAN.md

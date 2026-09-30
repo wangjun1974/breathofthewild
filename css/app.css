@@ -647,3 +647,36 @@ body.hide-koroks .korok-icon {
   pointer-events: none !important;
 }
 
+/* --- Shrine icon (teal diamond) --- */
+.shrine-marker {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.shrine-icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #5ec4a0;
+  border: 2px solid #0b1020;
+  box-shadow: 0 0 0 2px rgba(94, 196, 160, 0.35);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+/* --- Tower icon (blue square) --- */
+.tower-marker {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.tower-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #6db4f0;
+  border: 2px solid #0b1020;
+  box-shadow: 0 0 0 2px rgba(109, 180, 240, 0.35);
+  border-radius: 3px;
+}
+

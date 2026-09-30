@@ -1,4 +1,4 @@
-import { state, isCollected, toggleCollected } from "./state.js?v=20260929-hide3";
+import { state, isCollected, toggleCollected } from "./state.js?v=20260930-lm1";
 
 const sheet = () => document.getElementById("sheet");
 const body = () => document.getElementById("sheet-body");
@@ -85,6 +85,56 @@ export function showKorokSheet(k, { onToggle } = {}) {
 
   content.querySelector("#btn-copy-coords")?.addEventListener("click", async () => {
     const text = `${k.x.toFixed(1)}, ${k.y.toFixed(1)}, ${k.z.toFixed(1)}`;
+    try {
+      await navigator.clipboard.writeText(text);
+      toast("坐标已复制");
+    } catch {
+      toast(text);
+    }
+  });
+}
+
+export function showLandmarkSheet(item, kind) {
+  const el = sheet();
+  const content = body();
+  if (!el || !content) return;
+
+  const label = kind === "tower" ? "希卡塔" : "神庙";
+  const nameZh = item.nameZh || "";
+  const nameEn = item.name || item.id;
+  const subtitle = item.subtitle || "";
+
+  content.innerHTML = `
+    <div class="badges">
+      <span class="badge">${escapeHtml(label)}</span>
+      <span class="badge">${escapeHtml(item.regionZh || item.region || "")}</span>
+    </div>
+    <h2>${escapeHtml(nameZh || nameEn)}</h2>
+    ${nameZh ? `<div style="margin:-4px 0 8px;color:var(--muted);font-size:0.85rem">${escapeHtml(nameEn)}</div>` : ""}
+    ${subtitle ? `<div style="margin:0 0 8px;font-size:0.9rem;color:var(--accent)">${escapeHtml(subtitle)}</div>` : ""}
+    <div class="meta-grid">
+      <div class="meta-item">
+        <span class="label">坐标 X / Z</span>
+        <span class="value">${item.x.toFixed(1)}, ${item.z.toFixed(1)}</span>
+      </div>
+      <div class="meta-item">
+        <span class="label">海拔 Y</span>
+        <span class="value">${item.y.toFixed(1)}</span>
+      </div>
+      ${item.mapUnit ? `<div class="meta-item"><span class="label">地图格</span><span class="value">${escapeHtml(item.mapUnit)}</span></div>` : ""}
+    </div>
+    <div class="sheet-actions">
+      <button type="button" class="btn" id="btn-copy-coords">复制坐标</button>
+    </div>
+  `;
+
+  el.hidden = false;
+  const topBtn = document.getElementById("btn-close-sheet-top");
+  if (topBtn) topBtn.hidden = false;
+  el.scrollTop = 0;
+
+  content.querySelector("#btn-copy-coords")?.addEventListener("click", async () => {
+    const text = `${item.x.toFixed(1)}, ${item.y.toFixed(1)}, ${item.z.toFixed(1)}`;
     try {
       await navigator.clipboard.writeText(text);
       toast("坐标已复制");

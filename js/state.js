@@ -1,5 +1,7 @@
 const STORAGE_KEY = "botw-korok-collected-v1";
 const HIDE_KEY = "botw-korok-hide-v1";
+const HIDE_SHRINE_KEY = "botw-shrine-hide-v1";
+const HIDE_TOWER_KEY = "botw-tower-hide-v1";
 
 function readCollected() {
   try {
@@ -12,20 +14,26 @@ function readCollected() {
   }
 }
 
-function readHideKoroks() {
+function readBool(key, fallback = false) {
   try {
-    return localStorage.getItem(HIDE_KEY) === "1";
+    const v = localStorage.getItem(key);
+    if (v === null) return fallback;
+    return v === "1";
   } catch {
-    return false;
+    return fallback;
   }
 }
 
 export const state = {
   koroks: [],
+  shrines: [],
+  towers: [],
   collected: readCollected(),
   region: "all",
   onlyUncollected: false,
-  hideKoroks: readHideKoroks(),
+  hideKoroks: readBool(HIDE_KEY),
+  hideShrines: readBool(HIDE_SHRINE_KEY),
+  hideTowers: readBool(HIDE_TOWER_KEY),
   /** 套装定位等临时强制隐藏，不写入偏好 */
   forceHideKoroks: false,
   selectedId: null,
@@ -35,6 +43,24 @@ export function setHideKoroks(value) {
   state.hideKoroks = !!value;
   try {
     localStorage.setItem(HIDE_KEY, state.hideKoroks ? "1" : "0");
+  } catch {
+    /* ignore */
+  }
+}
+
+export function setHideShrines(value) {
+  state.hideShrines = !!value;
+  try {
+    localStorage.setItem(HIDE_SHRINE_KEY, state.hideShrines ? "1" : "0");
+  } catch {
+    /* ignore */
+  }
+}
+
+export function setHideTowers(value) {
+  state.hideTowers = !!value;
+  try {
+    localStorage.setItem(HIDE_TOWER_KEY, state.hideTowers ? "1" : "0");
   } catch {
     /* ignore */
   }
