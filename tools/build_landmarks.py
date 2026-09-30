@@ -138,12 +138,11 @@ SHRINE_REGION: dict[str, str] = {
     "Kaya Wan": "lanayru", "Kah Mael": "lanayru",
     "Sato Koda": "lanayru", "Kee Dafunia": "lanayru",
     "Mah Eliya": "lanayru", "Shai Yota": "lanayru",
-    # Akkala Tower (akkala) — 9
+    # Akkala Tower (akkala) — 8
     "Dah Hesho": "akkala", "Ke'nai Shakah": "akkala",
     "Katosa Aug": "akkala", "Ze Kasho": "akkala",
     "Tutsuwa Nima": "akkala", "Zuna Kai": "akkala",
     "Ritaag Zumo": "akkala", "Tu Ka'loh": "akkala",
-    "Dah Kaso": "akkala",
     # Eldin Tower (eldin) — 9 base + 3 DLC
     "Mo'a Keet": "eldin", "Sah Dahaj": "eldin",
     "Daqa Koh": "eldin", "Shora Hah": "eldin",
@@ -181,12 +180,12 @@ SHRINE_REGION: dict[str, str] = {
     "Dako Tah": "gerudo", "Hawa Koth": "gerudo",
     "Sho Dantu": "gerudo", "Kuh Takkar": "gerudo",
     "Raqa Zunzo": "gerudo", "Tho Kayu": "gerudo",
-    "Keive Tala": "gerudo",
-    # Wasteland Tower (wasteland) — 7 + 1 DLC
+    "Keive Tala": "gerudo", "Takama Shiri": "gerudo",
+    # Wasteland Tower (wasteland) — 7 + 1
     "Jee Noh": "wasteland", "Kay Noh": "wasteland",
     "Joloo Nah": "wasteland", "Dila Maag": "wasteland",
     "Misae Suma": "wasteland", "Korsh O'hu": "wasteland",
-    "Suma Sahma": "wasteland", "Takama Shiri": "wasteland",
+    "Suma Sahma": "wasteland", "Dah Kaso": "wasteland",
     # Lake Tower (lake) — 6
     "Ya Naga": "lake", "Ka'o Makagh": "lake",
     "Ishto Soh": "lake", "Pumaag Nitae": "lake",
