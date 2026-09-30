@@ -26,7 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 OUT_PATH = DATA_DIR / "landmarks.json"
-KOROKS_PATH = DATA_DIR / "koroks.json"
+
 
 STATIC_URL = "https://objmap.zeldamods.org/game_files/map_summary/MainField/static.json"
 LOCATION_MARKER_URL = "https://objmap.zeldamods.org/game_files/text/StaticMsg%2FLocationMarker.json"
@@ -87,38 +87,125 @@ def http_json(url: str, retries: int = 4, timeout: int = 60) -> dict | list:
     raise RuntimeError(f"GET failed: {url}: {last}")
 
 
-def load_korok_regions() -> list[dict]:
-    """Load koroks.json and return list of {x, z, region, regionZh}."""
-    if not KOROKS_PATH.exists():
-        print(f"warn: {KOROKS_PATH} not found, region assignment will be approximate", file=sys.stderr)
-        return []
-    data = json.loads(KOROKS_PATH.read_text(encoding="utf-8"))
-    return [
-        {"x": k["x"], "z": k["z"], "region": k["region"], "regionZh": k["regionZh"]}
-        for k in data.get("koroks", [])
-    ]
+# Tower name → region key (matches korok region chips)
+TOWER_NAME_REGION: dict[str, str] = {
+    "Hebra Tower": "hebra",
+    "Tabantha Tower": "tabantha",
+    "Gerudo Tower": "gerudo",
+    "Wasteland Tower": "wasteland",
+    "Woodland Tower": "woodland",
+    "Central Tower": "central",
+    "Great Plateau Tower": "plateau",
+    "Dueling Peaks Tower": "duelingpeaks",
+    "Lake Tower": "lake",
+    "Eldin Tower": "eldin",
+    "Akkala Tower": "akkala",
+    "Lanayru Tower": "lanayru",
+    "Hateno Tower": "hateno",
+    "Faron Tower": "faron",
+    "Ridgeland Tower": "ridgeland",
+}
+
+# Official shrine → tower-region mapping (game map regions).
+# 120 base shrines + 16 DLC (Champions' Ballad) = 136 total.
+# Key = shrine short name (Dungeon.json _master value).
+SHRINE_REGION: dict[str, str] = {
+    # Great Plateau Tower (plateau) — 4 base + 4 DLC
+    "Oman Au": "plateau", "Ja Baij": "plateau",
+    "Keh Namut": "plateau", "Owa Daim": "plateau",
+    "Yowaka Ita": "plateau", "Rohta Chigah": "plateau",
+    "Ruvo Korbah": "plateau", "Etsu Korima": "plateau",
+    # Central Tower (central) — 7
+    "Katah Chuki": "central", "Wahgo Katta": "central",
+    "Rota Ooh": "central", "Noya Neha": "central",
+    "Namika Ozz": "central", "Kaam Ya'tak": "central",
+    "Saas Ko'sah": "central",
+    # Dueling Peaks Tower (duelingpeaks) — 9
+    "Bosh Kala": "duelingpeaks", "Ha Dahamar": "duelingpeaks",
+    "Ree Dahee": "duelingpeaks", "Shee Venath": "duelingpeaks",
+    "Shee Vaneer": "duelingpeaks", "Toto Sah": "duelingpeaks",
+    "Hila Rao": "duelingpeaks", "Lakna Rokee": "duelingpeaks",
+    "Ta'loh Naeg": "duelingpeaks",
+    # Hateno Tower (hateno) — 7
+    "Myahm Agana": "hateno", "Dow Na'eh": "hateno",
+    "Kam Urog": "hateno", "Chaas Qeta": "hateno",
+    "Jitan Sa'mi": "hateno", "Mezza Lo": "hateno",
+    "Tahno O'ah": "hateno",
+    # Lanayru Tower (lanayru) — 8 base + 4 DLC
+    "Ne'ez Yohma": "lanayru", "Sheh Rata": "lanayru",
+    "Dagah Keek": "lanayru", "Rucco Maag": "lanayru",
+    "Soh Kofi": "lanayru", "Daka Tuss": "lanayru",
+    "Kaya Wan": "lanayru", "Kah Mael": "lanayru",
+    "Sato Koda": "lanayru", "Kee Dafunia": "lanayru",
+    "Mah Eliya": "lanayru", "Shai Yota": "lanayru",
+    # Akkala Tower (akkala) — 9
+    "Dah Hesho": "akkala", "Ke'nai Shakah": "akkala",
+    "Katosa Aug": "akkala", "Ze Kasho": "akkala",
+    "Tutsuwa Nima": "akkala", "Zuna Kai": "akkala",
+    "Ritaag Zumo": "akkala", "Tu Ka'loh": "akkala",
+    "Dah Kaso": "akkala",
+    # Eldin Tower (eldin) — 9 base + 3 DLC
+    "Mo'a Keet": "eldin", "Sah Dahaj": "eldin",
+    "Daqa Koh": "eldin", "Shora Hah": "eldin",
+    "Kayra Mah": "eldin", "Shae Mo'sah": "eldin",
+    "Gorae Torr": "eldin", "Qua Raym": "eldin",
+    "Tah Muhl": "eldin", "Kamia Omuna": "eldin",
+    "Rinu Honika": "eldin", "Sharo Lun": "eldin",
+    # Woodland Tower (woodland) — 8
+    "Mirro Shaz": "woodland", "Keo Ruug": "woodland",
+    "Monya Toma": "woodland", "Kuhn Sidajj": "woodland",
+    "Maag Halan": "woodland", "Daag Chokah": "woodland",
+    "Ketoh Wawai": "woodland", "Rona Kachta": "woodland",
+    # Hebra Tower (hebra) — 13 base + 1 DLC
+    "Sha Gehma": "hebra", "Gee Ha'rah": "hebra",
+    "Hia Miu": "hebra", "Mozo Shenno": "hebra",
+    "To Quomo": "hebra", "Shada Naw": "hebra",
+    "Goma Asaagh": "hebra", "Rok Uwog": "hebra",
+    "Rin Oyaa": "hebra", "Dunba Taag": "hebra",
+    "Maka Rah": "hebra", "Lanno Kooh": "hebra",
+    "Qaza Tokki": "hebra", "Kiah Toza": "hebra",
+    # Tabantha Tower (tabantha) — 7
+    "Akh Va'quot": "tabantha", "Bareeda Naag": "tabantha",
+    "Voo Lota": "tabantha", "Sha Warvo": "tabantha",
+    "Tena Ko'sah": "tabantha", "Kah Okeo": "tabantha",
+    "Noe Rajee": "tabantha",
+    # Ridgeland Tower (ridgeland) — 8
+    "Zalta Wa": "ridgeland", "Sheem Dagoze": "ridgeland",
+    "Toh Yahsa": "ridgeland", "Shae Loya": "ridgeland",
+    "Mogg Latan": "ridgeland", "Mijah Rokee": "ridgeland",
+    "Maag No'rah": "ridgeland", "Shira Gomar": "ridgeland",
+    # Gerudo Tower (gerudo) — 12 + 1 DLC
+    "Daqo Chisay": "gerudo", "Kema Zoos": "gerudo",
+    "Sasa Kai": "gerudo", "Kema Kosassa": "gerudo",
+    "Keeha Yoog": "gerudo", "Kihiro Moh": "gerudo",
+    "Dako Tah": "gerudo", "Hawa Koth": "gerudo",
+    "Sho Dantu": "gerudo", "Kuh Takkar": "gerudo",
+    "Raqa Zunzo": "gerudo", "Tho Kayu": "gerudo",
+    "Keive Tala": "gerudo",
+    # Wasteland Tower (wasteland) — 7 + 1 DLC
+    "Jee Noh": "wasteland", "Kay Noh": "wasteland",
+    "Joloo Nah": "wasteland", "Dila Maag": "wasteland",
+    "Misae Suma": "wasteland", "Korsh O'hu": "wasteland",
+    "Suma Sahma": "wasteland", "Takama Shiri": "wasteland",
+    # Lake Tower (lake) — 6
+    "Ya Naga": "lake", "Ka'o Makagh": "lake",
+    "Ishto Soh": "lake", "Pumaag Nitae": "lake",
+    "Shoqa Tatone": "lake", "Shae Katha": "lake",
+    # Faron Tower (faron) — 8
+    "Yah Rin": "faron", "Kah Yah": "faron",
+    "Shai Utoh": "faron", "Shoda Sah": "faron",
+    "Muwo Jeem": "faron", "Qukah Nata": "faron",
+    "Korgu Chideh": "faron", "Tawa Jinn": "faron",
+}
 
 
-def nearest_korok_region(x: float, z: float, koroks: list[dict]) -> tuple[str, str]:
-    """Find the region of the nearest korok to (x, z)."""
-    best_region = "central"
-    best_region_zh = "中央海拉鲁"
-    best_dist = math.inf
-    for k in koroks:
-        d = math.hypot(k["x"] - x, k["z"] - z)
-        if d < best_dist:
-            best_dist = d
-            best_region = k["region"]
-            best_region_zh = k["regionZh"]
-    return best_region, best_region_zh
+def resolve_shrine_region(short_name: str) -> str:
+    """Look up official tower region for a shrine by its short name."""
+    return SHRINE_REGION.get(short_name, "central")
 
 
 def main() -> int:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-    print("Loading korok regions ...", flush=True)
-    korok_refs = load_korok_regions()
-    print(f"  {len(korok_refs)} korok reference points", flush=True)
 
     print("Fetching static.json ...", flush=True)
     static = http_json(STATIC_URL)
@@ -133,6 +220,7 @@ def main() -> int:
     # --- Build Shrines ---
     dungeon_markers = markers.get("Dungeon", [])
     shrines: list[dict] = []
+    unmapped: list[str] = []
     for m in dungeon_markers:
         mid = m.get("MessageID", "")
         if not re.fullmatch(r"Dungeon\d+", mid):
@@ -152,7 +240,10 @@ def main() -> int:
         warp = m.get("WarpDestMapName", "")
         map_name = re.sub(r"^MainField/", "", warp) if warp else ""
 
-        region, region_zh = nearest_korok_region(x, z, korok_refs)
+        region = resolve_shrine_region(short_name)
+        if region == "central" and short_name not in SHRINE_REGION:
+            unmapped.append(short_name)
+        region_zh = REGION_ZH.get(region, region)
 
         shrines.append({
             "id": mid,
@@ -167,6 +258,8 @@ def main() -> int:
             "regionZh": region_zh,
         })
 
+    if unmapped:
+        print(f"warn: {len(unmapped)} shrines not in SHRINE_REGION table (defaulted to central): {unmapped}", file=sys.stderr)
     shrines.sort(key=lambda s: s["id"])
 
     # --- Build Towers ---
@@ -187,7 +280,8 @@ def main() -> int:
         warp = m.get("WarpDestMapName", "")
         map_name = re.sub(r"^MainField/", "", warp) if warp else ""
 
-        region, region_zh = nearest_korok_region(x, z, korok_refs)
+        region = TOWER_NAME_REGION.get(name_en, "central")
+        region_zh = REGION_ZH.get(region, region)
 
         towers.append({
             "id": mid,
