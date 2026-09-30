@@ -2,13 +2,13 @@
 
 ## 当前进度
 
-- **状态**：呀哈哈 + 套装已完成；**神庙 + 希卡塔 进行中**
+- **状态**：呀哈哈 + 套装 + 神庙 + 希卡塔 **已完成**；Pages 已更新
 - **在线地址**：https://wangjun1974.github.io/breathofthewild/
 - **工作目录**：`~/git/agent/opencode/breathofthewild`
 - **呀哈哈**：全量 **900**
 - **套装**：**26 / 26**（77 部件；说明、获取、套装效果、升级材料、地图定位、已拥有）
-- **神庙**：**136**（120 本体 + 16 DLC）— 进行中
-- **希卡塔**：**15** — 进行中
+- **神庙**：**136**（120 本体 + 16 DLC）— 已完成
+- **希卡塔**：**15** — 已完成
 - **穿戴图形**：不做（仅文字）
 
 ## 目标
@@ -31,9 +31,9 @@
 | phase1-data | `tools/build_armors.py` → `data/armors.json` | done |
 | phase2-ui | 顶栏切换 + 列表/详情/已拥有/定位 | done |
 | phase3-pages | 推送 GitHub Pages + 更新本文件 | done |
-| phase4-data | `tools/build_landmarks.py` → `data/landmarks.json`（136 神庙 + 15 希卡塔） | in progress |
-| phase5-ui | 筛选栏增加「隐藏神庙」「隐藏希卡塔」开关 + 地图图标 + 点击弹层 | in progress |
-| phase6-pages | 推送 GitHub Pages + 更新本文件 | pending |
+| phase4-data | `tools/build_landmarks.py` → `data/landmarks.json`（136 神庙 + 15 希卡塔） | done |
+| phase5-ui | 筛选栏增加「隐藏神庙」「隐藏希卡塔」开关 + 地图图标 + 点击弹层 | done |
+| phase6-pages | 推送 GitHub Pages + 更新本文件 | done |
 
 ## 技术选型
 
@@ -49,10 +49,10 @@
 - [x] 全部成套（含 amiibo、DLC）可浏览；详情含获取、效果、升级材料
 - [x] 有坐标的部件可地图定位（51/77 部件有坐标）
 - [x] GitHub Pages 已更新并可打开套装功能（`status: built`，`armors.json` HTTP 200）
-- [ ] 神庙图标可显示/隐藏（136 个，含 DLC）
-- [ ] 希卡塔图标可显示/隐藏（15 个）
-- [ ] 点击神庙/希卡塔弹层显示名称与坐标
-- [ ] GitHub Pages 已更新（`landmarks.json` HTTP 200）
+- [x] 神庙图标可显示/隐藏（136 个，含 DLC）
+- [x] 希卡塔图标可显示/隐藏（15 个）
+- [x] 点击神庙/希卡塔弹层显示名称与坐标
+- [x] GitHub Pages 已更新（`landmarks.json` HTTP 200）
 
 ## 进度日志
 
@@ -78,15 +78,15 @@
 
 ### 2026-09-30（神庙 + 希卡塔）
 
-- [ ] `tools/build_landmarks.py`：从 objmap static.json + 文本获取 136 神庙 + 15 希卡塔
-- [ ] `data/landmarks.json` 生成
-- [ ] `js/landmarks.js`：神庙/希卡塔图标图层
-- [ ] `js/state.js`：hideShrines / hideTowers + localStorage
-- [ ] `index.html`：筛选栏增加两个 toggle
-- [ ] `css/app.css`：图标样式（菱形 = 神庙，方形 = 希卡塔）
-- [ ] `js/popup.js`：点击弹层
-- [ ] `js/app.js`：数据加载 + 连线
-- [ ] 推送 GitHub Pages
+- [x] `tools/build_landmarks.py`：从 objmap static.json + 文本获取 136 神庙 + 15 希卡塔
+- [x] `data/landmarks.json` 生成（28 KB）
+- [x] `js/landmarks.js`：神庙/希卡塔图标图层（菱形 = 神庙，方形 = 希卡塔）
+- [x] `js/state.js`：hideShrines / hideTowers + localStorage
+- [x] `index.html`：筛选栏增加两个 toggle
+- [x] `css/app.css`：图标样式
+- [x] `js/popup.js`：点击弹层（名称、坐标、复制坐标）
+- [x] `js/app.js`：数据加载 + 连线
+- [x] 推送 `64a14db` → Pages built
 
 ### 既有呀哈哈（历史）
 
