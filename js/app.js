@@ -1,7 +1,7 @@
-import { createMap } from "./map.js?v=20260930-lm2";
-import { createMarkerLayer } from "./markers.js?v=20260930-lm2";
-import { createLandmarkLayers } from "./landmarks.js?v=20260930-lm2";
-import { showKorokSheet, showLandmarkSheet, hideSheet, toast } from "./popup.js?v=20260930-lm2";
+import { createMap } from "./map.js?v=20260930-lm3";
+import { createMarkerLayer } from "./markers.js?v=20260930-lm3";
+import { createLandmarkLayers } from "./landmarks.js?v=20260930-lm3";
+import { showKorokSheet, showLandmarkSheet, hideSheet, toast } from "./popup.js?v=20260930-lm3";
 import {
   state,
   clearCollected,
@@ -10,9 +10,9 @@ import {
   setHideKoroks,
   setHideShrines,
   setHideTowers,
-} from "./state.js?v=20260930-lm2";
-import { createOwnedStore } from "./owned.js?v=20260930-lm2";
-import { createArmorUi } from "./armors.js?v=20260930-lm2";
+} from "./state.js?v=20260930-lm3";
+import { createOwnedStore } from "./owned.js?v=20260930-lm3";
+import { createArmorUi } from "./armors.js?v=20260930-lm3";
 
 const REGION_LABELS = [
   ["all", "全部"],
@@ -186,9 +186,9 @@ async function main() {
   let landmarkData;
   try {
     const [kRes, aRes, lRes] = await Promise.all([
-      fetch("./data/koroks.json"),
-      fetch("./data/armors.json"),
-      fetch("./data/landmarks.json"),
+      fetch("./data/koroks.json?v=20260930"),
+      fetch("./data/armors.json?v=20260930"),
+      fetch("./data/landmarks.json?v=20260930b"),
     ]);
     if (!kRes.ok) throw new Error(`koroks HTTP ${kRes.status}`);
     if (!aRes.ok) throw new Error(`armors HTTP ${aRes.status}`);

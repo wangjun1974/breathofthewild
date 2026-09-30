@@ -1,5 +1,5 @@
-import { state, matchesFilter, isCollected } from "./state.js?v=20260930-lm2";
-import { xyzToLatLng } from "./map.js?v=20260930-lm2";
+import { state, matchesFilter, isCollected } from "./state.js?v=20260930-lm3";
+import { xyzToLatLng } from "./map.js?v=20260930-lm3";
 
 const paneName = "koroks";
 

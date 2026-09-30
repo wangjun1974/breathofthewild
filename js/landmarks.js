@@ -2,8 +2,8 @@
  * Shrine and Sheikah Tower marker layers.
  * Similar to markers.js (koroks) but simpler — no collected state, just show/hide.
  */
-import { state } from "./state.js?v=20260930-lm2";
-import { xyzToLatLng } from "./map.js?v=20260930-lm2";
+import { state } from "./state.js?v=20260930-lm3";
+import { xyzToLatLng } from "./map.js?v=20260930-lm3";
 
 function shrineIcon() {
   return L.divIcon({
