@@ -1,7 +1,7 @@
-import { createMap } from "./map.js?v=20260930-lm1";
-import { createMarkerLayer } from "./markers.js?v=20260930-lm1";
-import { createLandmarkLayers } from "./landmarks.js?v=20260930-lm1";
-import { showKorokSheet, showLandmarkSheet, hideSheet, toast } from "./popup.js?v=20260930-lm1";
+import { createMap } from "./map.js?v=20260930-lm2";
+import { createMarkerLayer } from "./markers.js?v=20260930-lm2";
+import { createLandmarkLayers } from "./landmarks.js?v=20260930-lm2";
+import { showKorokSheet, showLandmarkSheet, hideSheet, toast } from "./popup.js?v=20260930-lm2";
 import {
   state,
   clearCollected,
@@ -10,9 +10,9 @@ import {
   setHideKoroks,
   setHideShrines,
   setHideTowers,
-} from "./state.js?v=20260930-lm1";
-import { createOwnedStore } from "./owned.js?v=20260930-lm1";
-import { createArmorUi } from "./armors.js?v=20260930-lm1";
+} from "./state.js?v=20260930-lm2";
+import { createOwnedStore } from "./owned.js?v=20260930-lm2";
+import { createArmorUi } from "./armors.js?v=20260930-lm2";
 
 const REGION_LABELS = [
   ["all", "全部"],

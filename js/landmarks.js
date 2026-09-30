@@ -2,8 +2,8 @@
  * Shrine and Sheikah Tower marker layers.
  * Similar to markers.js (koroks) but simpler — no collected state, just show/hide.
  */
-import { state } from "./state.js?v=20260930-lm1";
-import { xyzToLatLng } from "./map.js?v=20260930-lm1";
+import { state } from "./state.js?v=20260930-lm2";
+import { xyzToLatLng } from "./map.js?v=20260930-lm2";
 
 function shrineIcon() {
   return L.divIcon({
@@ -40,6 +40,11 @@ export function createLandmarkLayers(map) {
     pane.style.pointerEvents = visible ? "" : "none";
   }
 
+  function matchesRegion(item) {
+    if (state.region === "all") return true;
+    return item.region === state.region;
+  }
+
   function renderShrines() {
     shrineLayer.clearLayers();
     if (state.hideShrines || state.forceHideKoroks) {
@@ -51,6 +56,7 @@ export function createLandmarkLayers(map) {
     if (!map.hasLayer(shrineLayer)) shrineLayer.addTo(map);
 
     for (const s of state.shrines) {
+      if (!matchesRegion(s)) continue;
       const marker = L.marker(xyzToLatLng(s.x, s.z), {
         icon: shrineIcon(),
         title: s.name,
@@ -77,6 +83,7 @@ export function createLandmarkLayers(map) {
     if (!map.hasLayer(towerLayer)) towerLayer.addTo(map);
 
     for (const t of state.towers) {
+      if (!matchesRegion(t)) continue;
       const marker = L.marker(xyzToLatLng(t.x, t.z), {
         icon: towerIcon(),
         title: t.nameZh || t.name,
