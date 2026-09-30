@@ -680,3 +680,343 @@ body.hide-koroks .korok-icon {
   border-radius: 3px;
 }
 
+
+/* ===== Guide Panel ===== */
+.guide-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--topbar-h) + var(--safe-top));
+  bottom: 0;
+  z-index: 950;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(13,18,34,0.98), rgba(8,12,24,0.98));
+  border-top: 1px solid var(--border);
+  padding-bottom: var(--safe-bottom);
+}
+
+.guide-panel[hidden] { display: none !important; }
+
+body.mode-guide #map { visibility: hidden; }
+
+.guide-toolbar {
+  flex: 0 0 auto;
+  padding: 10px 12px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.guide-tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.28);
+  align-self: flex-start;
+}
+
+.guide-tab {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  min-height: 32px;
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+}
+
+.guide-tab.is-active {
+  background: rgba(125,222,160,0.22);
+  color: #b5f5d2;
+}
+
+.guide-search {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(0,0,0,0.35);
+  color: var(--text);
+  font-size: 1rem;
+  padding: 10px 14px;
+  min-height: 40px;
+  outline: none;
+}
+
+.guide-search::placeholder { color: var(--muted); }
+
+.guide-list {
+  flex: 1 1 auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 10px 24px;
+}
+
+.guide-empty {
+  margin: 24px 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Region group header (shrine guide) */
+.guide-region-group { margin-bottom: 8px; }
+
+.guide-region-header {
+  padding: 6px 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-2);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(240,199,94,0.2);
+  margin-bottom: 2px;
+}
+
+/* Card */
+.guide-card {
+  border-bottom: 1px solid rgba(243,234,208,0.1);
+}
+
+.guide-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  padding: 12px 8px;
+  min-height: 52px;
+  cursor: pointer;
+}
+
+.guide-card-header:active { background: rgba(255,255,255,0.04); }
+
+.guide-order {
+  flex: 0 0 28px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-align: center;
+}
+
+.shrine-cat-dot {
+  flex: 0 0 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.guide-card-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.guide-card-title strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guide-card-title small {
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge-dlc {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  background: rgba(180,150,240,0.2);
+  border: 1px solid rgba(180,150,240,0.4);
+  color: #c4a0f5;
+  vertical-align: middle;
+}
+
+.guide-diff {
+  flex: 0 0 auto;
+  font-size: 0.65rem;
+  letter-spacing: -1px;
+  color: var(--accent-2);
+}
+
+.guide-chevron {
+  flex: 0 0 20px;
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Card body */
+.guide-card-body {
+  padding: 0 10px 14px 36px;
+}
+
+.guide-card-body[hidden] { display: none !important; }
+
+.shrine-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.shrine-cat-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.shrine-region-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(243,234,208,0.15);
+  background: rgba(255,255,255,0.04);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.guide-summary {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.guide-how-to-find {
+  margin: 0 0 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(109,180,240,0.08);
+  border: 1px solid rgba(109,180,240,0.2);
+  font-size: 0.85rem;
+  color: #a8d6f5;
+  line-height: 1.5;
+}
+
+/* Steps */
+.guide-steps {
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.guide-step {
+  display: flex;
+  gap: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.step-num {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(125,222,160,0.15);
+  border: 1px solid rgba(125,222,160,0.3);
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+/* Tips */
+.guide-tips {
+  margin: 0 0 8px;
+  padding: 8px 10px 8px 12px;
+  border-radius: 10px;
+  background: rgba(240,199,94,0.06);
+  border: 1px solid rgba(240,199,94,0.2);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.guide-tip {
+  font-size: 0.83rem;
+  color: #e8d48a;
+  line-height: 1.5;
+}
+
+.guide-tip::before { content: "💡 "; }
+
+/* Rewards / Chests */
+.guide-rewards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.guide-reward-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(240,199,94,0.3);
+  background: rgba(240,199,94,0.08);
+  font-size: 0.78rem;
+  color: #f0c75e;
+}
+
+.guide-locate-btn {
+  margin-top: 4px;
+  border-radius: 10px !important;
+  font-size: 0.85rem;
+}
+
+/* Pin for shrine locate */
+.shrine-locate-pin {
+  background: transparent !important;
+  border: none !important;
+}
+
+.shrine-locate-dot {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #7ddea0;
+  border: 2px solid #0b1020;
+  box-shadow: 0 0 0 3px rgba(125,222,160,0.4);
+}
+
+@media (min-width: 900px) {
+  .guide-panel {
+    top: calc(var(--topbar-h) + var(--safe-top));
+  }
+}

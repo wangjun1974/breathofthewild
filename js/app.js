@@ -1,7 +1,7 @@
-import { createMap } from "./map.js?v=20260930-lm3";
-import { createMarkerLayer } from "./markers.js?v=20260930-lm3";
-import { createLandmarkLayers } from "./landmarks.js?v=20260930-lm3";
-import { showKorokSheet, showLandmarkSheet, hideSheet, toast } from "./popup.js?v=20260930-lm3";
+import { createMap } from "./map.js?v=20260930-g1";
+import { createMarkerLayer } from "./markers.js?v=20260930-g1";
+import { createLandmarkLayers } from "./landmarks.js?v=20260930-g1";
+import { showKorokSheet, showLandmarkSheet, hideSheet, toast } from "./popup.js?v=20260930-g1";
 import {
   state,
   clearCollected,
@@ -10,9 +10,10 @@ import {
   setHideKoroks,
   setHideShrines,
   setHideTowers,
-} from "./state.js?v=20260930-lm3";
-import { createOwnedStore } from "./owned.js?v=20260930-lm3";
-import { createArmorUi } from "./armors.js?v=20260930-lm3";
+} from "./state.js?v=20260930-g1";
+import { createOwnedStore } from "./owned.js?v=20260930-g1";
+import { createArmorUi } from "./armors.js?v=20260930-g1";
+import { createGuideUi } from "./guides.js?v=20260930-g1";
 
 const REGION_LABELS = [
   ["all", "全部"],
@@ -39,6 +40,7 @@ let map;
 let markers;
 let landmarks;
 let armors;
+let guides;
 const ownedStore = createOwnedStore();
 
 function showLoading(text) {
@@ -106,11 +108,13 @@ function setMode(next) {
   const brand = document.getElementById("brand-title");
   const filters = document.getElementById("korok-filters");
   const armorPanel = document.getElementById("armor-panel");
+  const guidePanel = document.getElementById("guide-panel");
   const armorBack = document.getElementById("armor-back-map");
   const resetBtn = document.getElementById("btn-reset-collected");
   const hideText = document.getElementById("hide-found-text");
 
   armors?.clearTempMarker();
+  guides?.clearTempMarker();
   if (armorBack) armorBack.hidden = true;
   hideSheet();
   armors?.closeSheet();
@@ -119,32 +123,45 @@ function setMode(next) {
     if (brand) brand.textContent = "呀哈哈地图";
     if (filters) filters.hidden = false;
     if (armorPanel) armorPanel.hidden = true;
+    if (guidePanel) guidePanel.hidden = true;
     if (resetBtn) {
       resetBtn.hidden = false;
       resetBtn.textContent = "重置收集";
     }
     if (hideText) hideText.textContent = "仅未收集";
-    document.body.classList.remove("mode-armor", "armor-locating");
+    document.body.classList.remove("mode-armor", "mode-guide", "armor-locating");
     state.forceHideKoroks = false;
     syncHideClass();
     updateKorokProgress();
     markers?.render();
     landmarks?.render();
-  } else {
+  } else if (mode === "armor") {
     if (brand) brand.textContent = "套装图鉴";
     if (filters) filters.hidden = true;
     if (armorPanel) armorPanel.hidden = false;
+    if (guidePanel) guidePanel.hidden = true;
     if (resetBtn) {
       resetBtn.hidden = true;
     }
     if (hideText) hideText.textContent = "隐藏已拥有";
     document.body.classList.add("mode-armor");
-    document.body.classList.remove("armor-locating");
+    document.body.classList.remove("mode-guide", "armor-locating");
     state.forceHideKoroks = false;
     syncHideClass();
     const only = document.getElementById("only-uncollected");
     armors?.setHideOwned(!!only?.checked);
     armors?.renderList();
+  } else if (mode === "guide") {
+    if (brand) brand.textContent = "攻略";
+    if (filters) filters.hidden = true;
+    if (armorPanel) armorPanel.hidden = true;
+    if (guidePanel) guidePanel.hidden = false;
+    if (resetBtn) resetBtn.hidden = true;
+    document.body.classList.add("mode-guide");
+    document.body.classList.remove("mode-armor", "armor-locating");
+    state.forceHideKoroks = false;
+    syncHideClass();
+    guides?.render();
   }
 }
 
@@ -181,21 +198,54 @@ async function main() {
     },
   });
 
+  guides = createGuideUi({
+    map,
+    onLocate() {
+      document.getElementById("guide-panel").hidden = true;
+      document.getElementById("armor-back-map").hidden = false;
+      document.body.classList.add("armor-locating");
+      document.body.classList.remove("mode-guide");
+      state.forceHideKoroks = true;
+      syncHideClass();
+      markers.render();
+      landmarks.render();
+    },
+    onBackToList() {
+      document.getElementById("guide-panel").hidden = false;
+      document.getElementById("armor-back-map").hidden = true;
+      document.body.classList.add("mode-guide");
+      document.body.classList.remove("armor-locating");
+      state.forceHideKoroks = false;
+      guides?.clearTempMarker();
+      syncHideClass();
+      markers.render();
+      landmarks.render();
+    },
+  });
+
   let korokData;
   let armorData;
   let landmarkData;
+  let guidesData;
+  let shrineGuidesData;
   try {
-    const [kRes, aRes, lRes] = await Promise.all([
+    const [kRes, aRes, lRes, gRes, sgRes] = await Promise.all([
       fetch("./data/koroks.json?v=20260930"),
       fetch("./data/armors.json?v=20260930"),
       fetch("./data/landmarks.json?v=20260930b"),
+      fetch("./data/guides.json?v=20260930g1"),
+      fetch("./data/shrine-guides.json?v=20260930g1"),
     ]);
     if (!kRes.ok) throw new Error(`koroks HTTP ${kRes.status}`);
     if (!aRes.ok) throw new Error(`armors HTTP ${aRes.status}`);
     if (!lRes.ok) throw new Error(`landmarks HTTP ${lRes.status}`);
+    if (!gRes.ok) throw new Error(`guides HTTP ${gRes.status}`);
+    if (!sgRes.ok) throw new Error(`shrine-guides HTTP ${sgRes.status}`);
     korokData = await kRes.json();
     armorData = await aRes.json();
     landmarkData = await lRes.json();
+    guidesData = await gRes.json();
+    shrineGuidesData = await sgRes.json();
   } catch (e) {
     removeLoading();
     toast(`数据加载失败：${e.message || e}`);
@@ -212,6 +262,9 @@ async function main() {
 
   const meta = armors.load(armorData);
   console.info("[套装]", meta);
+
+  guides.load(guidesData, shrineGuidesData);
+  console.info("[攻略]", `主线 ${guidesData?.mainStory?.quests?.length ?? 0} 任务, 神庙 ${shrineGuidesData?.shrines?.length ?? 0} 座`);
 
   function refreshKorok() {
     syncHideClass();
@@ -318,6 +371,22 @@ async function main() {
   ownedStore.onChange(() => {
     if (mode === "armor") armors?.updateCount();
   });
+
+  // 攻略「返回」按钮复用 armor-back-map
+  document.getElementById("armor-back-map")?.addEventListener("click", () => {
+    if (mode === "guide") {
+      guides?.clearTempMarker();
+      guides?.onBackToList?.();
+      document.getElementById("guide-panel").hidden = false;
+      document.getElementById("armor-back-map").hidden = true;
+      document.body.classList.add("mode-guide");
+      document.body.classList.remove("armor-locating");
+      state.forceHideKoroks = false;
+      syncHideClass();
+      markers.render();
+      landmarks.render();
+    }
+  }, { capture: true }); // 覆盖 armors 的监听（监听顺序）
 
   removeLoading();
   toast(`已加载 ${state.koroks.length} 呀哈哈 · ${state.shrines.length} 神庙 · ${state.towers.length} 塔 · ${meta.setCount || "?"} 套装`);

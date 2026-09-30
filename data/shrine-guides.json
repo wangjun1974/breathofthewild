@@ -1,0 +1,4376 @@
+{
+  "generatedAt": "2026-09-30T16:00:00Z",
+  "stats": {
+    "total": 136,
+    "base": 120,
+    "dlc": 16
+  },
+  "shrines": [
+    {
+      "id": "Dungeon000",
+      "name": "Tah Muhl Shrine",
+      "nameShort": "Tah Muhl",
+      "nameZh": "塔姆尔神庙",
+      "subtitle": "Passing the Flame",
+      "subtitleZh": "传递火焰",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 2301.46,
+      "y": 226.35,
+      "z": -940.73,
+      "mapUnit": "H-4",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "奥尔汀地区东部，从鼓隆城往东沿着岩浆平原边缘走可找到。",
+      "solution": [
+        "场内地板有持续喷出的火焰，需要找时机穿越。",
+        "观察火焰喷出的节律，在短暂间歇时冲过去。",
+        "用磁石法杖移动金属板来遮挡部分火焰柱，创造安全通道。",
+        "取得熄灭后的火炬，借助场内永久火源点燃，再点亮目标灯台。",
+        "灯台点亮后门打开，取宝箱与神灵对话完成。"
+      ],
+      "tips": [
+        "防火药水或防火护甲可以在火焰中自由行动，大幅降低难度。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之弓"
+      ]
+    },
+    {
+      "id": "Dungeon001",
+      "name": "Jee Noh Shrine",
+      "nameShort": "Jee Noh",
+      "nameZh": "基·诺神庙",
+      "subtitle": "On the Move",
+      "subtitleZh": "移动中",
+      "region": "wasteland",
+      "regionZh": "荒野",
+      "x": -1793.25,
+      "y": 125.85,
+      "z": 2422.49,
+      "mapUnit": "D-7",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "格鲁德荒野西部，靠近科洛格岩地带，从格鲁德小镇往西南可找到。",
+      "solution": [
+        "场内有多个持续移动的平台，需要在平台运动中完成各个谜题。",
+        "在移动平台上用炸弹引爆，利用爆炸推力移动场内物体。",
+        "部分谜题需要在平台移动到某个特定位置时操作，时机要求较高。",
+        "用定格法杖暂停平台，争取更多操作时间。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "观察平台运动周期，在周期的某一固定时间点重复操作，逐步解开谜题。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon002",
+      "name": "Sah Dahaj Shrine",
+      "nameShort": "Sah Dahaj",
+      "nameZh": "萨·达哈神庙",
+      "subtitle": "Power of Fire",
+      "subtitleZh": "火之力量",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 2666.12,
+      "y": 260.91,
+      "z": -1580.33,
+      "mapUnit": "H-3",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "奥尔汀火山区北部，靠近死亡山火山口，须穿戴防火装备才能进入。",
+      "solution": [
+        "场内地板有大范围熔岩，用磁石法杖将金属板架在熔岩上搭桥通行。",
+        "金属板也可以用来遮挡火焰喷口，创造安全行走区域。",
+        "取得宝箱后需要把宝箱移到更高平台，用金属板把宝箱顶上去。",
+        "最终区域：把金属板插入两面墙之间形成阶梯，攀爬上去。",
+        "到达祭台与神灵对话。"
+      ],
+      "tips": [
+        "防火护甲（鼓隆城套装）在奥尔汀地区必备，否则持续扣血。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之剑"
+      ]
+    },
+    {
+      "id": "Dungeon003",
+      "name": "Hawa Koth Shrine",
+      "nameShort": "Hawa Koth",
+      "nameZh": "哈瓦·科斯神庙",
+      "subtitle": "The Current Solution",
+      "subtitleZh": "最优解",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -4847.43,
+      "y": 136.74,
+      "z": 3773.55,
+      "mapUnit": "A-8",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "格鲁德沙漠西北角，靠近神殿废墟，从格鲁德小镇向西北穿越沙漠可到达。",
+      "solution": [
+        "场内地板有电流轨道，电流会持续移动，接触即受伤。",
+        "观察电流移动规律，在电流经过间隙快速通过区域。",
+        "用磁石法杖移动金属板改变电流走向，使电路与轨道断开。",
+        "调整后安全通过区域，取宝箱。",
+        "与神灵对话完成试炼。"
+      ],
+      "tips": [
+        "穿戴橡皮衣套装可免疫电击伤害，大幅降低该神庙难度。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon004",
+      "name": "Zalta Wa Shrine",
+      "nameShort": "Zalta Wa",
+      "nameZh": "扎尔塔·瓦神庙",
+      "subtitle": "Two Orbs to Guide You",
+      "subtitleZh": "双球引导",
+      "region": "ridgeland",
+      "regionZh": "丘陵",
+      "x": -1432.62,
+      "y": 151.32,
+      "z": -593.25,
+      "mapUnit": "D-4",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "里脊地区东侧，靠近里脊山北坡，从利特村往南走可找到。",
+      "solution": [
+        "场内有两个球形开关，各自对应一个凹槽，需要将两球同时送入。",
+        "用磁石法杖吸起一个球，引导滚入凹槽；另一球滚落后用炸弹的爆炸气浪推向对应凹槽。",
+        "或用定格法杖暂停一个球，处理好另一个后再解除定格。",
+        "两球同时入槽，终点门打开。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "两个球的凹槽位置对称，观察好布局再行动。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓"
+      ]
+    },
+    {
+      "id": "Dungeon005",
+      "name": "Ne'ez Yohma Shrine",
+      "nameShort": "Ne'ez Yohma",
+      "nameZh": "内兹·约玛神庙",
+      "subtitle": "Pushing Power",
+      "subtitleZh": "推力之术",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 3323.17,
+      "y": 252.28,
+      "z": -517.92,
+      "mapUnit": "I-4",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "佐拉领地边界，从米法广场往东南方向的山丘走去即可找到。",
+      "solution": [
+        "场内有多个可推动的石块，用炸弹推力（爆炸冲击）移动石块到开关位置。",
+        "炸弹爆炸时产生的推力会移动周围物体，调整放置位置控制推力方向。",
+        "用推动的石块压住地面开关，保持持续激活状态。",
+        "最后一关：两个石块需要同时压住两个开关，门才会打开。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "炸弹爆炸推力方向是以爆炸点为中心向外，提前计算好距离和角度。"
+      ],
+      "chestContents": [
+        "宝箱：皇家弓"
+      ]
+    },
+    {
+      "id": "Dungeon006",
+      "name": "Yah Rin Shrine",
+      "nameShort": "Yah Rin",
+      "nameZh": "亚·林神庙",
+      "subtitle": "A Weighty Decision",
+      "subtitleZh": "沉重的决断",
+      "region": "faron",
+      "regionZh": "费罗尼",
+      "x": 2833.53,
+      "y": 165.75,
+      "z": 3311.96,
+      "mapUnit": "H-8",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "费罗尼地区南部雨林，从费罗尼塔往南穿越密林可以找到。",
+      "solution": [
+        "场内有多个重量开关，需要放置足够重量的物体才能激活。",
+        "用磁石法杖将多个金属箱子叠放到开关上，增加总重量。",
+        "部分开关需要玩家本人站上去配合金属箱，凑够重量。",
+        "观察每个开关的提示重量，合理分配金属箱数量。",
+        "全部激活后终点门打开，取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "金属箱数量足够，不需要全都叠在一起，分散放置到各个开关上。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓"
+      ]
+    },
+    {
+      "id": "Dungeon007",
+      "name": "Bosh Kala Shrine",
+      "nameShort": "Bosh Kala",
+      "nameZh": "博希·卡拉神庙",
+      "subtitle": "The Wind Guides You",
+      "subtitleZh": "顺风而行",
+      "region": "duelingpeaks",
+      "regionZh": "双子山",
+      "x": 87.02,
+      "y": 135.51,
+      "z": 1657.71,
+      "mapUnit": "F-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "双子山脚下西侧，从双子山客栈旁边沿河往西北方向走可找到。",
+      "solution": [
+        "场内有巨型风扇持续吹风，需借风力飞越宽阔的峡谷。",
+        "在风扇旁展开滑翔翼，借助上升气流飞向对面平台。",
+        "移动金属板（磁石法杖）挡风，改变气流方向，使某些开关被触发。",
+        "最后一段：站在风扇正前方展翼，精准滑到终点平台。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "展翼时机要在离开平台瞬间按，早了或晚了都会掉落。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓"
+      ]
+    },
+    {
+      "id": "Dungeon008",
+      "name": "Bareeda Naag Shrine",
+      "nameShort": "Bareeda Naag",
+      "nameZh": "巴里达·纳格神庙",
+      "subtitle": "Cannon",
+      "subtitleZh": "炮台",
+      "region": "tabantha",
+      "regionZh": "塔邦达",
+      "x": -3608.99,
+      "y": 255.74,
+      "z": -1516.38,
+      "mapUnit": "B-3",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "塔邦达地区北部，靠近利特村往北的山道旁，飞行时可以从空中看到。",
+      "solution": [
+        "场内有一门可旋转炮台，调整角度向目标射击。",
+        "用磁石法杖旋转炮台，让炮口朝向不同的目标石块。",
+        "射击目标石块将其炸开，露出通道或开关。",
+        "利用炮弹的爆炸力推动金属球滚入凹槽，激活机关。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "炮台旋转需要精准角度，可以用磁石法杖缓慢微调到最佳方向。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓"
+      ]
+    },
+    {
+      "id": "Dungeon009",
+      "name": "Owa Daim Shrine",
+      "nameShort": "Owa Daim",
+      "nameZh": "欧瓦·戴姆神庙",
+      "subtitle": "Stasis Trial",
+      "subtitleZh": "定格试炼",
+      "region": "plateau",
+      "regionZh": "初始台地",
+      "x": -925.03,
+      "y": 287.17,
+      "z": 2320.23,
+      "mapUnit": "E-7",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "初始台地东南角，从台地崖壁沿路向东可到达。",
+      "solution": [
+        "进入后取得定格法杖（Stasis）。",
+        "对准前方巨石使用定格，趁机从旁边的斜坡跑到对面平台。",
+        "击打被定格的巨石积累动能，解除定格后巨石会被弹出。",
+        "用定格法杖定住摆动的齿轮机关，快速通过。",
+        "最终抵达祭台，与神庙神灵对话获得心之容器碎片。"
+      ],
+      "tips": [
+        "定格后可以用武器多次击打物体积攒动能，方向会反转。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓"
+      ]
+    },
+    {
+      "id": "Dungeon010",
+      "name": "Kay Noh Shrine",
+      "nameShort": "Kay Noh",
+      "nameZh": "卡·诺神庙",
+      "subtitle": "Power of Electricity",
+      "subtitleZh": "电力之道",
+      "region": "wasteland",
+      "regionZh": "荒野",
+      "x": -2809.97,
+      "y": 185.01,
+      "z": 2300.18,
+      "mapUnit": "C-7",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "格鲁德荒野中部，从格鲁德小镇往北走进荒野约10分钟可找到。",
+      "solution": [
+        "场内有电力网格，需要找到不导电的路径穿越，接触导电格即受伤。",
+        "观察网格布局，找出从入口到出口的安全路线（不导电的地板格）。",
+        "穿戴橡皮衣套装可以免疫电击，直接走最短路径。",
+        "沿安全路径行进，取宝箱。",
+        "与神灵对话完成试炼。"
+      ],
+      "tips": [
+        "橡皮衣套装（格鲁德荒野支线获得）让这个神庙变得极为简单，建议提前取得。"
+      ],
+      "chestContents": [
+        "宝箱：皇家弓"
+      ]
+    },
+    {
+      "id": "Dungeon011",
+      "name": "Monya Toma Shrine",
+      "nameShort": "Monya Toma",
+      "nameZh": "莫尼亚·托玛神庙",
+      "subtitle": "Drawing Parabolas",
+      "subtitleZh": "抛物线之道",
+      "region": "woodland",
+      "regionZh": "森林",
+      "x": -1489.24,
+      "y": 288.22,
+      "z": -1473.8,
+      "mapUnit": "D-3",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "迷途森林附近，克洛格森林北部边界，从迷途森林入口往北走可找到。",
+      "solution": [
+        "场内有多个需要将球投入高处洞口的谜题，球的飞行轨迹呈抛物线。",
+        "用炸弹的爆炸气浪将球弹射出去，调整炸弹与球的距离控制飞行距离。",
+        "也可以将球放在弹射台上，控制弹射角度让球精准落入洞口。",
+        "多个洞口有不同高度和距离，逐一调整击入。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "炸弹距球越近，爆炸气浪越强，球飞得越高越远；距离越远则球飞得越低。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓"
+      ]
+    },
+    {
+      "id": "Dungeon012",
+      "name": "Voo Lota Shrine",
+      "nameShort": "Voo Lota",
+      "nameZh": "沃·罗塔神庙",
+      "subtitle": "The Winding Route",
+      "subtitleZh": "蜿蜒之路",
+      "region": "tabantha",
+      "regionZh": "塔邦达",
+      "x": -4015.36,
+      "y": 284.2,
+      "z": -1722.49,
+      "mapUnit": "B-3",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "塔邦达地区南部，从利特村往南穿越塔邦达大桥可找到。",
+      "solution": [
+        "场内有弯曲管道，需要将球引导通过弯道到达出口。",
+        "用陀螺仪/摇杆控制整个管道倾斜，引导球在弯道中滚动。",
+        "在关键弯道前减慢倾斜速度，防止球因惯性冲过弯道。",
+        "球到达出口后机关激活，进入终点取宝箱。",
+        "与神灵对话完成。"
+      ],
+      "tips": [
+        "倾斜速度要缓慢，尤其在弯道前，保持球在视野内随时调整。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon013",
+      "name": "Katosa Aug Shrine",
+      "nameShort": "Katosa Aug",
+      "nameZh": "卡托萨·欧格神庙",
+      "subtitle": "Katosa Aug Apparatus",
+      "subtitleZh": "卡托萨欧格机关",
+      "region": "akkala",
+      "regionZh": "阿卡拉",
+      "x": 4294.9,
+      "y": 250.42,
+      "z": -2729.88,
+      "mapUnit": "J-2",
+      "isDLC": false,
+      "category": "apparatus",
+      "categoryZh": "机关",
+      "difficulty": 3,
+      "howToFind": "阿卡拉古城废墟附近，从北方行者路往东走入阿卡拉地区可找到。",
+      "solution": [
+        "场内有一个可旋转的平台装置，需要旋转平台让球滚到出口。",
+        "用陀螺仪/摇杆控制平台倾斜，引导球避开障碍物滚向目标。",
+        "球到达特定位置后激活机关，平台形态改变，继续引导。",
+        "最后将球送入终点槽，大门打开。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "这是机关类神庙，建议关闭陀螺仪改用摇杆操控，更精确。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾",
+        "宝箱：古代齿轮"
+      ]
+    },
+    {
+      "id": "Dungeon014",
+      "name": "Kam Urog Shrine",
+      "nameShort": "Kam Urog",
+      "nameZh": "坎姆·乌罗格神庙",
+      "subtitle": "Trial of Passage",
+      "subtitleZh": "穿越通道",
+      "region": "hateno",
+      "regionZh": "哈特诺",
+      "x": 2501.7,
+      "y": 128.17,
+      "z": 1495.58,
+      "mapUnit": "H-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "哈特诺村东北方向，沿着通往哈特诺研究所的山路向上走可找到。",
+      "solution": [
+        "进入后有多扇由金属闸板挡住的通道，用磁石法杖将闸板上移。",
+        "绕过闸板时注意脚下陷阱，用定格法杖暂停弹射机关。",
+        "用炸弹炸开部分石墙，露出宝箱和捷径。",
+        "最终区域：同时控制两块闸板开道。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "部分闸板放开后会自动下落，提前规划好移动路线。"
+      ],
+      "chestContents": [
+        "宝箱：骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon015",
+      "name": "Toto Sah Shrine",
+      "nameShort": "Toto Sah",
+      "nameZh": "托托·萨神庙",
+      "subtitle": "Toto Sah Apparatus",
+      "subtitleZh": "托托萨机关",
+      "region": "duelingpeaks",
+      "regionZh": "双子山",
+      "x": 1846.56,
+      "y": 144.51,
+      "z": 2473.73,
+      "mapUnit": "G-7",
+      "isDLC": false,
+      "category": "apparatus",
+      "categoryZh": "机关",
+      "difficulty": 3,
+      "howToFind": "双子山南麓，靠近杜耶尔巅（双子山南峰）脚下，从南边河谷可以抵达。",
+      "solution": [
+        "场内有一个巨型可倾斜的水槽装置，需要通过旋转来引导水流。",
+        "用左摇杆/陀螺仪控制水槽倾斜，让水流到开关一侧激活机关。",
+        "水槽内有球形开关，将水引导让球移动到指定凹槽。",
+        "保持水槽平衡，让球停在凹槽内不滚出。",
+        "机关开启后进入终点，取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "陀螺仪控制时，手机/手柄保持平稳，慢慢倾斜比急剧旋转更容易控制。"
+      ],
+      "chestContents": [
+        "宝箱：双刃斧",
+        "宝箱：古代齿轮"
+      ]
+    },
+    {
+      "id": "Dungeon016",
+      "name": "Rucco Maag Shrine",
+      "nameShort": "Rucco Maag",
+      "nameZh": "鲁科·马格神庙",
+      "subtitle": "Five Flames",
+      "subtitleZh": "五道火焰",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 3333.5,
+      "y": 132.0,
+      "z": 402.5,
+      "mapUnit": "I-5",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "拉聂尔湖中的小岛上，需要游泳或用冰块法杖搭桥才能到达。",
+      "solution": [
+        "场内有五个火炬，需要全部点燃，但只有一把火炬会燃烧。",
+        "从已点燃的火炬取火（持有木制物品从火焰旁跑过即可引燃），点燃其余四个。",
+        "注意部分火炬在高处，需要爬梯或用磁石法杖搭桥才能抵达。",
+        "五个全部点燃后，终点大门开启。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "传火时用木矛或木棍持在手中最方便，即可直接点燃近处火炬。"
+      ],
+      "chestContents": [
+        "宝箱：法师头盔",
+        "宝箱：古代弹簧"
+      ]
+    },
+    {
+      "id": "Dungeon017",
+      "name": "Shee Vaneer Shrine",
+      "nameShort": "Shee Vaneer",
+      "nameZh": "希伊·瓦尼尔神庙",
+      "subtitle": "Twin Memories",
+      "subtitleZh": "双子记忆（上峰）",
+      "region": "duelingpeaks",
+      "regionZh": "双子山",
+      "x": 1266.27,
+      "y": 538.87,
+      "z": 1938.7,
+      "mapUnit": "G-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "双子山南峰（达伦峰）山顶，需要攀登双子山南峰才能到达，注意体力管理。",
+      "solution": [
+        "进入后看到5×5棋盘格，部分格子已有光球，其余为空。",
+        "任务：记住当前棋盘格局，然后去北峰的希伊·维纳斯神庙，按照那里的格局在此复现。",
+        "先记录或截图此神庙的棋盘布局，然后前往北峰。",
+        "在北峰（希伊·维纳斯神庙）按照提示将球放入对应格子。",
+        "两个神庙均完成后，各自取得心之容器碎片与宝箱。"
+      ],
+      "tips": [
+        "两座神庙的棋盘格局互为镜像，去另一座前一定要记下当前布局。"
+      ],
+      "chestContents": [
+        "宝箱：紫色卢比"
+      ]
+    },
+    {
+      "id": "Dungeon018",
+      "name": "Rok Uwog Shrine",
+      "nameShort": "Rok Uwog",
+      "nameZh": "罗克·乌沃格神庙",
+      "subtitle": "Power of Reach",
+      "subtitleZh": "到达之力",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -2377.02,
+      "y": 498.91,
+      "z": -3224.61,
+      "mapUnit": "C-1",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "赫布拉山脉南麓，从赫布拉塔往南走约10分钟可到，气候寒冷须防寒装备。",
+      "solution": [
+        "场内有多个高处平台，需要借助磁石法杖将金属物搭桥到达。",
+        "将金属棒横放，踩上去到达下一层。",
+        "部分平台之间距离过远，需要叠加两根金属棒延伸桥长。",
+        "高处有宝箱，搭好梯子后跳上去取得。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "金属棒可以叠加延伸，遇到距离较远的跨越时不要放弃，找第二根金属棒。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之弓"
+      ]
+    },
+    {
+      "id": "Dungeon019",
+      "name": "Dow Na'eh Shrine",
+      "nameShort": "Dow Na'eh",
+      "nameZh": "多·纳尔神庙",
+      "subtitle": "Three Boxes",
+      "subtitleZh": "三箱之谜",
+      "region": "hateno",
+      "regionZh": "哈特诺",
+      "x": 2696.77,
+      "y": 233.94,
+      "z": 1333.02,
+      "mapUnit": "H-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "哈特诺村西侧丘陵，从村庄西门出发沿路向上爬约5分钟可到。",
+      "solution": [
+        "场内有三个箱子和三个凹槽，用磁石法杖将每个箱子放入对应的凹槽。",
+        "观察凹槽形状与箱子大小匹配关系，顺序正确才能全部激活。",
+        "最后一个箱子需要先用炸弹炸开封堵的石墙，才能推入凹槽。",
+        "全部激活后终点门打开。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "箱子入槽顺序无严格要求，但大箱子须最后放，否则挡住通路。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓",
+        "宝箱：蓝宝石"
+      ]
+    },
+    {
+      "id": "Dungeon020",
+      "name": "Sheem Dagoze Shrine",
+      "nameShort": "Sheem Dagoze",
+      "nameZh": "席姆·达格泽神庙",
+      "subtitle": "Moving in Parallel",
+      "subtitleZh": "平行运动",
+      "region": "ridgeland",
+      "regionZh": "丘陵",
+      "x": -1892.42,
+      "y": 221.4,
+      "z": 91.03,
+      "mapUnit": "D-5",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "里脊地区中部，从里脊塔向西走约500米可找到。",
+      "solution": [
+        "场内有多个相互联动的移动平台，两个平台同步运动。",
+        "站上其中一个平台，随平台移动到对岸时跳下。",
+        "用定格法杖暂停平台，在静止时跳跃到下一段。",
+        "多段平台接力，到达终点。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "两个联动平台的运动方向相反，在其中一个到达最近端时跳上去最安全。"
+      ],
+      "chestContents": [
+        "宝箱：皇家弓"
+      ]
+    },
+    {
+      "id": "Dungeon021",
+      "name": "Toh Yahsa Shrine",
+      "nameShort": "Toh Yahsa",
+      "nameZh": "托·亚萨神庙",
+      "subtitle": "Buried Secrets",
+      "subtitleZh": "埋藏的秘密",
+      "region": "ridgeland",
+      "regionZh": "丘陵",
+      "x": -2269.1,
+      "y": 225.58,
+      "z": -901.1,
+      "mapUnit": "C-4",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "里脊地区北侧，靠近利特村道路旁的小丘，但入口在地下，需要找到入口位置。",
+      "solution": [
+        "神庙入口埋在地下，找到地面上的弱化岩石，用炸弹炸开进入。",
+        "进入后有多个由地下水道连接的谜题区域，用冰块法杖阻断水流改变路线。",
+        "找到隐藏在暗处的宝箱，需要探索所有分支水道。",
+        "最终到达祭台，与神灵对话完成。"
+      ],
+      "tips": [
+        "地面弱化岩石通常有裂缝标记，仔细检查地面可以发现。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓"
+      ]
+    },
+    {
+      "id": "Dungeon022",
+      "name": "Keo Ruug Shrine",
+      "nameShort": "Keo Ruug",
+      "nameZh": "科·鲁格神庙",
+      "subtitle": "Fateful Stars",
+      "subtitleZh": "命运之星",
+      "region": "woodland",
+      "regionZh": "森林",
+      "x": 470.95,
+      "y": 263.15,
+      "z": -2167.82,
+      "mapUnit": "F-2",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "克洛格森林内，需要进入迷途森林中的克洛格森林才能到达。",
+      "solution": [
+        "场内有一个巨大星图，需要根据场内的提示将球放到星图对应星座位置。",
+        "观察场内的星座提示（光束指向），确定每颗星球应在的位置。",
+        "用磁石法杖将球一一移动到对应位置，全部准确后机关激活。",
+        "宝箱在星图中心，机关激活后可以取到。",
+        "与神灵对话完成试炼。"
+      ],
+      "tips": [
+        "星座提示在场内高处的光束上，先俯视整体再逐一对应。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之弓"
+      ]
+    },
+    {
+      "id": "Dungeon023",
+      "name": "Sheh Rata Shrine",
+      "nameShort": "Sheh Rata",
+      "nameZh": "谢·拉塔神庙",
+      "subtitle": "Speed of Light",
+      "subtitleZh": "光速之道",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 1509.48,
+      "y": 141.41,
+      "z": -377.22,
+      "mapUnit": "G-4",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 4,
+      "howToFind": "拉聂尔湖东侧，在湖边的断崖旁，需要绕过湖岸才能到达，是该区域最难的谜题神庙。",
+      "solution": [
+        "进入后有传送管道，需要控制水流方向使球自动从管道被推送到终点。",
+        "用冰块法杖在指定水管口生成冰柱，改变管道内水流的走向。",
+        "水流改向后，球会沿新路径滚动，观察球的动向再决定下一步。",
+        "多段管道互相连接，需要逐一破解，有时需要同时封堵多个出口。",
+        "球到达终点后机关开启，取宝箱与神灵对话完成。"
+      ],
+      "tips": [
+        "这个神庙逻辑性强，建议从球出发点反推到终点，再决定在哪里堵水。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之弓",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon024",
+      "name": "Mezza Lo Shrine",
+      "nameShort": "Mezza Lo",
+      "nameZh": "梅扎·罗神庙",
+      "subtitle": "Ancient Trifecta",
+      "subtitleZh": "远古三合一",
+      "region": "hateno",
+      "regionZh": "哈特诺",
+      "x": 2621.62,
+      "y": 258.39,
+      "z": 379.23,
+      "mapUnit": "H-5",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "哈特诺村东侧远古科技实验室门口附近，从哈特诺研究所往东走即可。",
+      "solution": [
+        "场内有定格机关、磁石机关、炸弹机关共三组联动谜题。",
+        "第一组：用定格暂停旋转臂，通过旋转臂上方的通道。",
+        "第二组：用磁石法杖将金属球放入球形轨道触发机关。",
+        "第三组：用炸弹炸开特定墙壁同时激活弹射装置。",
+        "三组全部完成，终点开启，取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "此神庙需要灵活切换法杖，建议提前将三种法杖分配到常用快捷键。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓",
+        "宝箱：古代箭×5"
+      ]
+    },
+    {
+      "id": "Dungeon025",
+      "name": "Kayra Mah Shrine",
+      "nameShort": "Kayra Mah",
+      "nameZh": "卡亚拉·玛神庙",
+      "subtitle": "Greedy Hill",
+      "subtitleZh": "贪心山丘",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 2075.82,
+      "y": 533.77,
+      "z": -2039.72,
+      "mapUnit": "H-2",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "奥尔汀火山北坡，靠近死亡山下山道旁，从鼓隆城出发向西北可找到。",
+      "solution": [
+        "场内是一个大型斜坡，有巨型石球持续滚落。",
+        "用炸弹炸开斜坡侧面的凹洞，石球会落入凹洞停下，为玩家开路。",
+        "爬上开路后的斜坡区域，到达平台。",
+        "利用落入凹洞的石球当踏板，跳到高处宝箱。",
+        "最终抵达顶部祭台，与神灵对话完成。"
+      ],
+      "tips": [
+        "石球滚落速度很快，要保持侧面位置，不要站在斜坡正中被砸到。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon026",
+      "name": "Shae Mo'sah Shrine",
+      "nameShort": "Shae Mo'sah",
+      "nameZh": "沙伊·莫萨神庙",
+      "subtitle": "Swinging Flames",
+      "subtitleZh": "摆动的火焰",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 1756.57,
+      "y": 548.32,
+      "z": -2561.7,
+      "mapUnit": "G-2",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "奥尔汀火山西麓，鼓隆城往西的火岩地带，需要绕过几处守卫。",
+      "solution": [
+        "场内有多条大型摆动火焰臂，在两次摆动间隙快速通过。",
+        "用定格法杖暂停摆动火焰臂，从旁边绕过去。",
+        "定格后配合磁石法杖移动金属板遮挡火焰，延长可通过时间窗口。",
+        "最后一段：两条火焰臂同时摆动，须在两者之间的空隙穿越。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "防火装备在这个神庙非常有用，即使被火焰臂扫到也只有轻微伤害。"
+      ],
+      "chestContents": [
+        "宝箱：熔岩短剑"
+      ]
+    },
+    {
+      "id": "Dungeon027",
+      "name": "Rota Ooh Shrine",
+      "nameShort": "Rota Ooh",
+      "nameZh": "罗塔·欧神庙",
+      "subtitle": "Passing of the Gates",
+      "subtitleZh": "穿越关卡",
+      "region": "central",
+      "regionZh": "中央海拉鲁",
+      "x": -1562.29,
+      "y": 199.73,
+      "z": 1309.78,
+      "mapUnit": "D-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "海拉鲁城堡城镇遗迹附近，从神庙路往北走，靠近城堡主路。",
+      "solution": [
+        "场内有多扇由绳索控制的大门，用炸弹炸断绳索使门下降。",
+        "找到隐藏在墙壁内的开关，用箭矢远程激活。",
+        "利用木箱垫高踩踏特定开关打开通道。",
+        "最后区域用磁石法杖移开挡路的金属物，过关取宝箱。",
+        "与神灵对话完成试炼。"
+      ],
+      "tips": [
+        "场景中的木箱可以用火焰武器烧掉，或用磁石法杖搬开。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之刀"
+      ]
+    },
+    {
+      "id": "Dungeon028",
+      "name": "Shora Hah Shrine",
+      "nameShort": "Shora Hah",
+      "nameZh": "修拉·哈神庙",
+      "subtitle": "Blue Flame",
+      "subtitleZh": "蓝色火焰",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 1536.21,
+      "y": 520.33,
+      "z": -3117.47,
+      "mapUnit": "G-1",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "奥尔汀火山核心地带，从鼓隆城往北进入火山区深处，是该区标志性神庙。",
+      "solution": [
+        "场内需要引导蓝色火焰（Blue Flame）点燃远处的灯台。",
+        "用木制火炬或木制武器从蓝焰处取火，沿路传递不被熄灭。",
+        "途中有风扇会吹灭火焰，用磁石法杖移开挡风板。",
+        "有水坑会熄灭火焰，用冰块法杖冻住水面后通过。",
+        "点燃所有灯台，终点门打开，取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "蓝焰遇水即灭，遇风也会被吹灭，规划路线时绕开这些区域。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓",
+        "宝箱：古代箭×10"
+      ]
+    },
+    {
+      "id": "Dungeon029",
+      "name": "Hila Rao Shrine",
+      "nameShort": "Hila Rao",
+      "nameZh": "西拉·饶神庙",
+      "subtitle": "Drifting",
+      "subtitleZh": "漂浮之术",
+      "region": "duelingpeaks",
+      "regionZh": "双子山",
+      "x": 854.0,
+      "y": 129.93,
+      "z": 838.74,
+      "mapUnit": "F-5",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "双子山东侧河流旁，卡卡利科村道路边，可从村庄往南沿河行走找到。",
+      "solution": [
+        "进入后有流速很快的水道，需要在水上用冰块法杖生成平台站立。",
+        "在流水中连续生成冰柱，跳上一根接着跳上另一根，越过湍流区。",
+        "用冰柱顶起被水淹的开关，激活机关。",
+        "最终区域：在涌泉处生成冰柱阻挡水流，露出通道入口。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "在流水中站在冰柱上时，冰柱会被水流缓慢推动，要快速行动。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓",
+        "宝箱：红宝石"
+      ]
+    },
+    {
+      "id": "Dungeon030",
+      "name": "Joloo Nah Shrine",
+      "nameShort": "Joloo Nah",
+      "nameZh": "乔罗·纳神庙",
+      "subtitle": "Joloo Nah Apparatus",
+      "subtitleZh": "乔罗纳机关",
+      "region": "wasteland",
+      "regionZh": "荒野",
+      "x": -2004.01,
+      "y": 240.65,
+      "z": 1675.26,
+      "mapUnit": "C-6",
+      "isDLC": false,
+      "category": "apparatus",
+      "categoryZh": "机关",
+      "difficulty": 4,
+      "howToFind": "格鲁德荒野北部，靠近科洛格森林方向的边界，从荒野塔往北可找到。",
+      "solution": [
+        "场内有大型旋转机关装置，需要旋转整个装置使球到达出口。",
+        "用陀螺仪旋转装置，同时注意球在装置内的位置。",
+        "装置有多个分节可以独立旋转，逐一调整每节方向。",
+        "球通过各节后到达最终出口，机关激活。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "这是该区域最难的机关类神庙，建议关闭陀螺仪改用摇杆，降低操控难度。"
+      ],
+      "chestContents": [
+        "宝箱：大师剑强化材料",
+        "宝箱：古代弹簧"
+      ]
+    },
+    {
+      "id": "Dungeon031",
+      "name": "Mo'a Keet Shrine",
+      "nameShort": "Mo'a Keet",
+      "nameZh": "莫·阿·基特神庙",
+      "subtitle": "Metal Makes a Path",
+      "subtitleZh": "金属开路",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 2723.08,
+      "y": 298.41,
+      "z": -1165.17,
+      "mapUnit": "H-3",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "奥尔汀山脚东侧，从鼓隆城往东南方向走约10分钟可到达。",
+      "solution": [
+        "场内有多块金属板散布各处，用磁石法杖移动金属板填平深坑。",
+        "填平后安全通行，到达新区域，继续移动金属板打通下一段路。",
+        "利用金属板搭建临时阶梯，抵达高处宝箱。",
+        "最后将金属板压住开关激活终点门。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "场内金属板数量刚好够用，不要遗留在不必要的位置。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之盾"
+      ]
+    },
+    {
+      "id": "Dungeon032",
+      "name": "Dako Tah Shrine",
+      "nameShort": "Dako Tah",
+      "nameZh": "达科·塔神庙",
+      "subtitle": "Electric Path",
+      "subtitleZh": "电之路",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -3316.8,
+      "y": 159.11,
+      "z": 2162.68,
+      "mapUnit": "B-7",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "格鲁德高地北端，从格鲁德小镇往北翻越山岭可找到，高地气候寒冷。",
+      "solution": [
+        "场内有电力机关，需要用金属导体连接两个电极，使电路导通。",
+        "用磁石法杖拿起金属棒，将两端分别接触两个电极完成电路。",
+        "电路导通后平台上升或门打开，玩家通过。",
+        "部分电极在高处，需要先搭好梯子再连线。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "金属棒越长，越容易同时接触两端电极，优先寻找最长的金属导体。"
+      ],
+      "chestContents": [
+        "宝箱：皇家弓"
+      ]
+    },
+    {
+      "id": "Dungeon033",
+      "name": "Daka Tuss Shrine",
+      "nameShort": "Daka Tuss",
+      "nameZh": "达卡·塔斯神庙",
+      "subtitle": "Sunken Scoop",
+      "subtitleZh": "沉没水勺",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 1601.83,
+      "y": 130.7,
+      "z": 462.75,
+      "mapUnit": "G-5",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "拉聂尔湿地区域，从湿地桥头往东南走到沼泽地带可找到。",
+      "solution": [
+        "场内有一个巨型水勺装置，上方有落水不断注入。",
+        "用磁石法杖旋转水勺，将水舀起后倒向特定开关区域。",
+        "倒水激活开关后，地板平台上升，打开通道。",
+        "注意水勺转速，控制好节奏再倒水。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "水勺中的水可以连续舀多次再一起倒，集中激活多个开关。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓",
+        "宝箱：蓝宝石"
+      ]
+    },
+    {
+      "id": "Dungeon034",
+      "name": "Kah Yah Shrine",
+      "nameShort": "Kah Yah",
+      "nameZh": "卡·亚神庙",
+      "subtitle": "Quick Thinking",
+      "subtitleZh": "快速思考",
+      "region": "faron",
+      "regionZh": "费罗尼",
+      "x": 3437.29,
+      "y": 129.68,
+      "z": 3317.2,
+      "mapUnit": "I-8",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "费罗尼海岸南端，靠近卡格海滩，从海岸线沿路向南走可找到。",
+      "solution": [
+        "场内有多个需要同时激活的开关，开关会在一定时间后复位。",
+        "用炸弹远程引爆激活最远处开关，同时跑向近处开关踩下。",
+        "利用磁石法杖的金属物持续压住一个开关，腾出手处理另一个。",
+        "尝试同一区域的开关组合顺序，找出最省时的激活序列。",
+        "全部同时激活，门打开，取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "用炸弹提前放置到需要远程激活的开关旁，时机到了立即引爆。"
+      ],
+      "chestContents": [
+        "宝箱：皇家弓"
+      ]
+    },
+    {
+      "id": "Dungeon035",
+      "name": "Akh Va'quot Shrine",
+      "nameShort": "Akh Va'quot",
+      "nameZh": "阿克·瓦克神庙",
+      "subtitle": "Windmills",
+      "subtitleZh": "风车",
+      "region": "tabantha",
+      "regionZh": "塔邦达",
+      "x": -3656.03,
+      "y": 334.74,
+      "z": -1757.7,
+      "mapUnit": "B-3",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "塔邦达地区中部，靠近利特村附近的风车群，从利特村往东可看到。",
+      "solution": [
+        "场内有多台风车，持续吹出强风气流。",
+        "借助风车气流启动滑翔翼飞越宽阔区域。",
+        "在风中控制滑翔方向，精准落在目标平台上。",
+        "在风车转速周期内找准时机展翼，获得最大上升力。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "滑翔前先观察风向，顺风滑翔速度快，横风需要修正方向。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓"
+      ]
+    },
+    {
+      "id": "Dungeon036",
+      "name": "Sho Dantu Shrine",
+      "nameShort": "Sho Dantu",
+      "nameZh": "修·丹图神庙",
+      "subtitle": "Two Bombs",
+      "subtitleZh": "两个炸弹",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -3910.61,
+      "y": 405.0,
+      "z": 1653.03,
+      "mapUnit": "B-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "格鲁德沙漠中部，从格鲁德小镇往北走约15分钟可看到神庙标志。",
+      "solution": [
+        "场内有圆形和方形两种炸弹的使用训练。",
+        "用球形炸弹滚入斜面轨道，精准引爆目标石块。",
+        "用方形炸弹稳定放置在风口前，利用风力将炸弹吹到远处目标。",
+        "两种炸弹组合使用，依次解除多道障碍。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "球形炸弹在斜面上滚速很快，需要提前预判爆炸点再引爆。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓"
+      ]
+    },
+    {
+      "id": "Dungeon037",
+      "name": "Shae Loya Shrine",
+      "nameShort": "Shae Loya",
+      "nameZh": "沙伊·罗亚神庙",
+      "subtitle": "Aim for the Moment",
+      "subtitleZh": "抓住时机",
+      "region": "ridgeland",
+      "regionZh": "丘陵",
+      "x": -2930.76,
+      "y": 319.45,
+      "z": -433.04,
+      "mapUnit": "C-4",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "里脊地区西侧，靠近利特渡口附近的小山，从渡口往东走可找到。",
+      "solution": [
+        "场内有多个弹射台（弹弓装置），用炸弹压住弹射台，玩家站上去后引爆炸弹，被弹射飞出。",
+        "利用弹射飞出的高度，在空中展翼滑翔到对面平台。",
+        "多段弹射接力，到达高处的终点。",
+        "高处有宝箱，弹射后精准滑翔到宝箱平台。",
+        "与神灵对话完成。"
+      ],
+      "tips": [
+        "弹射后立即展开滑翔翼，可以保持最大高度飞行更远。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon038",
+      "name": "Oman Au Shrine",
+      "nameShort": "Oman Au",
+      "nameZh": "奥曼·欧神庙",
+      "subtitle": "Magnesis Trial",
+      "subtitleZh": "磁石试炼",
+      "region": "plateau",
+      "regionZh": "初始台地",
+      "x": -672.46,
+      "y": 186.09,
+      "z": 1513.63,
+      "mapUnit": "E-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "初始台地西侧废墟中央，从台地广场往西走即可看到神庙入口。",
+      "solution": [
+        "获得磁石法杖（Magnesis），可吸附金属物体。",
+        "用磁石法杖移动地面上的大金属板，露出通道下方的开关。",
+        "操控金属板搭桥，越过有水的低洼地带。",
+        "用磁石法杖拔出墙上的大金属盖板，穿过隐藏通道。",
+        "到达终点取宝箱，再与神灵对话完成试炼。"
+      ],
+      "tips": [
+        "磁石法杖可以同时吸附多个金属物体，善用叠加。"
+      ],
+      "chestContents": [
+        "宝箱：铁锤"
+      ]
+    },
+    {
+      "id": "Dungeon039",
+      "name": "Myahm Agana Shrine",
+      "nameShort": "Myahm Agana",
+      "nameZh": "姆亚姆·阿加纳神庙",
+      "subtitle": "Myahm Agana Apparatus",
+      "subtitleZh": "姆亚姆阿加纳机关",
+      "region": "hateno",
+      "regionZh": "哈特诺",
+      "x": 3387.71,
+      "y": 255.59,
+      "z": 2215.13,
+      "mapUnit": "I-7",
+      "isDLC": false,
+      "category": "apparatus",
+      "categoryZh": "机关",
+      "difficulty": 3,
+      "howToFind": "哈特诺村中央广场旁，是进入哈特诺村后最醒目的神庙之一。",
+      "solution": [
+        "场内有一个3D迷宫装置，需要翻转迷宫让小球滚到出口。",
+        "用陀螺仪/摇杆控制迷宫的旋转，引导小球避开坑洞。",
+        "关键技巧：把迷宫翻转180度，小球会出现在顶端，从那里重新引导更容易。",
+        "精确控制倾斜角度，让小球缓慢滑入出口通道。",
+        "小球进入出口后机关激活，进入终点取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "直接把迷宫翻过来从反面走是公认最简单的技巧，避免复杂的正向路线。"
+      ],
+      "chestContents": [
+        "宝箱：双刃斧",
+        "宝箱：古代齿轮"
+      ]
+    },
+    {
+      "id": "Dungeon040",
+      "name": "Kaam Ya'tak Shrine",
+      "nameShort": "Kaam Ya'tak",
+      "nameZh": "卡姆·亚塔神庙",
+      "subtitle": "Trial of Power",
+      "subtitleZh": "力量试炼",
+      "region": "central",
+      "regionZh": "中央海拉鲁",
+      "x": -967.64,
+      "y": 140.67,
+      "z": 716.88,
+      "mapUnit": "E-5",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "海拉鲁城堡附近，在城堡东边的山麓地带，需要绕过几处守卫才能安全到达。",
+      "solution": [
+        "巨型落石不断滚落，用定格法杖定住落石，安全通过。",
+        "被定格的落石累积动能后可以弹射，用于击倒远处的机关柱。",
+        "第二区域：用炸弹炸开封堵通道的石块。",
+        "最后一关需要同时定格两块落石，争取足够时间冲过通道。",
+        "取宝箱并与神灵对话。"
+      ],
+      "tips": [
+        "落石被击打积累动能后弹射方向可预判，提前站好位置。"
+      ],
+      "chestContents": [
+        "宝箱：冰雪弓",
+        "宝箱：古代螺丝"
+      ]
+    },
+    {
+      "id": "Dungeon041",
+      "name": "Ja Baij Shrine",
+      "nameShort": "Ja Baij",
+      "nameZh": "贾·拜神庙",
+      "subtitle": "Bomb Trial",
+      "subtitleZh": "炸弹试炼",
+      "region": "plateau",
+      "regionZh": "初始台地",
+      "x": -447.7,
+      "y": 193.02,
+      "z": 1990.18,
+      "mapUnit": "E-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "初始台地中部偏东，从台地中间平原向东北方向前进可找到。",
+      "solution": [
+        "获得炸弹法杖（Remote Bomb），有球形和方形两种。",
+        "将球形炸弹滚入轨道，引爆炸毁挡路的石墙。",
+        "用炸弹炸开地面上的裂缝，掉下去取得宝箱。",
+        "方形炸弹放置在风扇前，利用气流将炸弹吹到远处的目标。",
+        "最后一关：将炸弹放入发射轨道中，击中终点的靶子即可开门。"
+      ],
+      "tips": [
+        "球形炸弹适合滚动，方形炸弹适合稳定放置在平台上。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之盾"
+      ]
+    },
+    {
+      "id": "Dungeon042",
+      "name": "Rin Oyaa Shrine",
+      "nameShort": "Rin Oyaa",
+      "nameZh": "林·欧亚神庙",
+      "subtitle": "Directing the Wind",
+      "subtitleZh": "引导风向",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -1720.39,
+      "y": 348.74,
+      "z": -2554.63,
+      "mapUnit": "D-2",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "赫布拉山区西侧，靠近利特村往西北的山道旁。",
+      "solution": [
+        "场内有风力机关，风扇持续吹出气流，需要引导风向。",
+        "用磁石法杖旋转风扇方向，使气流吹向特定开关。",
+        "开关被气流激活后平台移动，玩家通过。",
+        "多个风扇组合调整，逐步开通所有通道。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "风扇方向调整到位后，在附近等待开关激活，不需要一直按住法杖。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓"
+      ]
+    },
+    {
+      "id": "Dungeon043",
+      "name": "Kuh Takkar Shrine",
+      "nameShort": "Kuh Takkar",
+      "nameZh": "库·塔卡神庙",
+      "subtitle": "Melting Ice Hazard",
+      "subtitleZh": "融冰隐患",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -3083.61,
+      "y": 584.55,
+      "z": 1221.79,
+      "mapUnit": "B-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "格鲁德高地南侧的冰雪地带，须穿防寒装备才能进入。",
+      "solution": [
+        "场内地板覆盖厚冰，站上去会缓慢滑落。",
+        "用火焰箭或火把融化特定区域的冰，露出地面开关。",
+        "在融冰后快速踩住开关（融化的水坑短时间后会重新冻结）。",
+        "用冰块法杖在水上生成冰柱当踏板，安全通过水区。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "防寒装备（格鲁德高地套装）在此神庙必备，否则在高地就会持续扣血。"
+      ],
+      "chestContents": [
+        "宝箱：双刃斧"
+      ]
+    },
+    {
+      "id": "Dungeon044",
+      "name": "Shee Venath Shrine",
+      "nameShort": "Shee Venath",
+      "nameZh": "希伊·维纳斯神庙",
+      "subtitle": "Twin Memories",
+      "subtitleZh": "双子记忆（北峰）",
+      "region": "duelingpeaks",
+      "regionZh": "双子山",
+      "x": 1245.12,
+      "y": 456.37,
+      "z": 1850.44,
+      "mapUnit": "G-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "双子山北峰（亚冈峰）山顶，与南峰的希伊·瓦尼尔神庙配套，须两座都完成。",
+      "solution": [
+        "进入后看到5×5棋盘格，部分格子有光球。",
+        "任务：将球放入棋盘格，使其格局与南峰（希伊·瓦尼尔）的初始棋盘格局相同。",
+        "先去南峰记住格局，再回到此处将球逐一放入对应位置。",
+        "全部放入后机关开启，进入终点。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "两峰的棋盘互为镜像，记录格局时要注意方向。"
+      ],
+      "chestContents": [
+        "宝箱：紫色卢比"
+      ]
+    },
+    {
+      "id": "Dungeon045",
+      "name": "Ha Dahamar Shrine",
+      "nameShort": "Ha Dahamar",
+      "nameZh": "哈·达哈玛神庙",
+      "subtitle": "The Water Guides",
+      "subtitleZh": "水之引导",
+      "region": "duelingpeaks",
+      "regionZh": "双子山",
+      "x": 1662.97,
+      "y": 128.52,
+      "z": 1922.4,
+      "mapUnit": "G-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "双子山脚下东侧，靠近双子山客栈附近的水边，从客栈往东南走可找到。",
+      "solution": [
+        "用冰块法杖在水管出口生成冰柱阻断水流，使水流改向流入另一水道。",
+        "水流进入水车后水车旋转，带动平台上升。",
+        "站上上升的平台，到达上层区域。",
+        "在上层重复冰块阻流操作，逐步开启通道。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "生成冰柱的位置要精准对准水管口，否则水流不会完全改向。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓"
+      ]
+    },
+    {
+      "id": "Dungeon046",
+      "name": "Shada Naw Shrine",
+      "nameShort": "Shada Naw",
+      "nameZh": "沙达·诺神庙",
+      "subtitle": "Red Giveaway",
+      "subtitleZh": "红色的线索",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -2998.31,
+      "y": 680.75,
+      "z": -3220.64,
+      "mapUnit": "B-1",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "赫布拉山区深处，从赫布拉塔往北进入山区即可看到神庙的红色标识。",
+      "solution": [
+        "场内有多条红色线索（红色光束/线条），追随红色指示找到隐藏出口。",
+        "红色线索指向隐藏在暗处的宝箱和开关，仔细查看墙面和地板。",
+        "找到线索指向的开关激活，打开新通道。",
+        "全部探索后到达终点，取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "神庙整体较为简单，关键在于不要遗漏任何一条红色线索。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之弓"
+      ]
+    },
+    {
+      "id": "Dungeon047",
+      "name": "Ree Dahee Shrine",
+      "nameShort": "Ree Dahee",
+      "nameZh": "里·达喜神庙",
+      "subtitle": "Timing Is Critical",
+      "subtitleZh": "时机至关重要",
+      "region": "duelingpeaks",
+      "regionZh": "双子山",
+      "x": 1272.92,
+      "y": 150.67,
+      "z": 1843.91,
+      "mapUnit": "G-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "双子山东麓，靠近河边的小高地，从双子山客栈往东走约300米可见。",
+      "solution": [
+        "场内有多个来回摆动的平台，须在合适时机跳上。",
+        "用定格法杖定住平台，从容跳上去，随后解除定格随平台移动。",
+        "利用摆动平台在高处衔接跳跃，到达更高层。",
+        "最后区域：两个平台交替摆动，需精准在二者同步的瞬间跳跃。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "定格的平台解除后会以更快速度摆动，跳上去后立即蹲下降低重心。"
+      ],
+      "chestContents": [
+        "宝箱：皮革马具"
+      ]
+    },
+    {
+      "id": "Dungeon048",
+      "name": "Ze Kasho Shrine",
+      "nameShort": "Ze Kasho",
+      "nameZh": "泽·卡修神庙",
+      "subtitle": "Ze Kasho Apparatus",
+      "subtitleZh": "泽卡修机关",
+      "region": "akkala",
+      "regionZh": "阿卡拉",
+      "x": 3028.3,
+      "y": 361.65,
+      "z": -1668.01,
+      "mapUnit": "I-3",
+      "isDLC": false,
+      "category": "apparatus",
+      "categoryZh": "机关",
+      "difficulty": 3,
+      "howToFind": "阿卡拉灯塔脚下，从灯塔往西南方向走即可看到神庙。",
+      "solution": [
+        "进入后有一个大型可旋转的盒型装置，盒内有球需要引导到出口。",
+        "旋转整个盒子使球滚落，在适当角度翻转。",
+        "球在盒内滚动时会受重力影响，先将盒翻转让球落到新位置，再倾斜引导。",
+        "多步骤旋转后球到达出口，机关开启。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "把整个装置完全翻转过来，球会从底部变成从顶部开始，是快速解法的关键。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之剑"
+      ]
+    },
+    {
+      "id": "Dungeon049",
+      "name": "Kaya Wan Shrine",
+      "nameShort": "Kaya Wan",
+      "nameZh": "卡亚·万神庙",
+      "subtitle": "Shields from Water",
+      "subtitleZh": "水中之盾",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 825.17,
+      "y": 145.88,
+      "z": 187.51,
+      "mapUnit": "F-5",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "拉聂尔湖东北角，靠近拉聂尔马场的湖边小丘，从马场往南走即可。",
+      "solution": [
+        "场内有多个喷水柱，激光光束会跟随水柱偏转。",
+        "用冰块法杖在水柱旁生成冰柱，阻挡或改变水柱喷射方向。",
+        "调整冰柱位置，使激光打到受光目标上激活机关。",
+        "多个机关联动，全部激活后终点门打开。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "冰柱可以当盾牌使用，挡住激光防止自己被烫到。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之弓"
+      ]
+    },
+    {
+      "id": "Dungeon050",
+      "name": "Shai Utoh Shrine",
+      "nameShort": "Shai Utoh",
+      "nameZh": "沙伊·乌托神庙",
+      "subtitle": "Halt the Tilt",
+      "subtitleZh": "止住倾斜",
+      "region": "faron",
+      "regionZh": "费罗尼",
+      "x": 1586.38,
+      "y": 179.99,
+      "z": 3613.99,
+      "mapUnit": "G-8",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "费罗尼地区中部丛林，从费罗尼塔往东南方向进入密林可找到。",
+      "solution": [
+        "场内有一个巨型可倾斜平台，需要用陀螺仪/摇杆控制保持平衡。",
+        "玩家须站在倾斜平台上，同时控制平台角度不让自己滑落。",
+        "平台各角落有开关，保持平衡的同时移动到开关位置踩下。",
+        "全部开关激活后，平台固定，打开通道。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "保持平台微微向前倾（朝目标方向），用小幅度调整而非大幅倾斜来移动。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon051",
+      "name": "Maka Rah Shrine",
+      "nameShort": "Maka Rah",
+      "nameZh": "玛卡·拉神庙",
+      "subtitle": "Steady Thy Heart",
+      "subtitleZh": "心平气和",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -4058.84,
+      "y": 107.89,
+      "z": -2508.26,
+      "mapUnit": "A-2",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "赫布拉山区中部，从赫布拉塔往东走穿越山道约15分钟可到。",
+      "solution": [
+        "场内地面布满冰面，极度光滑，移动时很难控制方向。",
+        "穿戴防滑靴（或携带对应食物）可以在冰面正常移动。",
+        "场内多个开关分散在冰面各处，滑行时注意动量控制。",
+        "用冰块法杖在冰面生成冰柱当作临时停靠点。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "没有防滑装备时，在冰面上小幅点按移动键，每次移动距离短，更容易控制方向。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon052",
+      "name": "Gee Ha'rah Shrine",
+      "nameShort": "Gee Ha'rah",
+      "nameZh": "基·哈拉神庙",
+      "subtitle": "Tandem",
+      "subtitleZh": "串联",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -2380.42,
+      "y": 291.11,
+      "z": -2255.4,
+      "mapUnit": "C-2",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "赫布拉山区西北部，在山顶附近，需要攀爬一段陡峭山坡才能到达。",
+      "solution": [
+        "场内有多个串联开关，必须按正确顺序激活，错误顺序会重置。",
+        "观察开关之间的光线或符号联系，推断正确顺序。",
+        "每次激活一个开关，等待系统确认（灯亮或音效），再按下一个。",
+        "全部按正确顺序激活后，终点门打开。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "如果触发了重置，保持冷静，重新观察顺序提示再来一次。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之剑"
+      ]
+    },
+    {
+      "id": "Dungeon053",
+      "name": "Sha Warvo Shrine",
+      "nameShort": "Sha Warvo",
+      "nameZh": "沙·瓦沃神庙",
+      "subtitle": "Path of Hidden Winds",
+      "subtitleZh": "隐风之路",
+      "region": "tabantha",
+      "regionZh": "塔邦达",
+      "x": -3822.24,
+      "y": 278.12,
+      "z": -2206.9,
+      "mapUnit": "B-2",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "塔邦达高地中部，在山谷深处，需要穿越塔邦达高地才能到达。",
+      "solution": [
+        "场内有看不见的风道（隐形气流轨道），通过气流推动方向找到通道位置。",
+        "在出口附近展翼，用气流将玩家推向隐藏通道入口。",
+        "进入隐形通道后，气流会不断将玩家推向前方，顺势前进。",
+        "遇到分叉时，观察旗帜或叶片飘动方向判断正确风道。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "隐形风道内往往有看不见的地板，用炸弹测试落点判断地板位置。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon054",
+      "name": "Ka'o Makagh Shrine",
+      "nameShort": "Ka'o Makagh",
+      "nameZh": "卡·欧·马卡神庙",
+      "subtitle": "Metal Doors Open the Way",
+      "subtitleZh": "金属门开路",
+      "region": "lake",
+      "regionZh": "湖之国",
+      "x": 522.95,
+      "y": 191.91,
+      "z": 3525.32,
+      "mapUnit": "F-8",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "丰收湖东侧，湖边的小丘上，从湖岸沿山路爬上去即可。",
+      "solution": [
+        "场内有多扇金属大门，用磁石法杖将门横移，创造通道。",
+        "部分门需要先移除挡在旁边的金属箱，才能完全移开大门。",
+        "高处有宝箱，将金属门竖立当梯子攀爬上去。",
+        "最终区域：用金属门同时封住两个喷射机关，从旁边安全通过。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "金属门尺寸较大，移动时注意不要把自己也挡住了。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之剑"
+      ]
+    },
+    {
+      "id": "Dungeon055",
+      "name": "Dunba Taag Shrine",
+      "nameShort": "Dunba Taag",
+      "nameZh": "邓巴·塔格神庙",
+      "subtitle": "Build and Release",
+      "subtitleZh": "建设与释放",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -2832.06,
+      "y": 92.88,
+      "z": -1577.13,
+      "mapUnit": "C-3",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "赫布拉山区中部，靠近赫布拉塔南侧的平坦雪地区域。",
+      "solution": [
+        "场内有雪球在斜面上持续滚落，需要控制雪球的落点。",
+        "用炸弹改变雪球的滚落路径，引导雪球滚入特定凹槽。",
+        "雪球也可以弹射：在雪球前方放置炸弹，爆炸将雪球向后弹射。",
+        "多个雪球配合，将不同大小的雪球引导到对应大小的凹槽中。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "雪球在斜面上加速很快，提前预判落点再放置炸弹。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之弓"
+      ]
+    },
+    {
+      "id": "Dungeon056",
+      "name": "Mirro Shaz Shrine",
+      "nameShort": "Mirro Shaz",
+      "nameZh": "米罗·沙兹神庙",
+      "subtitle": "Tempered Power",
+      "subtitleZh": "强韧之力",
+      "region": "woodland",
+      "regionZh": "森林",
+      "x": 1231.0,
+      "y": 140.55,
+      "z": -1212.73,
+      "mapUnit": "G-3",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "迷途森林北侧边界，从克洛格森林外围往北走可找到。",
+      "solution": [
+        "场内有多个被岩石块压住的开关，需要用炸弹或定格法杖移除岩石。",
+        "炸弹炸开大岩石后，用磁石法杖将碎片清除干净，开关露出来。",
+        "用定格法杖暂停滚落的石球，安全通过区域。",
+        "最后一关：用石球击中远处的目标装置，激活终点。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "石球的质量大，定格后积攒的动能会让它弹射更远，善用这一点击中远处目标。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon057",
+      "name": "Wahgo Katta Shrine",
+      "nameShort": "Wahgo Katta",
+      "nameZh": "瓦哥·卡塔神庙",
+      "subtitle": "Metal Connections",
+      "subtitleZh": "金属连接",
+      "region": "central",
+      "regionZh": "中央海拉鲁",
+      "x": 345.59,
+      "y": 136.08,
+      "z": 1007.77,
+      "mapUnit": "F-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "海拉鲁城堡城镇遗迹中部，从遗迹广场往北走约200米可见神庙标志。",
+      "solution": [
+        "用磁石法杖拿起金属箱，放到凹陷的开关台上激活机关。",
+        "用金属箱搭桥越过水道。",
+        "将金属箱插入特定凹槽，使平台升降让玩家通过。",
+        "最终区域：用磁石法杖组合两个金属物体绕过障碍。",
+        "与神灵对话完成。"
+      ],
+      "tips": [
+        "部分开关需要金属物体保持压住，注意别在通过后移走。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之剑",
+        "宝箱：古代弹簧"
+      ]
+    },
+    {
+      "id": "Dungeon058",
+      "name": "Mogg Latan Shrine",
+      "nameShort": "Mogg Latan",
+      "nameZh": "莫格·拉坦神庙",
+      "subtitle": "Synced Swing",
+      "subtitleZh": "同步摆动",
+      "region": "ridgeland",
+      "regionZh": "丘陵",
+      "x": -2297.78,
+      "y": 452.57,
+      "z": 461.66,
+      "mapUnit": "C-5",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "里脊地区中部山区，靠近克洛格森林方向，从里脊塔往西北走可找到。",
+      "solution": [
+        "场内有多个同步摆动的大型锤头机关，机关摆动规律相同。",
+        "在锤头摆开的瞬间冲过去，在下一次摆回之前通过。",
+        "用定格法杖暂停锤头，从容通过。",
+        "高处区域有宝箱，需要借助锤头弹射到达（站在锤头被击中端，被弹出到高处）。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "利用定格法杖后这个神庙难度大幅降低，几乎无需等待时机。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之弓"
+      ]
+    },
+    {
+      "id": "Dungeon059",
+      "name": "Kah Okeo Shrine",
+      "nameShort": "Kah Okeo",
+      "nameZh": "卡·欧科神庙",
+      "subtitle": "Wind Guide",
+      "subtitleZh": "风之引导",
+      "region": "tabantha",
+      "regionZh": "塔邦达",
+      "x": -4121.4,
+      "y": 197.29,
+      "z": -414.2,
+      "mapUnit": "A-4",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "塔邦达地区北端，靠近利特村往北的山道，从利特村出发约15分钟可到。",
+      "solution": [
+        "场内有持续风道，善用气流快速通过区域。",
+        "用磁石法杖移动挡风板，调整风道方向使风吹向开关。",
+        "风吹动开关后平台位置改变，打开新通道。",
+        "多段风道接力，到达终点。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "在气流中可以打开滑翔翼来减速或转向，充分利用气流而不是逆风前进。"
+      ],
+      "chestContents": [
+        "宝箱：皇家弓"
+      ]
+    },
+    {
+      "id": "Dungeon060",
+      "name": "Daqo Chisay Shrine",
+      "nameShort": "Daqo Chisay",
+      "nameZh": "达卡·奇萨神庙",
+      "subtitle": "The Whole Picture",
+      "subtitleZh": "全貌",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -3816.31,
+      "y": 163.45,
+      "z": 2819.16,
+      "mapUnit": "B-7",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "格鲁德小镇北侧广场附近，是进入格鲁德小镇后最容易发现的神庙。",
+      "solution": [
+        "场内有多个图案碎片，需要用磁石法杖将碎片拼成完整图案。",
+        "碎片散落在场内各处，一一拾取并拼合到中央拼图框内。",
+        "拼图对齐时会有提示光芒，全部拼合后机关激活。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "磁石法杖可以旋转碎片，旋转到正确角度后再放置到拼图框内。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon061",
+      "name": "Shoda Sah Shrine",
+      "nameShort": "Shoda Sah",
+      "nameZh": "修达·萨神庙",
+      "subtitle": "Impeccable Timing",
+      "subtitleZh": "精准时机",
+      "region": "faron",
+      "regionZh": "费罗尼",
+      "x": 1790.26,
+      "y": 202.79,
+      "z": 2992.86,
+      "mapUnit": "G-8",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "费罗尼海岸中段，靠近卡格海滩中部，从海滩沿崖壁走可找到。",
+      "solution": [
+        "场内有多个在预定路线上往返运动的平台，须踩在平台上后才能到对面。",
+        "等待平台运动到最近端，快速跳上，随平台移动到对岸。",
+        "用定格法杖暂停平台，安全跳上后解除定格。",
+        "多段关卡交替使用定格和徒手跳跃，完成全程。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "连续跳跃时注意不要手忙脚乱，每次只专注眼前一个平台。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon062",
+      "name": "Sha Gehma Shrine",
+      "nameShort": "Sha Gehma",
+      "nameZh": "沙·格玛神庙",
+      "subtitle": "Shift and Lock",
+      "subtitleZh": "移动与锁定",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -1672.36,
+      "y": 359.57,
+      "z": -3759.03,
+      "mapUnit": "D-1",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "赫布拉山区东部，从赫布拉塔往东北方向走约20分钟可找到。",
+      "solution": [
+        "场内有多个可移动的锁定开关：推动物体到指定位置后锁定，触发机关。",
+        "用磁石法杖将金属滑块推到对应凹槽，滑块入槽后锁定激活开关。",
+        "多个滑块需要同时处于锁定状态，注意顺序。",
+        "最终所有滑块锁定，终点门打开。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "滑块入槽时会有明显的卡入感（震动反馈），不确定时往复微调。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon063",
+      "name": "Kema Zoos Shrine",
+      "nameShort": "Kema Zoos",
+      "nameZh": "科马·祖斯神庙",
+      "subtitle": "A Delayed Puzzle",
+      "subtitleZh": "延迟谜题",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -4673.53,
+      "y": 145.12,
+      "z": 1968.79,
+      "mapUnit": "A-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "格鲁德沙漠东北角，靠近雷暴区边缘，穿戴橡皮衣可以安全通行。",
+      "solution": [
+        "场内有多个开关，激活后会有延迟才生效（约3秒后门才打开）。",
+        "利用延迟时间快速跑到即将打开的门前，门开时立刻进入。",
+        "多个开关的延迟叠加，需要规划好激活顺序和冲刺路线。",
+        "炸弹远程激活第一个开关，跑向第二个开关，争取最多的冲刺时间。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "记住每个开关激活后延迟的秒数，提前到达门前等待是最稳妥的方法。"
+      ],
+      "chestContents": [
+        "宝箱：皇家弓"
+      ]
+    },
+    {
+      "id": "Dungeon064",
+      "name": "Daqa Koh Shrine",
+      "nameShort": "Daqa Koh",
+      "nameZh": "达卡·科神庙",
+      "subtitle": "Stalled Flight",
+      "subtitleZh": "搁置的飞行",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 2064.97,
+      "y": 611.01,
+      "z": -2327.87,
+      "mapUnit": "H-2",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "奥尔汀火山东侧断崖上，需要攀爬火山东坡才能到达，视野良好可俯瞰整个奥尔汀。",
+      "solution": [
+        "场内有多个被风扇吹动的飞行平台，需借助平台飞越空中区域。",
+        "用炸弹炸断固定飞行平台的绳索，平台开始运动。",
+        "在平台运动至合适位置时跳上，借助惯性飞越。",
+        "高处有宝箱，需要在飞行中精准跳跃抓取。",
+        "到达终点祭台，与神灵对话。"
+      ],
+      "tips": [
+        "飞行平台速度较快，跳上后立即蹲下以免跌落，耐心等平台到正确位置。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon065",
+      "name": "Keh Namut Shrine",
+      "nameShort": "Keh Namut",
+      "nameZh": "科·纳牧特神庙",
+      "subtitle": "Cryonis Trial",
+      "subtitleZh": "冰块试炼",
+      "region": "plateau",
+      "regionZh": "初始台地",
+      "x": -1435.39,
+      "y": 350.58,
+      "z": 1990.71,
+      "mapUnit": "D-6",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "初始台地北侧山顶，需要爬上台地最高的山丘才能到达，温度寒冷建议备防寒食物。",
+      "solution": [
+        "获得冰块法杖（Cryonis），可在水面生成冰柱。",
+        "在水面生成冰柱踩上去，到达对岸平台。",
+        "用冰块法杖顶开挡在闸门下方的冰柱，让水门打开。",
+        "在流水中生成冰柱阻挡水流，使另一侧机关启动。",
+        "通过最终水道，与神灵对话完成冰块试炼。"
+      ],
+      "tips": [
+        "冰块法杖可以破坏已有的冰柱，合理利用这一点节省精力。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之斧"
+      ]
+    },
+    {
+      "id": "Dungeon066",
+      "name": "Kah Mael Shrine",
+      "nameShort": "Kah Mael",
+      "nameZh": "卡·马尔神庙",
+      "subtitle": "Drop and Rise",
+      "subtitleZh": "降与升",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 4708.56,
+      "y": 255.5,
+      "z": -1309.51,
+      "mapUnit": "J-3",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "拉聂尔海岸东端，需要攀上海边悬崖才能到达，附近有守护古人巡逻。",
+      "solution": [
+        "进入后，有多个由电力连接的升降平台。",
+        "用磁石法杖移动金属导线，改变电路连接使平台上升。",
+        "站上上升平台，到达高层区域。",
+        "高层有新的电路谜题，重复操作解开。",
+        "到达终点取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "金属导线只要两端分别接触导电体，电路即视为接通。"
+      ],
+      "chestContents": [
+        "宝箱：皇家弓",
+        "宝箱：古代齿轮"
+      ]
+    },
+    {
+      "id": "Dungeon067",
+      "name": "Qua Raym Shrine",
+      "nameShort": "Qua Raym",
+      "nameZh": "卡·雷姆神庙",
+      "subtitle": "A Balanced Approach",
+      "subtitleZh": "平衡之道",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 1820.24,
+      "y": 401.29,
+      "z": -1517.9,
+      "mapUnit": "G-3",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 2,
+      "howToFind": "奥尔汀火山西南侧，靠近鼓隆城南大门外的山坡，容易到达。",
+      "solution": [
+        "场内有一个大型天平装置，两侧各有一个平台。",
+        "用磁石法杖将重物放到天平一侧，使对侧平台上升。",
+        "站上上升的平台，到达高层区域。",
+        "重复此操作，逐层上升。",
+        "最终取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "场内所有金属物都可以用于天平，充分利用场内资源。"
+      ],
+      "chestContents": [
+        "宝箱：皇家盔甲"
+      ]
+    },
+    {
+      "id": "Dungeon068",
+      "name": "Ya Naga Shrine",
+      "nameShort": "Ya Naga",
+      "nameZh": "亚·纳加神庙",
+      "subtitle": "Shatter the Heavens",
+      "subtitleZh": "击碎苍穹",
+      "region": "lake",
+      "regionZh": "湖之国",
+      "x": -329.17,
+      "y": 81.02,
+      "z": 2600.12,
+      "mapUnit": "E-7",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "丰收湖北侧山崖顶，从湖北岸沿崖壁攀爬上去可到达，高处视野极佳。",
+      "solution": [
+        "场内有多个被冰块冻住的开关，需要用火焰融化冰块激活开关。",
+        "用火焰箭或持火把靠近，将冰块全部融化。",
+        "部分冰块下方是宝箱，融化后宝箱自动落下可拾取。",
+        "所有开关激活后，终点门打开。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "火焰箭消耗快，可以改用火把近距离融冰，节省材料。"
+      ],
+      "chestContents": [
+        "宝箱：皇家弓"
+      ]
+    },
+    {
+      "id": "Dungeon069",
+      "name": "Ishto Soh Shrine",
+      "nameShort": "Ishto Soh",
+      "nameZh": "依西托·索神庙",
+      "subtitle": "Bravery's Grasp",
+      "subtitleZh": "勇者之握",
+      "region": "lake",
+      "regionZh": "湖之国",
+      "x": -985.79,
+      "y": 334.22,
+      "z": 3564.98,
+      "mapUnit": "E-8",
+      "isDLC": false,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "丰收湖南岸的小岛上，游泳或绕路可以到达，周围有守护古人巡逻。",
+      "solution": [
+        "场内有多处光滑倾斜墙面，需要利用磁石法杖抓住金属把手攀爬。",
+        "用磁石法杖吸住墙上的金属把手，随着法杖引导玩家上升。",
+        "注意体力消耗，在平台上停下来恢复再继续攀爬。",
+        "高处有多个宝箱，全部收集后再到终点。",
+        "与神灵对话完成。"
+      ],
+      "tips": [
+        "磁石法杖拉动金属把手时，保持玩家朝向墙面，避免法杖脱手。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心",
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon070",
+      "name": "Soh Kofi Shrine",
+      "nameShort": "Soh Kofi",
+      "nameZh": "索·科菲神庙",
+      "subtitle": "A Minor Test of Strength",
+      "subtitleZh": "小型力量试炼",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 2239.21,
+      "y": 161.48,
+      "z": -292.43,
+      "mapUnit": "H-4",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 2,
+      "howToFind": "拉聂尔湖南侧的小山丘，从湖南岸沿山路爬上去即可。",
+      "solution": [
+        "进入后面对小型守护古人机器人，用炸弹先削血。",
+        "利用完美闪避触发慢动作，连续攻击。",
+        "快速以强力武器击败后取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "小型机器人难度低，携带足够武器耐久即可。"
+      ],
+      "chestContents": [
+        "宝箱：古代短剑"
+      ]
+    },
+    {
+      "id": "Dungeon071",
+      "name": "Pumaag Nitae Shrine",
+      "nameShort": "Pumaag Nitae",
+      "nameZh": "普马格·尼塔神庙",
+      "subtitle": "A Minor Test of Strength",
+      "subtitleZh": "小型力量试炼",
+      "region": "lake",
+      "regionZh": "湖之国",
+      "x": 559.36,
+      "y": 131.04,
+      "z": 2991.18,
+      "mapUnit": "F-7",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 2,
+      "howToFind": "丰收湖中央小岛，游泳渡湖或绕道可到达。",
+      "solution": [
+        "进入后面对小型守护古人机器人，快速用炸弹加弓箭击败。",
+        "击败后取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "小型机器人护甲薄，弓箭射眼睛一两箭即可击晕，趁机补刀。"
+      ],
+      "chestContents": [
+        "宝箱：古代短剑"
+      ]
+    },
+    {
+      "id": "Dungeon072",
+      "name": "Dah Kaso Shrine",
+      "nameShort": "Dah Kaso",
+      "nameZh": "达·卡索神庙",
+      "subtitle": "A Minor Test of Strength",
+      "subtitleZh": "小型力量试炼",
+      "region": "wasteland",
+      "regionZh": "荒野",
+      "x": -1695.71,
+      "y": 81.84,
+      "z": 1701.03,
+      "mapUnit": "D-6",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 2,
+      "howToFind": "格鲁德荒野中部，从格鲁德小镇往东走约5分钟即可看到。",
+      "solution": [
+        "进入后面对小型守护古人机器人，用炸弹和弓箭快速击败。",
+        "击败后取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "小型机器人攻击模式简单，完美闪避+反击即可快速结束。"
+      ],
+      "chestContents": [
+        "宝箱：古代短剑"
+      ]
+    },
+    {
+      "id": "Dungeon073",
+      "name": "Katah Chuki Shrine",
+      "nameShort": "Katah Chuki",
+      "nameZh": "卡塔·丘基神庙",
+      "subtitle": "A Minor Test of Strength",
+      "subtitleZh": "小型力量试炼",
+      "region": "central",
+      "regionZh": "中央海拉鲁",
+      "x": -636.08,
+      "y": 141.87,
+      "z": -344.16,
+      "mapUnit": "E-4",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 2,
+      "howToFind": "海拉鲁城堡城镇南侧平原，从城堡南大道向西走可轻易看到。",
+      "solution": [
+        "进入后，面前一名小型守护古人机器人。",
+        "可以用炸弹先削去一定血量，再用普通攻击连击解决。",
+        "守护机器人会使用冲刺攻击，适时翻滚躲避。",
+        "击败后取得宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "小型试炼的守护机器人血量少，用完美闪避反击可快速结束战斗。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之盾"
+      ]
+    },
+    {
+      "id": "Dungeon074",
+      "name": "Noya Neha Shrine",
+      "nameShort": "Noya Neha",
+      "nameZh": "诺亚·内哈神庙",
+      "subtitle": "A Minor Test of Strength",
+      "subtitleZh": "小型力量试炼",
+      "region": "central",
+      "regionZh": "中央海拉鲁",
+      "x": -952.17,
+      "y": 147.36,
+      "z": -623.88,
+      "mapUnit": "E-4",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 2,
+      "howToFind": "海拉鲁城堡城镇西北方向，靠近利特村道路起点附近的小山丘。",
+      "solution": [
+        "进入后面对小型守护古人机器人。",
+        "用炸弹配合弓箭射击弱点（发光的眼睛）可快速击倒。",
+        "注意机器人会在受伤后短暂加速攻击，保持距离用弓箭。",
+        "击败后取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "射击守护古人的单眼弱点可造成极高伤害，弓箭加古代箭效果更佳。"
+      ],
+      "chestContents": [
+        "宝箱：骑士之弓"
+      ]
+    },
+    {
+      "id": "Dungeon075",
+      "name": "Dah Hesho Shrine",
+      "nameShort": "Dah Hesho",
+      "nameZh": "达·赫修神庙",
+      "subtitle": "A Minor Test of Strength",
+      "subtitleZh": "小型力量试炼",
+      "region": "akkala",
+      "regionZh": "阿卡拉",
+      "x": 3899.69,
+      "y": 367.77,
+      "z": -1303.79,
+      "mapUnit": "I-3",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 2,
+      "howToFind": "阿卡拉高地南侧小山丘，从阿卡拉高地路往南走约500米可见。",
+      "solution": [
+        "进入后面对小型守护古人机器人，利用炸弹和弓箭快速击败。",
+        "击败后取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "小型机器人可以用盾反快速击倒，三次盾反通常足够击败。"
+      ],
+      "chestContents": [
+        "宝箱：古代短剑"
+      ]
+    },
+    {
+      "id": "Dungeon076",
+      "name": "Sasa Kai Shrine",
+      "nameShort": "Sasa Kai",
+      "nameZh": "萨萨·凯神庙",
+      "subtitle": "A Modest Test of Strength",
+      "subtitleZh": "中型力量试炼",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -3560.29,
+      "y": 361.78,
+      "z": 1953.87,
+      "mapUnit": "B-6",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 3,
+      "howToFind": "格鲁德沙漠中部，从格鲁德小镇往南走约10分钟可找到。",
+      "solution": [
+        "进入后面对中型守护古人机器人。",
+        "用炸弹先消耗血量，再发动完美闪避慢动作连击。",
+        "击败后取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "中型机器人的冲刺速度较快，翻滚闪避要比格挡更安全。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之剑",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon077",
+      "name": "Ke'nai Shakah Shrine",
+      "nameShort": "Ke'nai Shakah",
+      "nameZh": "肯·奈沙卡神庙",
+      "subtitle": "A Modest Test of Strength",
+      "subtitleZh": "中型力量试炼",
+      "region": "akkala",
+      "regionZh": "阿卡拉",
+      "x": 4194.71,
+      "y": 336.11,
+      "z": -855.91,
+      "mapUnit": "J-4",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 3,
+      "howToFind": "阿卡拉高地中部，靠近乌鸦隘口附近的小丘。",
+      "solution": [
+        "进入后面对中型守护古人机器人，攻击力较强。",
+        "用磁石法杖将场内金属物投掷伤敌，节省武器耐久。",
+        "中型机器人近战伤害高，注意翻滚闪避，再发动反击。",
+        "触发完美闪避后集中用强力武器输出。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "中型机器人有时会跳跃攻击，注意侧方闪避比后退更安全。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之弓",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon078",
+      "name": "Mijah Rokee Shrine",
+      "nameShort": "Mijah Rokee",
+      "nameZh": "米亚·罗基神庙",
+      "subtitle": "A Modest Test of Strength",
+      "subtitleZh": "中型力量试炼",
+      "region": "ridgeland",
+      "regionZh": "丘陵",
+      "x": -2743.99,
+      "y": 318.39,
+      "z": 225.75,
+      "mapUnit": "C-5",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 3,
+      "howToFind": "里脊地区中部，靠近里脊塔附近的山地，从塔往南走约300米可见。",
+      "solution": [
+        "进入后面对中型守护古人机器人。",
+        "用炸弹削血，完美闪避后慢动作连击。",
+        "击败后取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "中型机器人的攻击预警较为明显，耐心等待再闪避。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之刀",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon079",
+      "name": "Namika Ozz Shrine",
+      "nameShort": "Namika Ozz",
+      "nameZh": "纳米卡·奥兹神庙",
+      "subtitle": "A Modest Test of Strength",
+      "subtitleZh": "中型力量试炼",
+      "region": "central",
+      "regionZh": "中央海拉鲁",
+      "x": 760.29,
+      "y": 201.72,
+      "z": -821.39,
+      "mapUnit": "F-4",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 3,
+      "howToFind": "海拉鲁城堡城镇北侧，靠近河边的山丘上，需攀爬一小段崖壁。",
+      "solution": [
+        "面对中型守护古人机器人，血量和攻击力均比小型更强。",
+        "开场用磁石法杖拿起场内金属板投掷，制造额外伤害。",
+        "中型守护机器人有两种攻击：近战挥斩和远程冲击波，分别用翻滚和盾防御。",
+        "持续使用强力武器进行爆发攻击，争取在它出大招前击败。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "进入前确保有至少两把耐久度较好的武器，中型守护机器人会消耗大量武器耐久。"
+      ],
+      "chestContents": [
+        "宝箱：骑士之盾",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon080",
+      "name": "Shoqa Tatone Shrine",
+      "nameShort": "Shoqa Tatone",
+      "nameZh": "绍卡·塔托纳神庙",
+      "subtitle": "A Modest Test of Strength",
+      "subtitleZh": "中型力量试炼",
+      "region": "lake",
+      "regionZh": "湖之国",
+      "x": 95.0,
+      "y": 119.67,
+      "z": 3840.94,
+      "mapUnit": "F-8",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 3,
+      "howToFind": "丰收湖西南角，靠近小沼泽地带的小丘，从湖西岸绕行可找到。",
+      "solution": [
+        "进入后面对中型守护古人机器人。",
+        "用炸弹配合磁石法杖金属投掷消耗血量。",
+        "完美闪避后发动慢动作攻击，集中输出。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "中型机器人倒地后有短暂硬直，此时冲上去连击效率极高。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon081",
+      "name": "Muwo Jeem Shrine",
+      "nameShort": "Muwo Jeem",
+      "nameZh": "姆沃·基姆神庙",
+      "subtitle": "A Modest Test of Strength",
+      "subtitleZh": "中型力量试炼",
+      "region": "faron",
+      "regionZh": "费罗尼",
+      "x": 3657.17,
+      "y": 363.34,
+      "z": 3307.99,
+      "mapUnit": "I-8",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 3,
+      "howToFind": "费罗尼雨林深处，从费罗尼塔向东进入雨林约500米可看到。",
+      "solution": [
+        "进入后面对中型守护古人机器人，攻击力和血量适中。",
+        "用炸弹削血后，发动完美闪避触发慢动作，连续强力攻击。",
+        "中型机器人有冲刺攻击，向侧面翻滚可完美躲避。",
+        "击败后取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "中型机器人的弱点是眼部，弓箭射击眼睛可造成额外晕眩效果。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之刀",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon082",
+      "name": "Chaas Qeta Shrine",
+      "nameShort": "Chaas Qeta",
+      "nameZh": "查斯·科塔神庙",
+      "subtitle": "A Major Test of Strength",
+      "subtitleZh": "大型力量试炼",
+      "region": "hateno",
+      "regionZh": "哈特诺",
+      "x": 4011.48,
+      "y": 120.18,
+      "z": 2989.83,
+      "mapUnit": "J-7",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 4,
+      "howToFind": "哈特诺村东南方的小岛，需要在满潮时游泳或低潮时绕路才能到达。",
+      "solution": [
+        "进入后面对大型守护古人机器人，攻击力极高。",
+        "先用炸弹在机器人靠近时引爆，消耗其血量。",
+        "用磁石法杖吸起场内金属物投掷，额外造成伤害。",
+        "大型机器人激光攻击用盾反应对，盾反成功可反弹伤害。",
+        "发动完美闪避触发慢动作，用强力武器集中攻击。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "大型守护古人的近战挥击范围很大，向侧面翻滚比向后逃跑更安全。"
+      ],
+      "chestContents": [
+        "宝箱：大师剑强化材料×3",
+        "宝箱：古代核心",
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon083",
+      "name": "Tena Ko'sah Shrine",
+      "nameShort": "Tena Ko'sah",
+      "nameZh": "泰纳·科萨神庙",
+      "subtitle": "A Major Test of Strength",
+      "subtitleZh": "大型力量试炼",
+      "region": "tabantha",
+      "regionZh": "塔邦达",
+      "x": -3466.36,
+      "y": 397.49,
+      "z": -447.5,
+      "mapUnit": "B-4",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 4,
+      "howToFind": "塔邦达高地南侧，靠近大桥附近的山丘，需要穿越较长距离才能到达。",
+      "solution": [
+        "进入后面对大型守护古人机器人，是塔邦达区最强战斗神庙。",
+        "用炸弹削血，磁石法杖金属投掷配合输出。",
+        "激光攻击用盾反（或古代盾牌自动反弹），近战用完美闪避。",
+        "集中火力快速击败，取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "塔邦达区没有特殊防具加成，标准古代护甲是最佳选择。"
+      ],
+      "chestContents": [
+        "宝箱：大师剑强化材料×3",
+        "宝箱：古代核心",
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon084",
+      "name": "Tutsuwa Nima Shrine",
+      "nameShort": "Tutsuwa Nima",
+      "nameZh": "图苏瓦·尼玛神庙",
+      "subtitle": "A Major Test of Strength",
+      "subtitleZh": "大型力量试炼",
+      "region": "akkala",
+      "regionZh": "阿卡拉",
+      "x": 3777.26,
+      "y": 121.89,
+      "z": -2704.07,
+      "mapUnit": "I-2",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 4,
+      "howToFind": "阿卡拉高地最北端，靠近龙骨废墟，需要穿越守护古人巡逻区域才能抵达。",
+      "solution": [
+        "面对大型守护古人机器人，全游戏中最强的战斗神庙之一。",
+        "开场立即使用炸弹快速消耗血量。",
+        "大型机器人激光用盾反应对，近战连击用完美闪避触发慢动作。",
+        "利用场内古代武器箱，补充强力古代武器进行持续输出。",
+        "坚持到底，取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "携带至少两套武器和古代护甲可大幅降低难度，古代护甲对守护者减伤40%。"
+      ],
+      "chestContents": [
+        "宝箱：大师剑强化材料×3",
+        "宝箱：古代核心",
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon085",
+      "name": "Kema Kosassa Shrine",
+      "nameShort": "Kema Kosassa",
+      "nameZh": "科马·科萨萨神庙",
+      "subtitle": "A Major Test of Strength",
+      "subtitleZh": "大型力量试炼",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -4657.49,
+      "y": 632.49,
+      "z": 904.97,
+      "mapUnit": "A-5",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 4,
+      "howToFind": "格鲁德高地最深处，需穿越整个格鲁德高地才能抵达，周边环境恶劣。",
+      "solution": [
+        "进入后面对大型守护古人机器人，是格鲁德区最强战斗神庙。",
+        "开场用炸弹削血，磁石法杖投掷金属物配合输出。",
+        "大型机器人激光用盾反应对，近战用完美闪避触发慢动作。",
+        "携带古代武器和古代护甲，大幅提升输出和防御。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "古代护甲套装对守护古人减伤效果显著，是攻略大型试炼最推荐的装备。"
+      ],
+      "chestContents": [
+        "宝箱：大师剑强化材料×3",
+        "宝箱：古代核心",
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon086",
+      "name": "Goma Asaagh Shrine",
+      "nameShort": "Goma Asaagh",
+      "nameZh": "戈马·阿萨格神庙",
+      "subtitle": "A Major Test of Strength",
+      "subtitleZh": "大型力量试炼",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -2793.27,
+      "y": 684.02,
+      "z": -2882.06,
+      "mapUnit": "C-2",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 4,
+      "howToFind": "赫布拉山区南侧，靠近赫布拉塔下方的雪地平原，较易到达。",
+      "solution": [
+        "进入后面对大型守护古人机器人。",
+        "炸弹削血，盾反激光，完美闪避近战。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "赫布拉地区寒冷，进入前吃防寒食物或穿防寒套装，避免在神庙外扣血。"
+      ],
+      "chestContents": [
+        "宝箱：大师剑强化材料×3",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon087",
+      "name": "Mozo Shenno Shrine",
+      "nameShort": "Mozo Shenno",
+      "nameZh": "莫佐·谢诺神庙",
+      "subtitle": "A Major Test of Strength",
+      "subtitleZh": "大型力量试炼",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -3626.71,
+      "y": 433.82,
+      "z": -3038.26,
+      "mapUnit": "B-1",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 4,
+      "howToFind": "赫布拉山区中部高地，从赫布拉塔向西北深入山区可找到。",
+      "solution": [
+        "进入后面对大型守护古人机器人。",
+        "用古代武器集中输出，配合完美闪避快速击败。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "携带大量体力恢复食物以防战斗时出现意外。"
+      ],
+      "chestContents": [
+        "宝箱：大师剑强化材料×3",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon088",
+      "name": "Hia Miu Shrine",
+      "nameShort": "Hia Miu",
+      "nameZh": "希亚·米乌神庙",
+      "subtitle": "A Major Test of Strength",
+      "subtitleZh": "大型力量试炼",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -4446.02,
+      "y": 342.85,
+      "z": -3802.42,
+      "mapUnit": "A-1",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 4,
+      "howToFind": "赫布拉山脉最深处，需要穿越整个赫布拉山区才能抵达，是最偏远的战斗神庙之一。",
+      "solution": [
+        "进入后面对大型守护古人机器人，与前两个赫布拉大型试炼难度相同。",
+        "盾反激光，完美闪避近战，古代武器集中输出。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "三个赫布拉大型试炼可以连续一次性攻略，节省来回跑路时间。"
+      ],
+      "chestContents": [
+        "宝箱：大师剑强化材料×3",
+        "宝箱：古代核心",
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon089",
+      "name": "Saas Ko'sah Shrine",
+      "nameShort": "Saas Ko'sah",
+      "nameZh": "萨斯·科撒神庙",
+      "subtitle": "A Major Test of Strength",
+      "subtitleZh": "大型力量试炼",
+      "region": "central",
+      "regionZh": "中央海拉鲁",
+      "x": -148.4,
+      "y": 153.22,
+      "z": -1159.35,
+      "mapUnit": "E-4",
+      "isDLC": false,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 4,
+      "howToFind": "海拉鲁城堡正北方，接近卡卡利科村道路的山地中央，附近有敌人巡逻。",
+      "solution": [
+        "进入后面对大型守护古人机器人，是同类神庙中最强的。",
+        "开场立刻用炸弹和磁石法杖的金属投掷积累伤害。",
+        "大型守护机器人有激光扫射和近战连击，激光用盾反（反弹），近战用完美闪避。",
+        "盾反一次成功可以打出数倍伤害，是最高效的攻略手段。",
+        "利用场内古代武器箱补充武器，坚持到最后击败目标。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "大型守护机器人激光预警有明显蓄力动作，抓住时机按住盾牌不放即可格挡。",
+        "携带古代盾牌或镜盾可以自动反弹激光。"
+      ],
+      "chestContents": [
+        "宝箱：大师剑强化材料×3",
+        "宝箱：古代核心",
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon090",
+      "name": "Suma Sahma Shrine",
+      "nameShort": "Suma Sahma",
+      "nameZh": "苏玛·萨玛神庙",
+      "subtitle": "Suma Sahma's Blessing",
+      "subtitleZh": "苏玛萨玛的祝福",
+      "region": "wasteland",
+      "regionZh": "荒野",
+      "x": -1417.78,
+      "y": 554.4,
+      "z": 3449.21,
+      "mapUnit": "D-8",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 3,
+      "howToFind": "格鲁德荒野西南角，完成支线任务「荒野的秘宝」后显现。",
+      "solution": [
+        "前往格鲁德荒野西南部，找到废弃营地的NPC旅行者接取任务。",
+        "任务要求找到荒野中埋藏的三件古代宝物，分别位于不同的沙丘下方。",
+        "用磁石法杖从沙中挖出宝物，归还给旅行者。",
+        "全部归还后神庙显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "沙丘下的宝物用希卡石板扫描功能会有金属反应，辅助定位。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓"
+      ]
+    },
+    {
+      "id": "Dungeon091",
+      "name": "Gorae Torr Shrine",
+      "nameShort": "Gorae Torr",
+      "nameZh": "戈雷·托尔神庙",
+      "subtitle": "Gorae Torr's Blessing",
+      "subtitleZh": "戈雷托尔的祝福",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 2662.71,
+      "y": 483.0,
+      "z": -3457.21,
+      "mapUnit": "H-1",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 3,
+      "howToFind": "奥尔汀火山顶附近，完成支线任务「火山守护」后显现，需防火装备才能到达。",
+      "solution": [
+        "前往鼓隆城，与城内特定NPC对话接取「火山守护」支线任务。",
+        "任务要求讨伐奥尔汀火山顶的特定怪物头目（火焰莫布林头目）。",
+        "穿戴防火套装（或喝防火药水）攀登至死亡山山顶，找到并击败头目。",
+        "返回NPC报告完成，神庙在山顶附近显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "防火药水（30分钟版）可以在鼓隆城商店购买，是替代防火套装的快速方案。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon092",
+      "name": "Maag No'rah Shrine",
+      "nameShort": "Maag No'rah",
+      "nameZh": "马格·诺拉神庙",
+      "subtitle": "Maag No'rah's Blessing",
+      "subtitleZh": "马格诺拉的祝福",
+      "region": "ridgeland",
+      "regionZh": "丘陵",
+      "x": -1940.47,
+      "y": 262.88,
+      "z": -1459.02,
+      "mapUnit": "D-3",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "里脊地区西北部，完成支线任务「里脊的古老传说」后显现。",
+      "solution": [
+        "前往利特村往南，找到里脊地区的NPC老人接取任务。",
+        "任务要求找到隐藏在里脊地区的三块古代石碑，记录石碑上的文字。",
+        "收集完三块石碑信息后返回NPC，神庙在里脊地区北侧显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "石碑通常埋在草丛中或树旁，使用希卡石板扫描可以加速发现。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon093",
+      "name": "Raqa Zunzo Shrine",
+      "nameShort": "Raqa Zunzo",
+      "nameZh": "拉卡·珍祖神庙",
+      "subtitle": "Raqa Zunzo's Blessing",
+      "subtitleZh": "拉卡珍祖的祝福",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -3809.56,
+      "y": 168.3,
+      "z": 3126.86,
+      "mapUnit": "B-8",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "格鲁德沙漠西南部，完成支线任务「沙漠绿洲」后显现。",
+      "solution": [
+        "前往格鲁德沙漠西南角的绿洲废墟，与旅行商人NPC对话接取任务。",
+        "任务要求找到沙漠中隐藏的古代宝箱，用磁石法杖从沙中挖出。",
+        "将宝箱带回NPC，神庙在绿洲中央显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "沙漠中移动速度慢，建议骑马或使用快速移动来节省体力。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓"
+      ]
+    },
+    {
+      "id": "Dungeon094",
+      "name": "Tho Kayu Shrine",
+      "nameShort": "Tho Kayu",
+      "nameZh": "托·卡佑神庙",
+      "subtitle": "Tho Kayu's Blessing",
+      "subtitleZh": "托卡佑的祝福",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -4798.15,
+      "y": 144.13,
+      "z": 2800.03,
+      "mapUnit": "A-7",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "格鲁德沙漠东部，完成支线任务「格鲁德的火焰」后显现。",
+      "solution": [
+        "前往格鲁德小镇，与镇中商人接取支线任务。",
+        "任务要求找到并点燃沙漠中的四个古代火炬（用火焰箭点燃）。",
+        "四炬全亮后，神庙在火炬中央的沙丘中显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "格鲁德沙漠白天日照强烈，火焰箭更明显，建议白天点炬。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon095",
+      "name": "Kuhn Sidajj Shrine",
+      "nameShort": "Kuhn Sidajj",
+      "nameZh": "库恩·西达基神庙",
+      "subtitle": "Kuhn Sidajj's Blessing",
+      "subtitleZh": "库恩西达基的祝福",
+      "region": "woodland",
+      "regionZh": "森林",
+      "x": 18.44,
+      "y": 290.4,
+      "z": -1943.7,
+      "mapUnit": "F-3",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "克洛格森林外围北侧，完成支线任务「森林边界的守望」后显现。",
+      "solution": [
+        "前往克洛格森林北侧，找到林间守望塔的NPC接取任务。",
+        "任务要求在森林边界找到并击败特定怪物（食人魔头目）。",
+        "定位食人魔营地，使用攀爬+弓箭优势击败头目。",
+        "返回NPC报告，神庙在守望塔旁显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "食人魔头目通常在大型营地中央，先清除周围小怪再集中对付头目。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓"
+      ]
+    },
+    {
+      "id": "Dungeon096",
+      "name": "Qukah Nata Shrine",
+      "nameShort": "Qukah Nata",
+      "nameZh": "库卡·纳塔神庙",
+      "subtitle": "Qukah Nata's Blessing",
+      "subtitleZh": "库卡纳塔的祝福",
+      "region": "faron",
+      "regionZh": "费罗尼",
+      "x": 2007.9,
+      "y": 314.5,
+      "z": 3284.57,
+      "mapUnit": "H-8",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 3,
+      "howToFind": "费罗尼雨林南部，完成支线任务「雨中的花园」后显现。",
+      "solution": [
+        "前往费罗尼地区，找到雨林中的精灵NPC（科洛克树灵），接取支线。",
+        "任务要求在特定地点放置指定的花卉，使雨林中的枯萎植物复苏。",
+        "收集附近的特定花卉（如雨林玫瑰），放置到枯萎植物旁。",
+        "植物复苏后，神庙在附近显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "雨林中气候多变，注意持续的雨天会使攀爬变得困难，选择晴天出发。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓"
+      ]
+    },
+    {
+      "id": "Dungeon097",
+      "name": "Korgu Chideh Shrine",
+      "nameShort": "Korgu Chideh",
+      "nameZh": "科尔古·奇德神庙",
+      "subtitle": "Korgu Chideh's Blessing",
+      "subtitleZh": "科尔古奇德的祝福",
+      "region": "faron",
+      "regionZh": "费罗尼",
+      "x": 4736.62,
+      "y": 227.0,
+      "z": 3771.59,
+      "mapUnit": "J-8",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "费罗尼南部海岸的小岛礁，需要游泳或乘坐竹筏到达。",
+      "solution": [
+        "前往海岸附近找到孤独老人NPC，接取「传说的竹筏」支线任务。",
+        "任务要求用炸弹的爆炸气浪推动竹筏，到达指定海域。",
+        "在竹筏上使用炸弹爆炸推进（炸弹向后引爆，气浪向前推筏）。",
+        "到达目标小岛，神庙显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "炸弹气浪推筏时，站在筏的前端效果最佳，调整角度控制方向。"
+      ],
+      "chestContents": [
+        "宝箱：皇家骑士之盾"
+      ]
+    },
+    {
+      "id": "Dungeon098",
+      "name": "Daag Chokah Shrine",
+      "nameShort": "Daag Chokah",
+      "nameZh": "达格·科卡神庙",
+      "subtitle": "Daag Chokah's Blessing",
+      "subtitleZh": "达格科卡的祝福",
+      "region": "woodland",
+      "regionZh": "森林",
+      "x": -26.08,
+      "y": 293.34,
+      "z": -2457.69,
+      "mapUnit": "E-2",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "克洛格森林内，完成支线任务「森林的记忆」后显现。",
+      "solution": [
+        "进入克洛格森林，找到科洛克精灵长老，接取支线任务。",
+        "任务要求找到森林内散落的5块古代记忆石板，并按正确顺序排列。",
+        "搜索森林各角落，找到石板后用磁石法杖将其移动到中央祭坛排序。",
+        "排列正确后，神庙在祭坛附近显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "石板上有数字或图形标记，按升序排列是最常见的正确答案。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon099",
+      "name": "Ta'loh Naeg Shrine",
+      "nameShort": "Ta'loh Naeg",
+      "nameZh": "塔洛·奈格神庙",
+      "subtitle": "Ta'loh Naeg's Teaching",
+      "subtitleZh": "塔洛奈格的教诲",
+      "region": "duelingpeaks",
+      "regionZh": "双子山",
+      "x": 1841.22,
+      "y": 273.1,
+      "z": 891.11,
+      "mapUnit": "G-5",
+      "isDLC": false,
+      "category": "teaching",
+      "categoryZh": "教学",
+      "difficulty": 1,
+      "howToFind": "双子山东南方，卡卡利科村往东南的岔路口附近，是游客抵达双子山区时的教学神庙。",
+      "solution": [
+        "与神灵对话，学习基础战斗技巧：完美闪避（完美闪躲后触发慢动作）。",
+        "对面有一名训练用的守护古人机器人，练习在攻击前一刻翻滚触发慢动作反击。",
+        "学习盾反：在敌人攻击命中盾牌瞬间按 A 进行弹反。",
+        "在守护机器人身上多次练习，直到熟练为止。",
+        "与神灵对话完成教学，获得心之容器碎片。"
+      ],
+      "tips": [
+        "教学神庙不需要任何谜题，只要与NPC对话并练习动作即可。"
+      ],
+      "chestContents": [
+        "宝箱：旅行者之刀"
+      ]
+    },
+    {
+      "id": "Dungeon100",
+      "name": "Keeha Yoog Shrine",
+      "nameShort": "Keeha Yoog",
+      "nameZh": "基哈·友格神庙",
+      "subtitle": "Keeha Yoog's Blessing",
+      "subtitleZh": "基哈友格的祝福",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -3852.46,
+      "y": 649.3,
+      "z": 716.36,
+      "mapUnit": "B-5",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 3,
+      "howToFind": "格鲁德高地最高峰附近，完成支线任务「雪峰之鹰」后显现。",
+      "solution": [
+        "前往格鲁德高地山顶附近，找到特定NPC（格鲁德勇士）接取任务。",
+        "任务要求在指定时间内射击空中目标（飞翔的怪鸟），用弓箭完成。",
+        "目标飞行速度较快，预判前方位置提前射箭。",
+        "全部射中后NPC认可，神庙在高峰一侧显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "弓箭命中率与弓的蓄力时间有关，长弓命中率更高，短弓射速更快。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon101",
+      "name": "Dagah Keek Shrine",
+      "nameShort": "Dagah Keek",
+      "nameZh": "达格·基克神庙",
+      "subtitle": "Dagah Keek's Blessing",
+      "subtitleZh": "达格基克的祝福",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 3148.85,
+      "y": 289.0,
+      "z": -417.33,
+      "mapUnit": "I-4",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "佐拉领地内，完成神兽瓦·露塔任务后，在米法纪念碑附近显现。",
+      "solution": [
+        "完成主线任务「神兽瓦·露塔」后，前往佐拉领地的米法纪念广场。",
+        "在纪念碑旁边与特定NPC佐拉族长老对话，接取支线。",
+        "按任务指引将特定物品放置在指定位置，神庙显现。",
+        "进入神庙，直接与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "此神庙与主线联动，完成神兽后再来探索佐拉领地可一并解锁。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon102",
+      "name": "Zuna Kai Shrine",
+      "nameShort": "Zuna Kai",
+      "nameZh": "祖纳·凯神庙",
+      "subtitle": "Zuna Kai's Blessing",
+      "subtitleZh": "祖纳凯的祝福",
+      "region": "akkala",
+      "regionZh": "阿卡拉",
+      "x": 3324.09,
+      "y": 311.69,
+      "z": -3421.37,
+      "mapUnit": "I-1",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 3,
+      "howToFind": "阿卡拉高地东北部的小岛上，需要完成支线任务「铁人三项」才会显现。",
+      "solution": [
+        "前往阿卡拉高地特定NPC处，接取竞技挑战任务。",
+        "任务要求在规定时间内完成游泳、攀爬、滑翔三项挑战。",
+        "游泳时保持直线路线；攀爬时选择坡度最小的路线；滑翔时借助上升气流。",
+        "三项全部完成后神庙显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "提前强化体力格数，或使用体力回复食物，可让三项挑战更轻松。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓"
+      ]
+    },
+    {
+      "id": "Dungeon103",
+      "name": "Dila Maag Shrine",
+      "nameShort": "Dila Maag",
+      "nameZh": "蒂拉·马格神庙",
+      "subtitle": "Dila Maag's Blessing",
+      "subtitleZh": "蒂拉马格的祝福",
+      "region": "wasteland",
+      "regionZh": "荒野",
+      "x": -1795.0,
+      "y": 177.18,
+      "z": 3464.39,
+      "mapUnit": "D-8",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "格鲁德荒野东部，完成支线任务「荒野的灯塔」后显现。",
+      "solution": [
+        "在荒野东部的废弃灯塔旁找到NPC守灯人，接取任务。",
+        "任务要求修复灯塔，需要找到三个散落的灯塔零件（用磁石法杖寻找金属零件）。",
+        "将零件带回，NPC完成修复，神庙在灯塔旁显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "灯塔零件体积较大，磁石法杖吸附后移动较慢，耐心搬运。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon104",
+      "name": "Lanno Kooh Shrine",
+      "nameShort": "Lanno Kooh",
+      "nameZh": "拉诺·库神庙",
+      "subtitle": "Lanno Kooh's Blessing",
+      "subtitleZh": "拉诺库的祝福",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -2636.75,
+      "y": 459.03,
+      "z": -2061.29,
+      "mapUnit": "C-2",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "赫布拉山区西北，完成支线任务「雪山猎手」后显现。",
+      "solution": [
+        "前往赫布拉山区西北的猎人小屋，与猎人NPC对话接取任务。",
+        "任务要求在规定时间内猎杀特定数量的猎物（鹿或熊），用弓箭完成。",
+        "找到猎物群落，用弓箭静音射击，一次多杀。",
+        "达成猎杀数量后返回猎人，神庙在小屋旁显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "猎物对异常声响敏感，轻脚移动靠近后再用弓箭，切勿冲跑触发逃跑。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓"
+      ]
+    },
+    {
+      "id": "Dungeon105",
+      "name": "Tu Ka'loh Shrine",
+      "nameShort": "Tu Ka'loh",
+      "nameZh": "图·卡罗神庙",
+      "subtitle": "Tu Ka'loh's Blessing",
+      "subtitleZh": "图卡罗的祝福",
+      "region": "akkala",
+      "regionZh": "阿卡拉",
+      "x": 4655.0,
+      "y": 250.4,
+      "z": -3709.0,
+      "mapUnit": "J-1",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "阿卡拉高地中部，完成支线任务「荒废的阿卡拉」后显现。",
+      "solution": [
+        "前往阿卡拉古城废墟，与废墟中的商人NPC对话接取任务。",
+        "收集任务要求的特定素材（通常是古代零件），交给NPC。",
+        "NPC完成修复后，神庙在废墟中心显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "阿卡拉废墟附近的守护古人密度高，小心绕行或穿戴古代护甲降低仇恨。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon106",
+      "name": "Maag Halan Shrine",
+      "nameShort": "Maag Halan",
+      "nameZh": "马格·哈兰神庙",
+      "subtitle": "Maag Halan's Blessing",
+      "subtitleZh": "马格哈兰的祝福",
+      "region": "woodland",
+      "regionZh": "森林",
+      "x": 836.63,
+      "y": 295.2,
+      "z": -2418.81,
+      "mapUnit": "F-2",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "迷途森林东侧，完成支线任务「失落旅人的线索」后显现。",
+      "solution": [
+        "在迷途森林附近找到迷路的旅行商人，与其对话接取任务。",
+        "任务要求找到失去的商品（用磁石法杖从水中打捞），归还给商人。",
+        "商人感谢后，神庙在附近空地显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "水下打捞时，先浮出水面观察商品位置，再潜下去精确吸取。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon107",
+      "name": "Misae Suma Shrine",
+      "nameShort": "Misae Suma",
+      "nameZh": "米萨伊·苏玛神庙",
+      "subtitle": "Misae Suma's Blessing",
+      "subtitleZh": "米萨伊苏玛的祝福",
+      "region": "wasteland",
+      "regionZh": "荒野",
+      "x": -2969.8,
+      "y": 150.67,
+      "z": 3780.63,
+      "mapUnit": "C-8",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "格鲁德荒野中部，完成支线任务「荒野的歌声」后显现。",
+      "solution": [
+        "在荒野中部找到流浪歌手NPC，接取任务。",
+        "任务要求找到散落在荒野中的四块乐器碎片，收集后归还。",
+        "各碎片分散在荒野各方向，需要一一搜寻。",
+        "全部归还后神庙显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "荒野面积广阔，骑马或使用地图标记辅助搜索碎片位置。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon108",
+      "name": "Ketoh Wawai Shrine",
+      "nameShort": "Ketoh Wawai",
+      "nameZh": "科托·瓦伊神庙",
+      "subtitle": "Ketoh Wawai's Blessing",
+      "subtitleZh": "科托瓦伊的祝福",
+      "region": "woodland",
+      "regionZh": "森林",
+      "x": 284.4,
+      "y": 294.3,
+      "z": -3119.6,
+      "mapUnit": "F-1",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "克洛格森林内部，完成主线任务「大师之剑」后可直接在森林内取得。",
+      "solution": [
+        "进入克洛格森林，完成主线拔出大师之剑后，附近的神庙自动显现。",
+        "进入神庙，与神灵对话，无需额外试炼。",
+        "取得心之容器碎片。"
+      ],
+      "tips": [
+        "此神庙与主线拔剑任务直接绑定，完成主线后立即可进入。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon109",
+      "name": "Ritaag Zumo Shrine",
+      "nameShort": "Ritaag Zumo",
+      "nameZh": "里塔格·祖摩神庙",
+      "subtitle": "Ritaag Zumo's Blessing",
+      "subtitleZh": "里塔格祖摩的祝福",
+      "region": "akkala",
+      "regionZh": "阿卡拉",
+      "x": 4525.04,
+      "y": 116.77,
+      "z": -2128.39,
+      "mapUnit": "J-2",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "阿卡拉高地东岸海边，完成支线任务「海上之光」后显现。",
+      "solution": [
+        "前往阿卡拉灯塔，与守塔老人NPC对话接取任务。",
+        "任务要求在夜晚点亮海边特定三处火炬，用弓火箭一一点燃。",
+        "全部点亮后，对面的海上区域出现神庙。",
+        "游泳或绕路到达神庙入口。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "夜晚视野有限，提前记好三处火炬的大致位置，日落后立刻出发。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon110",
+      "name": "Korsh O'hu Shrine",
+      "nameShort": "Korsh O'hu",
+      "nameZh": "科尔希·欧胡神庙",
+      "subtitle": "Korsh O'hu's Blessing",
+      "subtitleZh": "科尔希欧胡的祝福",
+      "region": "wasteland",
+      "regionZh": "荒野",
+      "x": -2689.31,
+      "y": 114.01,
+      "z": 2811.91,
+      "mapUnit": "C-7",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "格鲁德荒野北部，完成支线任务「荒野的遗迹」后显现。",
+      "solution": [
+        "在荒野北部的古代遗迹处找到考古学家NPC，接取任务。",
+        "任务要求挖掘遗迹中的古代记录石板，用炸弹炸开封堵入口的石块。",
+        "进入地下遗迹，找到石板带出。",
+        "归还NPC后神庙在遗迹上方显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "地下遗迹内有守护古人残骸，谨慎前进，可以绕行不必正面交战。"
+      ],
+      "chestContents": [
+        "宝箱：古代弹簧"
+      ]
+    },
+    {
+      "id": "Dungeon111",
+      "name": "Tawa Jinn Shrine",
+      "nameShort": "Tawa Jinn",
+      "nameZh": "塔瓦·金神庙",
+      "subtitle": "Tawa Jinn's Blessing",
+      "subtitleZh": "塔瓦金的祝福",
+      "region": "faron",
+      "regionZh": "费罗尼",
+      "x": 2636.69,
+      "y": 327.17,
+      "z": 2833.85,
+      "mapUnit": "H-7",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "费罗尼地区北部，靠近费罗尼塔附近的小丘，完成支线任务后显现。",
+      "solution": [
+        "附近有一个守护古人NPC，与其对话接取「守护者的考验」支线。",
+        "任务要求击败附近指定地点的精英怪物（通常是银色莫布林）。",
+        "找到并击败目标怪物后，返回NPC报告。",
+        "神庙在小丘上显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "银色莫布林强度较高，携带至少一把强力武器和足够的食物再出发。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon112",
+      "name": "Lakna Rokee Shrine",
+      "nameShort": "Lakna Rokee",
+      "nameZh": "拉克纳·罗基神庙",
+      "subtitle": "Lakna Rokee's Blessing",
+      "subtitleZh": "拉克纳罗基的祝福",
+      "region": "duelingpeaks",
+      "regionZh": "双子山",
+      "x": 2039.63,
+      "y": 295.03,
+      "z": 971.7,
+      "mapUnit": "G-6",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 3,
+      "howToFind": "双子山客栈正东方的小山上，需要完成支线任务「双子山客栈的传说」才会现身。",
+      "solution": [
+        "前往双子山客栈，与客栈老板娘对话接取任务。",
+        "任务要求在夜晚爬上山丘，在指定石圈处等待月光照射。",
+        "月亮升起后，石圈附近会出现特殊光芒，触发神庙显现。",
+        "进入神庙后，直接走到祭台与神灵对话，无需额外试炼。",
+        "获得心之容器碎片。"
+      ],
+      "tips": [
+        "此神庙在夜晚特定月相才能触发，若等待太久可调整游戏时间（坐篝火）。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon113",
+      "name": "Shae Katha Shrine",
+      "nameShort": "Shae Katha",
+      "nameZh": "沙伊·卡塔神庙",
+      "subtitle": "Shae Katha's Blessing",
+      "subtitleZh": "沙伊卡塔的祝福",
+      "region": "lake",
+      "regionZh": "湖之国",
+      "x": 870.49,
+      "y": 135.99,
+      "z": 2329.53,
+      "mapUnit": "F-7",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 3,
+      "howToFind": "丰收湖西侧，完成支线任务「湖中之光」后显现。",
+      "solution": [
+        "前往丰收湖西岸的神殿遗迹，与遗迹守护NPC对话接取任务。",
+        "任务要求在月圆之夜，将三盏灯台同时点亮。",
+        "点亮灯台后，湖面出现光影，神庙在湖心小岛显现。",
+        "游泳或用冰块法杖搭桥到达小岛。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "月圆之夜可以坐篝火等待，或直接调整游戏时间到月圆的夜晚。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon114",
+      "name": "Shai Yota Shrine",
+      "nameShort": "Shai Yota",
+      "nameZh": "沙伊·约塔神庙",
+      "subtitle": "Shai Yota's Blessing",
+      "subtitleZh": "沙伊约塔的祝福",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 4245.25,
+      "y": 119.92,
+      "z": 253.91,
+      "mapUnit": "J-5",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 3,
+      "howToFind": "拉聂尔岛礁的最东端小岛，需要游泳或从大片珊瑚礁地带跳跃前进。",
+      "solution": [
+        "前往拉聂尔岛链东端，找到隐藏在礁岩中的古代宝箱图样。",
+        "用磁石法杖从水底打捞出古代宝箱，获得钥匙道具。",
+        "用钥匙激活附近神庙碑，神庙出现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "东端礁岩下方水体较深，潜水时注意氧气耗尽问题（可使用橡皮西装）。"
+      ],
+      "chestContents": [
+        "宝箱：拉聂尔的剑"
+      ]
+    },
+    {
+      "id": "Dungeon115",
+      "name": "Rona Kachta Shrine",
+      "nameShort": "Rona Kachta",
+      "nameZh": "罗纳·卡赫塔神庙",
+      "subtitle": "Rona Kachta's Blessing",
+      "subtitleZh": "罗纳卡赫塔的祝福",
+      "region": "woodland",
+      "regionZh": "森林",
+      "x": -1088.8,
+      "y": 35.05,
+      "z": -2660.74,
+      "mapUnit": "D-2",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "迷途森林南侧，靠近里脊地区边界，完成支线任务「森林守门人」后显现。",
+      "solution": [
+        "在迷途森林南侧的古代石碑旁找到NPC，接取任务。",
+        "任务要求在规定时间内沿指定路线穿越迷途森林，不走错路。",
+        "记住迷途森林的光芒方向（跟随发光的幽灵光球），抵达克洛格森林后神庙显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "迷途森林中跟随橙色发光虫（幽幽球）走就是正确路线。"
+      ],
+      "chestContents": [
+        "宝箱：古代弹簧"
+      ]
+    },
+    {
+      "id": "Dungeon116",
+      "name": "Qaza Tokki Shrine",
+      "nameShort": "Qaza Tokki",
+      "nameZh": "卡扎·托基神庙",
+      "subtitle": "Qaza Tokki's Blessing",
+      "subtitleZh": "卡扎托基的祝福",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -821.5,
+      "y": 354.3,
+      "z": -3535.0,
+      "mapUnit": "E-1",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "赫布拉山区北部，完成支线任务「雪域迷途」后显现。",
+      "solution": [
+        "在赫布拉山区北部找到迷路的旅行者NPC，与其对话接取任务。",
+        "任务要求找到散落在雪地中的三件旅行装备，用磁石法杖打捞。",
+        "找到所有装备后归还给旅行者，神庙在附近显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "雪地中的装备可能被雪覆盖，使用希卡石板扫描功能辅助寻找。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon117",
+      "name": "Jitan Sa'mi Shrine",
+      "nameShort": "Jitan Sa'mi",
+      "nameZh": "吉坦·萨米神庙",
+      "subtitle": "Jitan Sa'mi's Blessing",
+      "subtitleZh": "吉坦萨米的祝福",
+      "region": "hateno",
+      "regionZh": "哈特诺",
+      "x": 3883.03,
+      "y": 585.81,
+      "z": 1315.36,
+      "mapUnit": "I-6",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "哈特诺村南侧山顶，完成支线任务「哈特诺研究所的秘密」后神庙显现。",
+      "solution": [
+        "前往哈特诺研究所（古代科技实验室），与帕雅博士对话接取任务。",
+        "任务要求修复研究所的古代能量槽，需收集蓝焰引燃火炬。",
+        "用木制火炬从最近的火源取蓝焰，沿路不断传递蓝焰直到研究所。",
+        "能量槽点燃后，神庙在研究所南边的山顶显现。",
+        "进入神庙，直接与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "传递蓝焰途中不要进入水中，否则火焰熄灭需要从头开始。"
+      ],
+      "chestContents": [
+        "宝箱：皇家弓"
+      ]
+    },
+    {
+      "id": "Dungeon118",
+      "name": "To Quomo Shrine",
+      "nameShort": "To Quomo",
+      "nameZh": "托·库摩神庙",
+      "subtitle": "To Quomo's Blessing",
+      "subtitleZh": "托库摩的祝福",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -4022.13,
+      "y": 301.09,
+      "z": -3711.7,
+      "mapUnit": "A-1",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "赫布拉山脉西端，完成支线任务「极地守护」后显现。",
+      "solution": [
+        "前往赫布拉山脉西端，找到古代石碑前的守护NPC，接取任务。",
+        "任务要求击败石碑附近的四只特殊敌人（冰霜飞龙或冰霜莫布林精英）。",
+        "用火焰系武器或弓箭克制冰属性敌人，逐一击败。",
+        "全部击败后神庙显现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "火焰箭对冰属性敌人有属性克制效果，推荐携带足量火焰箭。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon119",
+      "name": "Tahno O'ah Shrine",
+      "nameShort": "Tahno O'ah",
+      "nameZh": "塔诺·奥阿神庙",
+      "subtitle": "Tahno O'ah's Blessing",
+      "subtitleZh": "塔诺奥阿的祝福",
+      "region": "hateno",
+      "regionZh": "哈特诺",
+      "x": 4182.76,
+      "y": 301.15,
+      "z": 1686.56,
+      "mapUnit": "J-6",
+      "isDLC": false,
+      "category": "blessing",
+      "categoryZh": "祝福",
+      "difficulty": 2,
+      "howToFind": "哈特诺村东北方的山顶，完成支线任务「哈特诺村的爬山挑战」后显现。",
+      "solution": [
+        "与哈特诺村特定NPC（老人）对话，接取爬山挑战任务。",
+        "任务要求在不使用任何辅助道具（无爬墙术）的情况下，沿特定路线爬上神庙所在的山顶。",
+        "若携带攀爬护甲（或已强化），可大幅减少体力消耗。",
+        "到达山顶后与NPC验证，神庙出现。",
+        "进入神庙，与神灵对话取得心之容器碎片。"
+      ],
+      "tips": [
+        "爬山前在篝火旁等到清晨出发，气温适宜且视野最佳。"
+      ],
+      "chestContents": [
+        "宝箱：皮革马具"
+      ]
+    },
+    {
+      "id": "Dungeon120",
+      "name": "Yowaka Ita Shrine",
+      "nameShort": "Yowaka Ita",
+      "nameZh": "余瓦卡·依塔神庙",
+      "subtitle": "Collected Soul",
+      "subtitleZh": "收束之魂（DLC）",
+      "region": "plateau",
+      "regionZh": "初始台地",
+      "x": -941.85,
+      "y": 196.7,
+      "z": 1671.74,
+      "mapUnit": "E-6",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "初始台地东南方的悬崖下方，需要从台地边缘攀爬下去，DLC专属神庙。",
+      "solution": [
+        "进入后，面前有多个光球在轨道上移动。",
+        "用冰块法杖阻挡光球路径，使多个光球汇聚到同一位置。",
+        "利用磁石法杖移动金属板改变光球轨道方向。",
+        "将所有光球引导至终点祭台，机关开启。",
+        "通过开启的大门取得宝箱，再与神灵对话。"
+      ],
+      "tips": [
+        "仔细观察光球轨道走向，一次性规划好路径再行动。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心",
+        "宝箱：白金"
+      ]
+    },
+    {
+      "id": "Dungeon121",
+      "name": "Kihiro Moh Shrine",
+      "nameShort": "Kihiro Moh",
+      "nameZh": "基西罗·莫神庙",
+      "subtitle": "Inside the Box",
+      "subtitleZh": "箱中之谜（DLC）",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -3392.16,
+      "y": 450.98,
+      "z": 1347.47,
+      "mapUnit": "B-6",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 4,
+      "howToFind": "格鲁德沙漠西北角，DLC专属神庙，在巨大沙丘后方。",
+      "solution": [
+        "进入后，场内有一个巨大的立体箱形迷宫，玩家在外部旋转迷宫。",
+        "用陀螺仪/摇杆控制整个迷宫的朝向，让内部的球滚到出口。",
+        "迷宫每次旋转180度，球的位置发生根本变化，需要重新规划路线。",
+        "特别注意迷宫内的陷阱格（弹出格），避免球掉入。",
+        "球到达出口后机关开启，取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "这个神庙是格鲁德区最难的谜题，建议先观察迷宫全貌再开始旋转。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心",
+        "宝箱：古代弹簧"
+      ]
+    },
+    {
+      "id": "Dungeon122",
+      "name": "Etsu Korima Shrine",
+      "nameShort": "Etsu Korima",
+      "nameZh": "依矶·科利玛神庙",
+      "subtitle": "Path of Light",
+      "subtitleZh": "光之路（DLC）",
+      "region": "plateau",
+      "regionZh": "初始台地",
+      "x": -1215.97,
+      "y": 349.5,
+      "z": 2110.88,
+      "mapUnit": "D-7",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "初始台地西侧深谷底部，需要从西侧崖边滑翔下去，DLC专属神庙。",
+      "solution": [
+        "地板上有反光镜，使用磁石法杖旋转镜子角度。",
+        "将光束依次反射至各个受光点，激活机关。",
+        "部分镜子被石块遮挡，先用炸弹清除石块再旋转镜子。",
+        "最后一面镜子需要精确角度将光射入终点，门自动开启。",
+        "进入终点取宝箱后与神灵对话完成试炼。"
+      ],
+      "tips": [
+        "光束一次只能射到第一个障碍，先清场再对准方向。"
+      ],
+      "chestContents": [
+        "宝箱：古代齿轮",
+        "宝箱：古代弹簧"
+      ]
+    },
+    {
+      "id": "Dungeon123",
+      "name": "Rohta Chigah Shrine",
+      "nameShort": "Rohta Chigah",
+      "nameZh": "罗塔·奇格神庙",
+      "subtitle": "Stop to Start",
+      "subtitleZh": "停止再启动（DLC）",
+      "region": "plateau",
+      "regionZh": "初始台地",
+      "x": -517.95,
+      "y": 182.8,
+      "z": 1799.02,
+      "mapUnit": "E-6",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "初始台地南侧峭壁脚下，从台地向南边沿崖攀爬可到达，DLC专属神庙。",
+      "solution": [
+        "场内有多个旋转平台和翻转机关，用定格法杖暂停转盘。",
+        "趁机关停止时快速跑过不稳定地板区域。",
+        "定格巨型旋转臂，从臂上跳到对面平台。",
+        "最后区域：连续定格两个机关，争取时间通过。",
+        "到达终点拿宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "定格持续时间有限，提前规划好路线，不要在定格中浪费时间。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon124",
+      "name": "Sato Koda Shrine",
+      "nameShort": "Sato Koda",
+      "nameZh": "萨托·科达神庙",
+      "subtitle": "Support and Guidance",
+      "subtitleZh": "支撑与引导（DLC）",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 3103.61,
+      "y": 551.91,
+      "z": -833.96,
+      "mapUnit": "I-4",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "拉聂尔湖东北角山顶，需要攀爬较高的山峰才能到达，DLC专属神庙。",
+      "solution": [
+        "场内有多根可移动的柱子，用磁石法杖操控柱子支撑平台或搭建桥梁。",
+        "将长柱横置架在两个支点之间，形成桥梁供玩家通行。",
+        "部分区域需要将柱子竖立当梯子攀爬。",
+        "最终区域：用柱子同时支撑移动平台和激活开关。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "DLC神庙柱子数量充足，不必担心用完，大胆尝试各种组合。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心",
+        "宝箱：古代弹簧"
+      ]
+    },
+    {
+      "id": "Dungeon125",
+      "name": "Kee Dafunia Shrine",
+      "nameShort": "Kee Dafunia",
+      "nameZh": "基·达夫尼亚神庙",
+      "subtitle": "The Melting Point",
+      "subtitleZh": "融化点（DLC）",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 4934.23,
+      "y": 115.8,
+      "z": -1002.05,
+      "mapUnit": "J-4",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "拉聂尔湖西岸山脉深处，DLC专属神庙，需要穿越密林才能到达。",
+      "solution": [
+        "场内有冰块构成的平台，用火焰箭或持火把可以融化冰块。",
+        "选择性融化部分冰块，使平台形成可通行的路径。",
+        "注意：冰块融化后变成水坑，可用冰块法杖重新生成冰柱踩过去。",
+        "融化特定冰块激活开关，同时保留其他冰块作为通道。",
+        "取宝箱，与神灵对话。"
+      ],
+      "tips": [
+        "火焰箭消耗品，也可用火把近距离融冰，节省弹药。"
+      ],
+      "chestContents": [
+        "宝箱：古代齿轮",
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon126",
+      "name": "Mah Eliya Shrine",
+      "nameShort": "Mah Eliya",
+      "nameZh": "马·依利亚神庙",
+      "subtitle": "Secret Stairway",
+      "subtitleZh": "秘密阶梯（DLC）",
+      "region": "lanayru",
+      "regionZh": "拉聂尔",
+      "x": 3761.87,
+      "y": 556.78,
+      "z": -645.5,
+      "mapUnit": "I-4",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 4,
+      "howToFind": "拉聂尔高地的悬崖内侧，DLC专属神庙，位置较为隐蔽。",
+      "solution": [
+        "场内有多层隐藏在墙壁中的开关，用磁石法杖移开金属板才能看见。",
+        "激活开关后，一段楼梯从地板中升出。",
+        "沿楼梯上升后，又有新的隐藏墙和开关，继续探索。",
+        "顶层有宝箱和最终开关，激活后与神灵对话。",
+        "整个过程需要仔细搜索每个角落。"
+      ],
+      "tips": [
+        "使用磁石法杖时不必精确点击，只要在金属物附近施法就会自动吸附。"
+      ],
+      "chestContents": [
+        "宝箱：古代弹簧",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon127",
+      "name": "Noe Rajee Shrine",
+      "nameShort": "Noe Rajee",
+      "nameZh": "诺伊·拉基神庙",
+      "subtitle": "The Four Winds",
+      "subtitleZh": "四风（DLC）",
+      "region": "tabantha",
+      "regionZh": "塔邦达",
+      "x": -3821.0,
+      "y": 98.77,
+      "z": -2310.52,
+      "mapUnit": "B-2",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "塔邦达高地中部，DLC专属神庙，在四面环山的谷地中央。",
+      "solution": [
+        "场内有四个方向的风道，对应四个开关，需要顺序激活。",
+        "站在中央，根据地面指示符号辨别四个风道的对应方向。",
+        "按指定顺序（通常是按顺时针）逐一进入风道并激活风道末端开关。",
+        "四个开关全部激活后，中央祭台上升，与神灵对话。",
+        "取宝箱后完成。"
+      ],
+      "tips": [
+        "风道内空气阻力大，展翼可以在风道中维持高度。"
+      ],
+      "chestContents": [
+        "宝箱：古代弹簧",
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon128",
+      "name": "Kiah Toza Shrine",
+      "nameShort": "Kiah Toza",
+      "nameZh": "基亚·托扎神庙",
+      "subtitle": "Master the Orb",
+      "subtitleZh": "掌控圆球（DLC）",
+      "region": "hebra",
+      "regionZh": "赫布拉",
+      "x": -2156.43,
+      "y": 459.4,
+      "z": -3188.15,
+      "mapUnit": "C-1",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "赫布拉山区东部高处，DLC专属神庙，在山顶的悬挂平台上。",
+      "solution": [
+        "场内有多个由线索悬挂的金属球，需要精确控制球的摆动方向。",
+        "用磁石法杖吸附金属球，拉向特定方向后释放，使球摆动撞击目标开关。",
+        "调整力度：轻拉球会小幅摆动，大力拉球摆幅大。",
+        "精准撞击全部目标开关后，终点门打开。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "球摆动有惯性，释放后注意观察摆动方向，再决定是否需要二次干预。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心",
+        "宝箱：古代弹簧"
+      ]
+    },
+    {
+      "id": "Dungeon129",
+      "name": "Shira Gomar Shrine",
+      "nameShort": "Shira Gomar",
+      "nameZh": "希拉·戈马神庙",
+      "subtitle": "Aim for Stillness",
+      "subtitleZh": "瞄准静止（DLC）",
+      "region": "ridgeland",
+      "regionZh": "丘陵",
+      "x": -2377.08,
+      "y": 273.97,
+      "z": -1383.92,
+      "mapUnit": "C-3",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "里脊地区东北角，DLC专属神庙，在陡峭山坡的平台上。",
+      "solution": [
+        "场内有多个高速旋转的圆盘靶，需要用弓箭射中靶心。",
+        "靶心旋转中心是固定的，专注瞄准中心点而非追踪靶的旋转。",
+        "射中靶心后靶停止旋转，对应机关激活。",
+        "多个靶依次射击，全部激活后终点门打开。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "在静止靶中心练习准确度，然后用相同手感面对旋转靶。"
+      ],
+      "chestContents": [
+        "宝箱：古代弓",
+        "宝箱：古代箭×5"
+      ]
+    },
+    {
+      "id": "Dungeon130",
+      "name": "Kamia Omuna Shrine",
+      "nameShort": "Kamia Omuna",
+      "nameZh": "卡米亚·欧姆纳神庙",
+      "subtitle": "Moving Targets",
+      "subtitleZh": "移动的目标（DLC）",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 2129.35,
+      "y": 518.92,
+      "z": -3228.66,
+      "mapUnit": "H-1",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "奥尔汀火山东麓，DLC专属神庙，在山坡中段的隐蔽位置。",
+      "solution": [
+        "场内有多个在轨道上移动的目标平台，需要精准跳上运动中的平台。",
+        "观察平台运动规律（来回或循环），选择最佳起跳时机。",
+        "用定格法杖暂停平台，从容跳上后再解除定格随平台移动。",
+        "通过多段移动平台组成的障碍区，到达终点。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "定格法杖在这个神庙极为好用，几乎可以无限制地在静止平台上从容跳跃。"
+      ],
+      "chestContents": [
+        "宝箱：古代弹簧",
+        "宝箱：古代轴"
+      ]
+    },
+    {
+      "id": "Dungeon131",
+      "name": "Rinu Honika Shrine",
+      "nameShort": "Rinu Honika",
+      "nameZh": "里努·侯尼卡神庙",
+      "subtitle": "Block the Blaze",
+      "subtitleZh": "封锁火焰（DLC）",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 2242.22,
+      "y": 550.82,
+      "z": -1996.19,
+      "mapUnit": "H-2",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "奥尔汀火山北坡，DLC专属神庙，在死亡山火山口附近。",
+      "solution": [
+        "场内有多处持续喷出的火焰柱，需要找方法封堵部分火焰柱。",
+        "用磁石法杖移动金属圆盖盖住火焰喷口，暂时熄灭火焰。",
+        "封堵特定火焰后，背后的通道或宝箱变得可接触。",
+        "多个圆盖需要精准对齐喷口，操作需要耐心。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "金属圆盖与喷口之间有磁力对齐提示，接近正确位置时会有轻微震动反馈。"
+      ],
+      "chestContents": [
+        "宝箱：古代核心",
+        "宝箱：古代弹簧"
+      ]
+    },
+    {
+      "id": "Dungeon132",
+      "name": "Sharo Lun Shrine",
+      "nameShort": "Sharo Lun",
+      "nameZh": "沙罗·伦神庙",
+      "subtitle": "Blind Spots",
+      "subtitleZh": "盲点（DLC）",
+      "region": "eldin",
+      "regionZh": "奥尔汀",
+      "x": 2931.94,
+      "y": 639.51,
+      "z": -2418.73,
+      "mapUnit": "H-2",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 4,
+      "howToFind": "奥尔汀火山核心区深处，DLC专属神庙，是奥尔汀地区最难到达的神庙之一。",
+      "solution": [
+        "进入后，场景极暗，几乎无法看清道路，只能靠感应和小范围光源探索。",
+        "使用发光武器或火把照亮前方，寻找隐藏开关和宝箱。",
+        "场内有隐藏的陷阱（地刺、落石），必须慢慢前进探索。",
+        "找到隐藏在暗处的所有开关，逐一激活，终点渐渐被照亮。",
+        "到达亮起的祭台，与神灵对话完成。"
+      ],
+      "tips": [
+        "弓箭配发光箭可以为远处区域短暂照明，辅助寻找路线和陷阱。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon133",
+      "name": "Keive Tala Shrine",
+      "nameShort": "Keive Tala",
+      "nameZh": "基伊韦·塔拉神庙",
+      "subtitle": "Big or Small",
+      "subtitleZh": "大与小（DLC）",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -2340.23,
+      "y": 138.5,
+      "z": 3900.93,
+      "mapUnit": "C-8",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "格鲁德沙漠南部，DLC专属神庙，在沙漠深处的小台地上。",
+      "solution": [
+        "场内有两种体型的同类物体（大球和小球），需分别引导到对应大小的出口。",
+        "大球用磁石法杖直接搬运到大出口；小球可以从高处投入小通道。",
+        "部分路段大球无法通过，须绕路再引导小球。",
+        "两球先后到达各自出口后，终点门打开。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "两个出口同时开放，先处理路线较简单的那一个，减少被另一个干扰。"
+      ],
+      "chestContents": [
+        "宝箱：古代轴",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon134",
+      "name": "Takama Shiri Shrine",
+      "nameShort": "Takama Shiri",
+      "nameZh": "塔卡玛·希利神庙",
+      "subtitle": "Dual Purpose",
+      "subtitleZh": "双重用途（DLC）",
+      "region": "gerudo",
+      "regionZh": "格鲁德",
+      "x": -4894.49,
+      "y": 150.98,
+      "z": 2155.5,
+      "mapUnit": "A-7",
+      "isDLC": true,
+      "category": "puzzle",
+      "categoryZh": "解谜",
+      "difficulty": 3,
+      "howToFind": "格鲁德高地东侧，DLC专属神庙，在山坡中段较为隐蔽。",
+      "solution": [
+        "场内每个机关物体都有两种用途（比如既是踏板又是导电体）。",
+        "分析场内物体的双重属性，安排合理的使用顺序。",
+        "例如：将金属板先用作桥梁通过，再用作导线接通电路。",
+        "每个谜题都需要物尽其用，不能「浪费」任何一件道具的功能。",
+        "取宝箱，与神灵对话完成。"
+      ],
+      "tips": [
+        "遇到瓶颈时，检查场内是否有物体的第二种功能尚未利用。"
+      ],
+      "chestContents": [
+        "宝箱：古代弹簧",
+        "宝箱：古代核心"
+      ]
+    },
+    {
+      "id": "Dungeon135",
+      "name": "Ruvo Korbah Shrine",
+      "nameShort": "Ruvo Korbah",
+      "nameZh": "鲁沃·科巴神庙",
+      "subtitle": "A Major Test of Strength+",
+      "subtitleZh": "力量强化试炼+（DLC）",
+      "region": "plateau",
+      "regionZh": "初始台地",
+      "x": -833.59,
+      "y": 198.8,
+      "z": 2144.81,
+      "mapUnit": "E-7",
+      "isDLC": true,
+      "category": "combat",
+      "categoryZh": "战斗",
+      "difficulty": 5,
+      "howToFind": "初始台地中心地带，DLC剑之试炼完成后解锁，是全游戏最难战斗神庙之一。",
+      "solution": [
+        "进入后面对初级守护古人机器人，用炸弹削减血量。",
+        "中级区域有两个机器人同时出现，利用磁石法杖投掷金属物干扰。",
+        "终极区域：面对强化版守护古人，会发射激光，须用盾反击。",
+        "盾反激光：在激光命中前一刻按格挡，激光反弹伤害古人。",
+        "击败全部守护机器人后门打开，取宝箱与神灵对话。"
+      ],
+      "tips": [
+        "全程尽量使用古代武器，伤害加成对守护者效果显著。",
+        "盾反是最高效处理激光的方式，需要提前练习时机。"
+      ],
+      "chestContents": [
+        "宝箱：大师剑强化材料×5",
+        "宝箱：古代核心×3"
+      ]
+    }
+  ]
+}

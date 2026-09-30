@@ -20,6 +20,13 @@
 - 各自可独立显示/隐藏（localStorage 持久化）
 - 点击弹层：名称、坐标、复制坐标
 
+### 攻略
+
+- 顶栏切换「呀哈哈 / 套装 / **攻略**」
+- **主线流程**：15 条主线任务完整步骤（含 DLC），可展开详情、搜索
+- **试炼神庙**：136 座神庙（120 本体 + 16 DLC）按区域分组，含中文解法、难度评级、宝箱内容、地图定位
+- 神庙可点击「在地图上显示」跳转到地图标记
+
 ### 套装
 
 - 顶栏切换「呀哈哈 / 套装」
@@ -113,10 +120,12 @@ python3 tools/build_landmarks.py  # data/landmarks.json
 index.html
 manifest.webmanifest
 css/app.css
-js/{app,map,markers,landmarks,popup,state,armors,owned}.js
+js/{app,map,markers,landmarks,popup,state,armors,owned,guides}.js
 data/koroks.json
 data/armors.json
 data/landmarks.json
+data/guides.json
+data/shrine-guides.json
 data/overrides.json
 tools/build_koroks.py
 tools/build_armors.py
